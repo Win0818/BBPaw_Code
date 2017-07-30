@@ -1,0 +1,9 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">购物</string>
+    
+    <string name="gold_number">乐币: %1$s</string>
+    <string name="get_more_gold">获取更多乐币</string>
+    
+    <string name="exchange_record">兑换记录</string>
+</resources>

@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="language_list_width">280dip</dimen>
+	<dimen name="language_list_height">300dip</dimen>
+	<dimen name="language_fragment_list_width">230dip</dimen>
+	<dimen name="logo_layout_marginLeft">5dip</dimen>
+	<dimen name="language_list_itme_height">50dip</dimen>
+	<dimen name="language_list_itme_text_maxWidth">180dip</dimen>
+	<dimen name="wifi_list_width">370dip</dimen>
+	<dimen name="wifi_list_height">300dip</dimen>
+	<dimen name="wifi_list_item_line_width">400dip</dimen>
+	<dimen name="wifi_list_itme_height">100dip</dimen>
+	<dimen name="wifi_list_itme_marginLeft">20dip</dimen>
+	<dimen name="wifi_psw_input_padding">15dip</dimen>
+	<dimen name="register_content_marginTop">30dip</dimen>
+	<dimen name="register_content_item_marginTop">20dip</dimen>
+	<dimen name="register_photo_width">200dip</dimen>
+	<dimen name="register_photo_height">200dip</dimen>
+	<dimen name="register_input_edit_paddingLeft">15dip</dimen>
+	<dimen name="register_input_edit_textSize">24sp</dimen>
+	<dimen name="system_pic_btn_marginRight">30dip</dimen>
+	<dimen name="custom_avatar_btn_marginLeft">30dip</dimen>
+	
+	<dimen name="birthday_pop_width">313dip</dimen>
+	<dimen name="birthday_pop_height">76dip</dimen>
+	<dimen name="birthday_pop_paddingTop">10dip</dimen>
+	
+	<dimen name="brithday_edit_pop_show_y">50dip</dimen>
+	<dimen name="gender_edit_pop_show_y">70dip</dimen>
+	<dimen name="edit_pop_input_textSize">24sp</dimen>
+	
+	<dimen name="register_send_code_width">100dip</dimen>
+	<dimen name="register_send_code_height">50dip</dimen>
+	<dimen name="register_input_edit_email_height">60dip</dimen>
+	
+	
+</resources>

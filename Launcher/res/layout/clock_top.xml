@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			    xmlns:tools="http://schemas.android.com/tools"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:baselineAligned="false"
+			    android:background="@drawable/clocktop_daytime"
+			    android:id="@+id/clocktop_main">
+			    
+    	<com.worldchip.bbp.ect.view.CustomAnalogClock
+    	    	xmlns:android="http://schemas.android.com/apk/res/android"
+		        xmlns:clock="http://schemas.android.com/apk/res-auto"
+		        android:id="@+id/analog_appwidget"
+		        style="@style/AppWidget"
+		        android:layout_marginLeft="@dimen/CustomAnalogClock_left"
+		        android:layout_marginTop="@dimen/CustomAnalogClock_top"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"/>
+   		
+</RelativeLayout>

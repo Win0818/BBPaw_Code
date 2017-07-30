@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/home_mian_image_name_bg" >
+
+    <ImageView
+        android:id="@+id/settingg_light_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@null"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/home_name_close_style" />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/setting_image_bg" >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/setting_image_src_bg"
+            android:contentDescription="@null"
+            android:padding="36dp"
+            android:scaleType="centerCrop"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/setting_up_light" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/setting_brightness_reduce"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="180dp"
+        android:contentDescription="@null"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/sound_decrease_style" />
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:gravity="center|bottom"
+        android:soundEffectsEnabled="false"
+        android:text="@string/brigthness_setting"
+        android:textColor="#010000"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/setting_brightness_increase"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="180dp"
+        android:contentDescription="@null"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/sound_increase_style" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="105dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/setting_light_seekbar_bg"
+        android:gravity="center" >
+
+        <SeekBar
+            android:id="@+id/brightnessSeekBar"
+            android:layout_width="427dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:max="60"
+            android:maxHeight="60dp"
+            android:minHeight="60dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:progressDrawable="@drawable/setting_seekbar_selector"
+            android:thumb="@drawable/setting_sound_seekbar_bule_push_button" />
+    </RelativeLayout>
+
+</RelativeLayout>

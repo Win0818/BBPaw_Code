@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://com.worldchip.bbp.ect"
+    android:id="@+id/ll_top_bar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/chat_top_bar_bg"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:padding="2dp"
+        android:background="@drawable/top_bar_head_bg"
+        android:gravity="center" >
+
+        <com.worldchip.bbpawphonechat.view.CircleImageView
+            android:id="@+id/iv_top_bar_my_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/image_null"
+            android:src="@drawable/top_bar_head_default" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_top_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="20sp" 
+        android:background="@drawable/scan_image"
+        />
+
+    <com.worldchip.bbpawphonechat.view.CircleImageView
+        android:id="@+id/iv_top_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/image_null"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="20dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/top_bar_message_lable"
+            android:contentDescription="@string/image_null" 
+            android:visibility="invisible"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_bar_message_number_bg"
+                android:contentDescription="@string/image_null" />
+
+            <TextView
+                android:id="@+id/iv_top_message_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

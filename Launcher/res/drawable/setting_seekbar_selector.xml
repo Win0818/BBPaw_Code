@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">  
+    <!-- 背景图 -->  
+    <item android:id="@+android:id/background" android:drawable="@drawable/setting_sound_seekbar_bg" />  
+    <!--全部能量图  -->  
+    <item android:id="@+android:id/secondaryProgress" android:drawable="@drawable/setting_sound_seekbar_bg" />  
+    <!-- 进和能量图 -->  
+    <!-- <item android:id="@+android:id/progress" android:drawable="@drawable/setting_sound_seekbar_push" />   -->
+    <item android:id="@android:id/progress">     
+        <clip>     
+            <shape>     
+                <corners android:radius="10dip" />     
+                <gradient android:startColor="#ffffffff"    
+                    	  android:centerColor="#56FA7C" 
+                    	  android:endColor="#ffAABD00"    
+                          android:centerY="1" android:angle="270" />     
+            </shape>     
+        </clip>     
+    </item> 
+</layer-list> 

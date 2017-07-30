@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list  
+		  xmlns:android="http://schemas.android.com/apk/res/android"  
+		  android:oneshot="false" >  
+    <item android:drawable="@drawable/dakeshui_01" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_02" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_03" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_04" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_05" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_06" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_07" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_08" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_09" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_10" android:duration="300"></item>  
+    <item android:drawable="@drawable/dakeshui_11" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_12" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_13" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_14" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_15" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_16" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_17" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_18" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_19" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_20" android:duration="300"></item>
+    <item android:drawable="@drawable/dakeshui_21" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_22" android:duration="300"></item> 
+    <item android:drawable="@drawable/dakeshui_23" android:duration="300"></item> 
+</animation-list>  

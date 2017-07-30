@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/parental_control_share"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/parental_control_share"
+        android:layout_height="@dimen/parental_control_mediashare_title_bg_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/share_above_layout_bg" >
+
+        <TextView
+            android:layout_width="@dimen/parental_control_mediashare_textview_title_bg_width"
+            android:layout_height="@dimen/parental_control_mediashare_textview_title_bg_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/share_title_bg"
+            android:gravity="center"
+            android:paddingLeft="45dp"
+            android:text="@string/share_video_left"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="@dimen/parental_control_mediashare_textview_title_bg_width"
+            android:layout_height="@dimen/parental_control_mediashare_textview_title_bg_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/share_title_bg"
+            android:gravity="center"
+            android:paddingLeft="45dp"
+            android:text="@string/share_video_right"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="942dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp" >
+
+        <GridView
+            android:id="@+id/gridviewvideoleft"
+            android:layout_width="@dimen/parental_control_mediashare_gridviewpicture_width"
+            android:layout_height="1084dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/share_bluebottom_bg"
+            android:columnWidth="145dp"
+            android:horizontalSpacing="7dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="7dp" />
+
+        <TextView
+            android:id="@+id/share_video_toright"
+            android:layout_width="60dp"
+            android:layout_height="69dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/parental_control_mediashare_toright_marginTop"
+            android:background="@drawable/share_transmission_green_right_style"
+            android:soundEffectsEnabled="false" />
+
+        <TextView
+            android:id="@+id/share_video_toleft"
+            android:layout_width="60dp"
+            android:layout_height="69dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/parental_control_mediashare_toleft_marginBottom"
+            android:background="@drawable/share_transmission_red_left_style"
+            android:soundEffectsEnabled="false" />
+        
+         <ImageView
+            android:id="@+id/share_video_toback"
+            android:layout_width="60dp"
+            android:layout_height="69dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/parental_control_mediashare_toback_marginBottom"
+            android:background="@drawable/share_transmission_blue_back_eng"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false" />
+
+        <GridView
+            android:id="@+id/gridviewvideoright"
+            android:layout_width="@dimen/parental_control_mediashare_gridviewpicture_width"
+            android:layout_height="1084dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/share_bluebottom_bg"
+            android:columnWidth="145dp"
+            android:horizontalSpacing="7dp"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:verticalSpacing="7dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="942dp"
+        android:layout_height="34dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/share_below_bg" />
+
+</RelativeLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.worldchip.bbpawphonechat"
+    android:versionCode="2"
+    android:versionName="1.02" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 二维码扫描的相关权限 -->
+    <uses-permission android:name="android.permission.CAMERA" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <application
+        android:name="com.worldchip.bbpawphonechat.application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.SplashActivity"
+            android:label="@string/app_name"
+            
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.PhoneChatActivity"
+           
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.MainActivity"
+            
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.LoginActivity"
+            
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.RegisterActivity"
+           
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.ForgetPswActivity"
+            
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.ContextMenuActivity"
+            
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.FeedbackAndSuggest"
+            android:label="@string/title_activity_feedback_and_suggest"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.ChangePassword"
+            
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.SettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.ProblemFeedbackActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.NavigationActivity"
+            
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.CommonProblemActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.MyFeedbackActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.worldchip.bbpawphonechat.activity.ShowBigImageActivity"
+            android:screenOrientation="portrait" />
+        
+         <activity
+            android:name="com.worldchip.bbpawphonechat.activity.MyProtocolContentsActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 设置环信应用的appkey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="bbpaw#chat" />
+        <!-- 声明sdk所需的service SDK核心功能 -->
+        <service android:name="com.easemob.chat.EMChatService" />
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/contacts_list_item_default_bg"
+    android:orientation="horizontal" >
+
+    <com.worldchip.bbpawphonechat.view.CircleImageView
+        android:id="@+id/item_contacts_headbg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/image_null"
+        android:scaleType="fitXY"
+        android:src="@drawable/contacts_head_bg" />
+
+    <TextView
+        android:id="@+id/item_contacts_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="120dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/black_thin1"
+        android:text="@string/action_settings"
+        android:textSize="20sp" />
+
+    <!-- <ImageView
+        android:id="@+id/item_contacts_delect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/contacts_list_item_default_close"
+        android:contentDescription="@string/image_null" /> -->
+
+</RelativeLayout>

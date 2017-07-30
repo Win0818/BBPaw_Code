@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--
+    <string-array name="special_locale_codes">
+    	<item>af_ZA</item>
+	<item>az_AZ</item>
+	<item>ar_EG</item>
+	<item>am_ET</item>
+        <item>en_GB</item>
+        <item>en_US</item>
+        <item>zh_CN</item>
+        <item>zh_TW</item>
+        <item>bg_BG</item>
+        <item>ca_ES</item>
+        <item>cs_CZ</item>
+        <item>da_DK</item>
+        <item>de_AT</item>
+        <item>de_CH</item>
+        <item>de_DE</item>
+        <item>de_LI</item>
+        <item>el_GR</item>
+        <item>en_AU</item>
+        <item>en_CA</item>
+        <item>en_IN</item>
+        <item>en_NZ</item>
+        <item>en_SG</item>
+        <item>es_ES</item>
+        <item>fi_FI</item>
+        <item>fr_BE</item>
+        <item>fr_CA</item>
+        <item>fr_CH</item>
+        <item>fr_FR</item>
+        <item>hi_IN</item>
+        <item>hr_HR</item>
+        <item>hu_HU</item>
+        <item>it_CH</item>
+        <item>it_IT</item>
+        <item>ja_JP</item>
+        <item>ko_KR</item>
+        <item>lt_LT</item>
+        <item>lv_LV</item>
+        <item>nb_NO</item>
+        <item>nl_BE</item>
+        <item>nl_NL</item>
+        <item>pl_PL</item>
+        <item>pt_BR</item>
+        <item>pt_PT</item>
+        <item>ro_RO</item>
+        <item>ru_RU</item>
+        <item>sk_SK</item>
+        <item>sl_SI</item>
+        <item>sr_RS</item>
+        <item>sv_SE</item>
+        <item>th_TH</item>
+        <item>tl_PH</item>
+        <item>tr_TR</item>
+        <item>uk_UA</item>
+        <item>vi_VN</item>
+	<item>es_US</item>
+	<item>et_EE</item>
+	<item>fa_IR</item>
+	<item>hy_AM</item>
+	<item>in_ID</item>
+	<item>iw_IL</item>
+	<item>ka_GE</item>
+	<item>km_KH</item>
+	<item>lo_LA</item>
+	<item>mn_MN</item>
+	<item>ms_MY</item>
+	<item>ne_NP</item>
+	<item>rm_CH</item>
+	<item>sw_TZ</item>
+	<item>zh_HK</item>
+	<item>zu_ZA</item>
+    </string-array>
+    <string-array name="special_locale_names">
+    </string-array>
+    -->
+    <string-array name="special_locale_codes">
+        <item>zh_CN</item>
+        <item>zh_TW</item>
+    </string-array>
+
+    <string-array name="special_locale_names">
+        <item>中文 (简体)</item>
+        <item>中文 (繁體)</item>
+    </string-array>
+    
+    <string-array name="default_locale_codes">
+        <item>zh_CN</item>
+        <item>en_US</item>
+    </string-array>
+
+</resources>

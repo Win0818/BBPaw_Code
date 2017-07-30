@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="183dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:layout_width="178dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/custom_image"
+            android:layout_width="172dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/custom_isselected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/custom_name"
+        android:layout_width="172dp"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="158dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:soundEffectsEnabled="false"
+        android:textColor="#000000" />
+
+</RelativeLayout>

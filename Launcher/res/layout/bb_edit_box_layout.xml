@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popupwindow_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mask"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/bb_bg_relayout"
+        android:layout_width="@dimen/bb_bg_relayout_width"
+        android:layout_height="@dimen/bb_bg_relayout_height"
+        android:background="@drawable/zz_bbinfo_bg_cn">
+
+        <ImageView
+            android:id="@+id/bb_edit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bb_edit_btn_left"
+            android:layout_marginTop="@dimen/bb_edit_btn_top"
+            
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false" />
+
+        <ImageView
+            android:id="@+id/bb_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/bb_cancel_btn_left"
+            android:layout_marginTop="@dimen/bb_cancel_btn_top"
+            android:background="@drawable/baby_edite_cancle"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false" />
+
+        <RelativeLayout
+            android:id="@+id/bb_secand_relayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bb_secand_relayout_top"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/bb_touxiang"
+                android:layout_width="@dimen/bb_touxiang_width"
+                android:layout_height="@dimen/bb_touxiang_height"
+                android:layout_marginLeft="@dimen/bb_touxiang_Left"
+                android:layout_marginTop="@dimen/bb_touxiang_top"
+                android:contentDescription="@null"
+                android:background="@drawable/zz_bb_touxinag_bg"
+                android:padding="@dimen/bb_touxiang_padding"
+                android:soundEffectsEnabled="false"/>
+
+            <LinearLayout
+                android:id="@+id/babynicheng_linlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/babynicheng_linlayout_left"
+                android:layout_marginTop="@dimen/babynicheng_linlayout_top"
+                android:layout_toRightOf="@+id/bb_touxiang"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/babymingzi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/babyinfo_nicheng"
+                    android:textColor="@color/baise"
+                    android:textSize="32sp" />
+
+                <TextView
+                    android:id="@+id/baby_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/baby_name_left"
+                    android:textColor="@color/baise"
+                    android:textSize="32sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/baby_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/babynicheng_linlayout"
+                android:layout_marginLeft="@dimen/baby_sex_left"
+                android:layout_marginTop="@dimen/baby_sex_top"
+                android:layout_toRightOf="@+id/bb_touxiang"
+                android:textColor="@color/baise"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:id="@+id/babybrithday_linlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/baby_sex"
+                android:layout_marginLeft="@dimen/baby_sex_left"
+                android:layout_marginTop="@dimen/baby_sex_top"
+                android:layout_toRightOf="@+id/bb_touxiang"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/babyshengri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/babyinfo_brithday"
+                    android:textColor="@color/baise"
+                    android:textSize="32sp" />
+                <TextView
+                    android:id="@+id/baby_brithday_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/baby_brithday_year_left"
+                    android:textColor="@color/baise"
+                    android:textSize="32sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/baby_edit_secand_relayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/baby_edit_secand_relayoutr_top"
+            android:visibility="gone" >
+
+            <com.worldchip.bbp.ect.view.BBpawTouxiangImageview
+                android:id="@+id/bb_moren_touxiang"
+                android:layout_width="@dimen/bb_moren_touxiang_width"
+                android:layout_height="@dimen/bb_moren_touxiang_height"
+                android:layout_marginLeft="@dimen/bb_moren_touxiang_left"
+                android:layout_marginTop="@dimen/bb_moren_touxiang_top"
+                android:contentDescription="@null"
+                android:background="@drawable/zz_bb_touxinag_bg"
+                android:padding="@dimen/bb_moren_touxiang_padding"
+                android:soundEffectsEnabled="true"/>
+
+            <LinearLayout
+                android:id="@+id/baby_eidt_nicheng_linlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/baby_eidt_nicheng_linlayout_left"
+                android:layout_marginTop="@dimen/baby_eidt_nicheng_linlayout_top"
+                android:layout_toRightOf="@+id/bb_moren_touxiang"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/baby_edit_mingzi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/babyinfo_nicheng"
+                    android:textColor="@color/baise"
+                    android:textSize="32sp" />
+
+                <EditText
+                    android:id="@+id/baby_edit_name"
+                    android:layout_width="@dimen/baby_edit_name_top_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/baby_edit_name_top_right"
+                    android:background="@null"
+                    android:gravity="center|left"
+                    android:inputType="textNoSuggestions"
+                    android:maxLength="8"
+                    android:paddingLeft="@dimen/baby_edit_name_top_paddingleft"
+                    android:singleLine="true"
+                    android:soundEffectsEnabled="true"
+                    android:textColor="@color/baise"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/baby_selector_sex_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/baby_eidt_nicheng_linlayout"
+                android:layout_marginLeft="@dimen/baby_selector_sex_radiogroup_left"
+                android:layout_marginTop="@dimen/baby_selector_sex_radiogroup_top"
+                android:layout_toRightOf="@+id/bb_moren_touxiang"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/baby_boy_radiobtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/baby_sex_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:soundEffectsEnabled="true" />
+
+                <TextView
+                    android:id="@+id/baby_boy_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/baby_boy_tv_left"
+                    android:text="@string/babyinfo_man"
+                    android:textColor="@color/baise"
+                    android:textSize="32sp" />
+
+                <RadioButton
+                    android:id="@+id/baby_girl_radiobtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/baby_girl_radiobtn_left"
+                    android:background="@drawable/baby_sex_selector"
+                    android:button="@null"
+                    android:soundEffectsEnabled="true" />
+
+                <TextView
+                    android:id="@+id/baby_girl_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/baby_boy_tv_left"
+                    android:text="@string/babyinfo_girl"
+                    android:textColor="@color/baise"
+                    android:textSize="32sp" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/baby_edit_brithday_linlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/baby_selector_sex_radiogroup"
+                android:layout_marginLeft="@dimen/baby_edit_brithday_linlayout_left"
+                android:layout_marginTop="@dimen/baby_edit_brithday_linlayout_top"
+                android:layout_toRightOf="@+id/bb_moren_touxiang"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/baby_edit_shengri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/babyinfo_brithday"
+                    android:textColor="@color/baise"
+                    android:textSize="32sp" />
+
+				</LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/zz_nian_bg"
+                    android:layout_below="@+id/baby_edit_brithday_linlayout"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginRight="20dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/baby_edit_brithday_year_linearlyout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/zz_nian_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/baby_edit_brithday_year_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/baby_edit_brithday_year_text_left"
+                            android:background="@null"
+                            android:text="@string/default_year"
+                            android:textColor="@color/baise"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/baby_edit_year_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/baby_edit_year_button_left"
+                            android:background="@drawable/zz_edit_jiantou"
+                            android:soundEffectsEnabled="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/baby_edit_brithday_month_linearlyout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/baby_edit_brithday_month_linearlyout_left"
+                        android:background="@drawable/zz_yue_bg"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/baby_edit_brithday_month_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/baby_edit_brithday_month_text_left"
+                            android:background="@null"
+                            android:text="@string/default_month"
+                            android:textColor="@color/baise"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/baby_edit_month_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/baby_edit_month_button_left"
+                            android:background="@drawable/zz_edit_jiantou"
+                            android:soundEffectsEnabled="true" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/baby_edit_brithday_ri_linearlyout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/baby_edit_brithday_ri_linearlyout_left"
+                        android:background="@drawable/zz_yue_bg"
+                        
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/baby_edit_brithday_ri_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/baby_edit_brithday_ri_text_left"
+                            android:background="@null"
+                            android:text="@string/default_day"
+                            android:textColor="@color/baise"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/baby_edit_ri_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/baby_edit_ri_button_left"
+                            android:background="@drawable/zz_edit_jiantou"
+                            android:soundEffectsEnabled="true" />
+                    </LinearLayout>
+                </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/baby_edit_save_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/baby_edit_save_btn_bottom"
+            android:layout_marginRight="@dimen/baby_edit_save_btn_right"
+            android:soundEffectsEnabled="false"
+            android:visibility="gone" />
+
+        <com.worldchip.bbp.ect.gwwheel.WheelView
+            android:id="@+id/wheelview_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/bb_cancel_btn"
+            android:layout_below="@+id/baby_edit_secand_relayout"
+            android:layout_marginRight="@dimen/wheelview_year_right"
+            android:background="@drawable/zz_wheel_month_bg"
+            android:visibility="gone" />
+
+        <com.worldchip.bbp.ect.gwwheel.WheelView
+            android:id="@+id/wheelview_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/bb_cancel_btn"
+            android:layout_below="@+id/baby_edit_secand_relayout"
+            android:layout_marginRight="@dimen/wheelview_month_right"
+            android:background="@drawable/zz_wheel_month_bg"
+            android:visibility="gone" />
+
+        <com.worldchip.bbp.ect.gwwheel.WheelView
+            android:id="@+id/wheelview_ri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/baby_edit_secand_relayout"
+            android:layout_marginRight="@dimen/wheelview_ri_right"
+            android:background="@drawable/zz_wheel_month_bg"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

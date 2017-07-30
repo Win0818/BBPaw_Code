@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg" >
+
+    <LinearLayout
+        android:id="@+id/main_menu_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dip"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/main_eyecare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/main_eyecare_selector"
+            android:contentDescription="@string/str_null"
+            android:scaleType="fitXY" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/main_growup_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/main_growup_selector"
+            android:contentDescription="@string/str_null"
+            android:scaleType="fitXY" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/main_vaccine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/main_vaccine_selector"
+            android:contentDescription="@string/str_null"
+            android:scaleType="fitXY">
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/main_manage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:background="@drawable/main_manage_selector"
+                    android:contentDescription="@string/str_null"
+                    android:scaleType="fitXY" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/main_manage_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/ic_tip"
+                    android:contentDescription="@string/str_null"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" >
+                </TextView>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/main_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:background="@drawable/main_information_selector"
+                    android:contentDescription="@string/str_null"
+                    android:scaleType="fitXY" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/main_message_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_margin="10dip"
+                    android:background="@drawable/ic_tip"
+                    android:contentDescription="@string/str_null"
+                    android:gravity="center"
+                    android:scaleType="fitXY"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" >
+                </TextView>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/main_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/main_settings_selector"
+            android:contentDescription="@string/str_null"
+            android:scaleType="fitXY" >
+        </ImageView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/parent_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/main_menu_ll" >
+
+        <TextView
+            android:id="@+id/parent_title"
+            style="@style/MainTitleTextView"
+            android:layout_width="160dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/main_page_parent_title_marginLeft"
+            android:layout_marginTop="@dimen/main_page_parent_title_marginTop"
+            android:rotation="15" />
+
+        <LinearLayout
+            android:layout_width="@dimen/main_page_webview_width"
+            android:layout_height="@dimen/main_page_webview_height"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/main_page_webview_marginRight"
+            android:layout_marginBottom="@dimen/main_page_webview_marginBottom"
+            android:orientation="vertical" >
+            <WebView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:overScrollMode="never"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:padding="20dip" >
+
+        <ImageView
+            android:id="@+id/main_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector_back_btn"
+            android:contentDescription="@null" />
+    </RelativeLayout>
+
+</RelativeLayout>

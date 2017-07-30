@@ -1,0 +1,211 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pr",
+				"println"
+			],
+			[
+				"pu",
+				"public"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"last_filter": "Package Control:in",
+		"selected_items":
+		[
+			[
+				"Package Control:in",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Contr",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/BBPawCode/Launcher/src/com/worldchip/bbp/ect/activity/BrowserActivity.java",
+		"/E/Wing资料/AndroidHeroes-master/3.Android控件架构/SystemWidget/app/src/main/java/com/imooc/systemwidget/MyTextView.java",
+		"/E/Wing资料/AndroidHeroes-master/3.Android控件架构/SystemWidget/app/src/main/java/com/imooc/systemwidget/ShineTextView.java",
+		"/E/Wing资料/AndroidHeroes-master/3.Android控件架构/SystemWidget/app/src/main/res/layout/shine_textview.xml",
+		"/E/Wing资料/AndroidHeroes-master/3.Android控件架构/SystemWidget/app/src/main/java/com/imooc/systemwidget/TopBar.java",
+		"/E/Wing资料/AndroidHeroes-master/3.Android控件架构/SystemWidget/app/src/main/res/layout/my_textview.xml",
+		"/E/Wing资料/AndroidHeroes-master/3.Android控件架构/SystemWidget/app/src/main/java/com/imooc/systemwidget/TeachingView.java",
+		"/E/Wing资料/AndroidHeroes-master/3.Android控件架构/SystemWidget/app/src/main/java/com/imooc/systemwidget/MyViewTest.java",
+		"/E/Wing资料/AndroidHeroes-master/3.Android控件架构/SystemWidget/app/src/main/java/com/imooc/systemwidget/MainActivity.java",
+		"/D/java0217/02.xml",
+		"/D/java0217/00.xml",
+		"/D/java0217/ArrayDemo.java",
+		"/D/java0217/day05/PersonDemo2.java",
+		"/D/java0217/day05/PersonDemo.java",
+		"/D/java0217/index.html",
+		"/D/Program Files (x86)/Sublime Text/Data/Packages/User/Terminal.sublime-settings",
+		"/D/Program Files (x86)/Sublime Text/Data/Packages/PackageResourceViewer/README.md"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"new",
+			"PersonDemo2",
+			";\n",
+			"age",
+			" ="
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Java/JavaC.sublime-build",
+	"project": "MainActivity.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 350.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#00000000"
+    android:padding="10dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/main_layout" >
+
+    <RelativeLayout
+        android:layout_width="229dip"
+        android:layout_height="240dip"
+        android:layout_gravity="center"
+        android:gravity="top|center_horizontal" >
+        
+        <ImageView
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/commodity_item_poster"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_name"
+        android:layout_width="229dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/name_background"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="229dip"
+        android:layout_height="80dip"
+        android:layout_gravity="center_horizontal|bottom"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="#ffffff"
+        android:gravity="top|left" >
+
+        <LinearLayout
+            android:id="@+id/layout_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginTop="15dip"
+            android:gravity="top|left"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:gravity="right|center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="人民币："
+                android:textColor="#ff0000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txt_now_sale_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#ff0000"
+                android:textSize="15sp" />
+        </LinearLayout>	
+
+        <LinearLayout
+            android:id="@+id/layout_label"
+            android:layout_width="48dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dip"
+            android:layout_toRightOf="@id/layout_score"
+            android:background="@drawable/lable"
+            android:gravity="top|center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dip"
+                android:text="0.0"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dip"
+                android:text="折"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_price_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_score"
+            android:layout_marginLeft="2dip"
+            android:layout_marginTop="5dip"
+            android:gravity="top|center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_price_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dip"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="乐币："
+                android:textColor="#ff0000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_now_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:drawableLeft="@drawable/coin"
+                android:layout_marginLeft="2dip"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="#ff0000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="0.0"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

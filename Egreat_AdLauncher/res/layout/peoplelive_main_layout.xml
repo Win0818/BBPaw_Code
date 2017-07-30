@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/people_live"
+    android:id="@+id/main">
+    
+     <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo" >
+    </ImageView>
+
+    <TextView
+         android:id="@+id/title"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:textStyle="italic"
+         android:layout_marginLeft="380dp"
+         android:layout_marginTop="38dp"
+         android:textColor="@color/white"
+         android:textSize="30sp" >
+     </TextView>
+     
+     
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="855dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center|right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="13:05"
+            android:textColor="@color/white"
+            android:textSize="27dp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/icon_weather"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/cloudy" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/icon_wifi"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_wifi_empty" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/icon_ethernet"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_ethernet_disconnected" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/icon_usb"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/usb_icon"
+            android:visibility="gone" >
+        </ImageView>
+    </LinearLayout>
+    
+     <LinearLayout 
+	    android:id="@+id/list_category_layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="130dip"
+	    android:gravity="center_horizontal"
+	    android:orientation="horizontal">
+	    <com.egreat.adlauncher.view.HorizontalListView
+		    android:id="@+id/list_category"
+		    android:layout_marginLeft="50dip"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_horizontal"
+		    android:nextFocusDown="@+id/list_application"
+		    android:gravity="center_horizontal"
+		    android:focusable="true"
+       		android:focusableInTouchMode="true"
+		    android:listSelector="#00000000"
+		    android:divider="#00000000"
+		    android:dividerHeight="25dip">
+		</com.egreat.adlauncher.view.HorizontalListView>
+    </LinearLayout>   
+    
+    <HorizontalScrollView
+        android:id="@+id/app_hscrollview"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dip"
+        android:layout_marginLeft="50dip"
+	    android:scrollbars="none">
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent" 
+	        android:layout_marginLeft="150dip"
+	        android:orientation="horizontal"
+	        android:layout_gravity="left"
+	        android:gravity="center"
+            android:layout_margin="5dp"
+            android:weightSum="1">
+	        <GridView 
+	            android:id="@+id/grid_application"
+	        	android:layout_width="0dip"
+	        	android:layout_height="fill_parent"
+	        	android:layout_gravity="center_horizontal"
+	        	android:clickable="true"
+	        	android:gravity="center"
+	        	android:layout_weight="0.8"
+	        	android:horizontalSpacing="-33dip"
+	        	android:scrollbars="none"
+	        	android:listSelector="@android:color/transparent"
+	        	android:stretchMode="columnWidth"/>
+	    </LinearLayout>
+	</HorizontalScrollView>
+    
+    <com.egreat.adlauncher.util.ScrollTextView
+        android:id="@+id/rolling_text"
+        android:layout_width="1030dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="600dp"
+        android:gravity="center_vertical"
+        android:textSize="33sp" >
+    </com.egreat.adlauncher.util.ScrollTextView>
+</RelativeLayout>

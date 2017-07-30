@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">BBPAWCamera</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="camera_set_parameters_error">Current camera doesn\'t support these parameter settings!</string>
+    <string name="camera_connect_error">Fail to connect to camera!</string>
+	 <string name="no_storage">"Please insert SD card before using camera!"</string>
+    <string name="preparing_sd">"Preparing SD card..."</string>
+    <string name="access_sd_fail">"Can't access to SD card!"</string>
+    <string name="spaceIsLow_content">"SD card space is not sufficient. Please delete some photos or other files."</string>
+    <string name="video_reach_size_limit">"The video file has reached the maximum size."</string>
+    <string name="video_file_name_format" translatable="false">"'VID'_yyyyMMdd_HHmmss"</string>
+    <string name="pic_file_name_format" translatable="false">"'POTO'_yyyyMMdd_HHmmss"</string>
+    <string name="global_alert_dialog_title" >Notice</string>
+    <string name="discard_message" >"Do you want to abandon this operation?"</string>
+    <string name="saving_msg" >Saving ...</string>
+    <string name="open_gallery_error_msg">"Can't open ablum!"</string>
+    <string name="timer_format" translatable="false"><xliff:g id="format">%02d:%02d:%02d</xliff:g></string>
+    
+    
+</resources>

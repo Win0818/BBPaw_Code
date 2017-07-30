@@ -1,0 +1,17 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.    -->
+    
+    <dimen name="text_size_30dp">30dp</dimen>
+    <dimen name="middle_text_size">18dp</dimen>
+    <dimen name="camera_preview_width">960dip</dimen>
+    <dimen name="camera_preview_height">800dip</dimen>
+    <dimen name="effect_gridview_width">150dip</dimen>
+    <dimen name="effect_gridview_height">800dip</dimen>
+    <dimen name="final_picture_width">960dip</dimen>
+    <dimen name="final_picture_height">800dip</dimen>
+    <dimen name="video_record_timer_layout_width">160dip</dimen>
+    <dimen name="global_alert_dialog_width">0.65dp</dimen>
+</resources>

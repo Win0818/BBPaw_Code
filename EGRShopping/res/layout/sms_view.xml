@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:background="#00000000" >
+    
+    <TextView 
+        android:id="@+id/tv_message_01"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="#000000"
+        android:gravity="center|left"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="26sp"
+        style="@style/NoFocusableStyle"
+        android:text="@string/user_info_tip3" />
+    
+    <RelativeLayout
+        android:id="@+id/rl_ipone_message" 
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#00000000"
+        android:layout_below="@+id/tv_message_01">
+        
+        <TextView 
+            android:id="@+id/tv_message_number"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:layout_marginLeft="60dp"
+            android:gravity="center|right"
+            android:textSize="24sp"
+            android:text="@string/user_info_tip4" />
+        
+        <TextView 
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:layout_toRightOf="@+id/tv_message_number"
+            android:gravity="center|left"
+            android:textSize="24sp"/>
+        
+    </RelativeLayout>
+    
+    <EditText 
+        android:id="@+id/et_verify_code"
+        android:layout_width="360dp"
+        android:layout_height="72dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:textColor="#FFFFFF"
+        style="@style/FocusableStyle"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/rl_ipone_message"
+        android:background="@drawable/edit_bg_style" />
+    
+    <TextView 
+            android:id="@+id/tv_re_sending"
+            android:layout_width="252dp"
+            android:layout_height="71dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/et_verify_code"
+            style="@style/FocusableStyle"
+            android:background="@drawable/tv_butt_red_style"
+            android:textSize="32sp"
+            android:text="@string/re_sending"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true" >
+        
+        <TextView
+            android:id="@+id/tv_remarks_01"
+            android:layout_width="560dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:singleLine="true"
+            android:text="@string/user_info_tip5"/>
+        
+        <TextView 
+            android:id="@+id/tv_sms_next_step"
+            android:layout_width="251dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@+id/tv_remarks_01"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            style="@style/FocusableStyle"
+            android:background="@drawable/butt_bg_style"
+            android:textSize="32sp"
+            android:text="@string/next_step"/>
+    </RelativeLayout>
+</RelativeLayout>

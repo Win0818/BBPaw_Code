@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/chat_top_bar_bg"
+        android:clickable="true"
+        android:onClick="onBack" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/top_back_btn" />
+
+        <ImageView
+            android:id="@+id/iv_fas_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="@drawable/feedback_suggest_bg"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/rg_feedback_and_suggest"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_problem_feedback"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/rb_common_problem"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/rb_my_feedback"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/selector_my_feedback"
+                android:button="@null" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/fram_feedback_suggest"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10" >
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

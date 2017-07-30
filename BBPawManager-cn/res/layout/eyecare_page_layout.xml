@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/eyecare_page_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/eyecare_marginBottom"
+        android:layout_marginLeft="@dimen/eyecare_marginLeft"
+        android:layout_marginRight="@dimen/eyecare_marginRight"
+        android:layout_marginTop="@dimen/eyecare_marginTop"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/eyecare_page_distance_title"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/eyecare_title_textsize" />
+
+                <com.worldchip.bbp.bbpawmanager.cn.view.SwitchButton
+                    android:id="@+id/distance_sensor_swicth_btn"
+                    android:layout_width="@dimen/eyecare_switchButton_width"
+                    android:layout_height="@dimen/eyecare_switchButton_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/eyecare_page_reverse_title"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/eyecare_title_textsize" />
+
+                <com.worldchip.bbp.bbpawmanager.cn.view.SwitchButton
+                    android:id="@+id/reverse_sensor_swicth_btn"
+                    android:layout_width="@dimen/eyecare_switchButton_width"
+                    android:layout_height="@dimen/eyecare_switchButton_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/eyecare_page_light_sensor_title"
+                    android:textColor="#000000"
+                    android:textSize="@dimen/eyecare_title_textsize" />
+
+                <com.worldchip.bbp.bbpawmanager.cn.view.SwitchButton
+                    android:id="@+id/light_sensor_swicth_btn"
+                     android:layout_width="@dimen/eyecare_switchButton_width"
+                    android:layout_height="@dimen/eyecare_switchButton_height"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/register_dialog_width"
+        android:layout_height="@dimen/register_dialog_height"
+        android:background="@drawable/forgetpassword_bg" >
+
+        <ImageView
+            android:id="@+id/bb_cancels_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/baby_edite_cancle"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false" />
+
+        <LinearLayout
+            android:id="@+id/login_accountnumber_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/accountnumber_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/chinese_edittext_bg"
+                    android:inputType="textNoSuggestions"
+                    android:singleLine="true"
+                    android:hint="@string/login_account_hint_text"
+                    android:textColorHint="#EFEBEB"
+                    android:maxWidth="@dimen/login_edit_max_width"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/accountnumber_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/accountnumber_edittext"
+                    android:text="@string/account_number"
+                    android:gravity="right"
+                    android:textColor="@color/baise"
+                    android:textSize="37sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_accountnumber_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/password_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:inputType="textPassword"
+                    android:hint="@string/login_account_hint_password"
+                    android:textColorHint="#EFEBEB"
+                    android:maxWidth="@dimen/login_edit_max_width"
+                    android:background="@drawable/chinese_edittext_bg"
+                    android:layout_marginLeft="20dip"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/password_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/password_edittext"
+                    android:text="@string/pass_wrod"
+                    android:textColor="@color/baise"
+                    android:gravity="right"
+                    android:textSize="37sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bb_denglu_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_password_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/login_button_cn"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false" />
+
+        <LinearLayout
+            android:id="@+id/forget_password_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bb_denglu_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dip"
+            android:layout_marginRight="50dip"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/register_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textColor="@color/baise"
+                android:textSize="29sp" />
+
+            <!-- <TextView
+                android:id="@+id/xiugai_password_textview"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/xiugaimima"
+                android:textColor="@color/baise"
+                android:textSize="29sp" /> -->
+
+            <TextView
+                android:id="@+id/forget_password_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:gravity="center"
+                android:text="@string/forget_passwrod"
+                android:textColor="@color/baise"
+                android:textSize="29sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

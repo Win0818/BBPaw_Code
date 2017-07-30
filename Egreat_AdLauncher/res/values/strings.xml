@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AdLauncher</string>
+    <string name="hello_world">Hello world!</string>
+    
+     <string name="txt_start">开始正常使用</string>
+     <string name="txt_start_no_guide">不再显示使用指引</string>
+     <string name="sub_title">便民服务</string>
+    
+     <string name="update_app">立即升级</string>
+     <string name="update_canel">取消</string>
+     <string name="money_total">您的乐币总额</string>
+    <string name="add">添加</string>
+    <string name="replace_app">替换快捷方式</string>
+    <string name="remove_app">移除快捷方式</string>
+    <string name="app_count">共 %1$s 个</string>
+    <string name="weather_sun">晴</string>
+    <string name="weather_sun_cloud">晴转多云</string>
+    <string name="weather_yin">阴</string>
+    <string name="weather_cloud">多云</string>
+    <string name="weather_rain">阵雨</string>
+    <string name="weather_rain_big">阵雨转大到暴雨</string>
+    <string name="weather_rain_lei">雷阵雨</string>
+    <string name="weather_rain_cloud">阵雨转多云</string>
+    <string name="weather_rain_bigbig">大雨</string>
+    <string name="weather_raining">雨</string>
+    <string name="weather_snow">雪</string>
+
+</resources>

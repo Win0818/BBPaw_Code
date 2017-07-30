@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">B.B.PAW引导设置</string>
+    <string name="action_settings">Settings</string>
+    <string name="terms_inquire">是否同意该条款？</string>
+
+    <!-- RegisterActivity -->
+    <string name="confirm_password">确认密码</string>
+    <string name="system_picture">系统图片</string>
+    <string name="custom_avatar">自定义头像</string>
+    <string name="next">下一个</string>
+    <string name="back">返回</string>
+    <string name="pass">跳过</string>
+    <string name="enter">进入</string>
+    <string name="cancel">取消</string>
+    <string name="input_password_title_text">输入WiFi (%s) 密码</string>
+    <string name="name">姓名</string>
+    <string name="birthday">生日</string>
+    <string name="gender">性别</string>
+    <string name="e_mail">邮箱</string>
+    <string name="set_password">设置密码</string>
+    <string name="connecting">连接中</string>
+    <string name="boy_text">男生</string>
+    <string name="girl_text">女生</string>
+      <string name="day">日</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+    <!-- ConnectActivity -->
+    <string name="password_error">密码错误</string>
+    
+    <string name="validate_psw_match_error">输入的两次密码不匹配，请重新输入</string>
+    <string name="validate_psw_empty_error">密码错误\n请输入6到12为数字或字母</string>
+    <string name="validate_email_empty_error">如果不输入邮箱，将不享受会员服务!</string>
+    <string name="validate_gender_empty_error">如果不输入性别，生日，将会影响到游戏!</string>
+    <string name="birghtday_error">输入的生日不正确!</string>
+    <string name="account_name_empty">输入的帐号不能为空!</string>
+    <string name="validate_email_error">请输入一个合法邮箱，否则将不享受会员服务和无法找回密码.</string>
+    
+	<string name="disagree_text">不同意</string>
+	<string name="agree_text">同意</string>
+	<string name="terms_title_text">服务条款</string>
+	<string name="language_no_select_text">请选择语言!</string>
+		<string name="setup_failure">设置不成功</string>
+	<string name="reset_text">请重新设置</string>
+	<string name="setup_sucees">设置成功</string>
+	<string name="not_network">当前没连接网络,无法注册!</string>
+	<string name="register_failure">注册失败</string>
+	<string name="register_sucees">注册成功</string>
+	
+	<string name="sec">S</string>
+	<string name="validate_phone_number_error">Please enter a valid Mobile Number, or member services cannot be enjoyed and password cannot be retrieved.</string>
+    <string name="verification_code_err">erification code error! </string>
+    <string name="validate_code_error">Please enter your verification code.</string>
+    <string name="space_point">" ."</string>
+    <string name="point">.</string>
+    <string name="verification_code">Verification code</string>
+    <string name="phone">Mobile number</string>
+    <string name="notnow">Not now</string>
+    <string name="signup">Sign up</string>
+</resources>

@@ -1,0 +1,119 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Small_Txt">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:singleLine">true</item>
+		<item name="android:ellipsize">none</item>
+    </style>
+    
+    <style name="NAV_CATEGORY_BUTTON">
+        <item name="android:textSize">28.0sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:singleLine">true</item>
+		<item name="android:ellipsize">none</item>
+    </style>
+    
+     <style name="Customer_Loading">
+        <item name="android:indeterminateDrawable">@drawable/loading_progress_img</item>
+        <item name="android:minWidth">50dp</item>
+        <item name="android:minHeight">50dp</item>
+        <item name="android:maxWidth">50dp</item>
+        <item name="android:maxHeight">50dp</item>
+        <item name="android:indeterminate">false</item>
+    </style>
+    
+    <style name="USER_CENTER_BUTTON">
+        <item name="android:textSize">23.0sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:singleLine">true</item>
+		<item name="android:ellipsize">none</item>
+    </style>
+    
+    <style name="USER_CENTER_TIP_TEXT" parent="USER_CENTER_BUTTON">
+        <item name="android:textSize">22.0sp</item>
+    </style>
+    
+    <style name="MenuPopupAnimation" >
+	    <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+	    <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+	</style>
+	
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_tool_view_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_tool_view_out</item>
+    </style>
+    
+    <style name="NoFocusableStyle" >
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>    </style>
+    
+    <style name="FocusableStyle" >
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+    
+    <style name="TextViewStyle1" parent="@style/FocusableStyle">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center|right</item>
+    </style>
+    
+    <style name="TextViewStyle2" parent="@style/NoFocusableStyle">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center|right</item>
+    </style>
+    
+    <style name="TextViewStyle3" parent="@style/NoFocusableStyle">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">53dp</item>
+        <item name="android:textColor">@color/tv_color_00</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center|right</item>
+    </style>
+    
+    <style name="TextViewStyle4" parent="@style/NoFocusableStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">53dp</item>
+        <item name="android:textColor">@color/tv_color_01</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center|left</item>
+    </style>
+    
+    <style name="EditTextStyle" parent="@style/FocusableStyle">
+        <item name="android:layout_width">349.0dp</item>
+        <item name="android:layout_height">53.0dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@color/bg_grey</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+</resources>

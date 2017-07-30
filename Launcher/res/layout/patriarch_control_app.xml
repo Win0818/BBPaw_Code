@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/parental_control_share"
+    android:layout_height="match_parent"
+    android:layout_gravity="center" >
+
+    <RelativeLayout
+        android:id="@+id/relayout_gagdeg"
+        android:layout_width="@dimen/parental_control_share"
+        android:layout_height="@dimen/relayout_gagdeg_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/share_apk_above_layout_bg" >
+
+        <TextView
+            android:id="@+id/allapp"
+            android:layout_width="@dimen/allap_width"
+            android:layout_height="@dimen/allap_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/allap_left"
+            android:background="@drawable/share_apk_title_right_bg"
+            android:gravity="center"
+            android:soundEffectsEnabled="false"
+            android:text="@string/share_apk_left"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/myapp"
+            android:layout_width="@dimen/allap_width"
+            android:layout_height="@dimen/allap_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/allap_left"
+            android:background="@drawable/share_apk_title_left_bg"
+            android:gravity="center"
+            android:soundEffectsEnabled="false"
+            android:text="@string/share_apk_right"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridViewMyApp"
+         android:layout_width="@dimen/gridViewAllApp_width"
+        android:layout_height="@dimen/gridViewAllApp_height"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000"
+        android:columnWidth="@dimen/gridViewAllApp_columnWidth"
+        android:horizontalSpacing="@dimen/gridViewAllApp_hroispacning"
+        android:numColumns="4"
+         android:paddingBottom="@dimen/gridViewAllApp_bottom"
+        android:paddingLeft="@dimen/gridViewAllApp_left"
+        android:paddingRight="@dimen/gridViewAllApp_right"
+        android:paddingTop="@dimen/gridViewAllApp_top"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/gridViewAllApp_hroispacning"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/gridViewAllApp"
+        android:layout_width="@dimen/gridViewAllApp_width"
+        android:layout_height="@dimen/gridViewAllApp_height"
+         android:layout_alignParentBottom="true"
+        android:background="#00000000"
+        android:columnWidth="@dimen/gridViewAllApp_columnWidth"
+        android:horizontalSpacing="@dimen/gridViewAllApp_hroispacning"
+        android:numColumns="4"
+        android:paddingBottom="@dimen/gridViewAllApp_bottom"
+        android:paddingLeft="@dimen/gridViewAllApp_left"
+        android:paddingRight="@dimen/gridViewAllApp_right"
+        android:paddingTop="@dimen/gridViewAllApp_top"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/gridViewAllApp_hroispacning" >
+    </GridView>
+
+</RelativeLayout>

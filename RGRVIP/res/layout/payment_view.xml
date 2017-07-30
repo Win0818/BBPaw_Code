@@ -1,0 +1,201 @@
+<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	 	xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#00000000" >
+    
+    <RelativeLayout 
+        android:id="@+id/rl_update_ipone"
+        android:layout_width="1070dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#00000000" >
+        
+        <RelativeLayout 
+            android:id="@+id/rl_ipone"
+            android:layout_width="720dp"
+            android:layout_height="150dp"
+            android:background="#00000000" >
+            
+            <TextView 
+                android:id="@+id/tv_ipone"
+            	style="@style/TextViewStyle2"
+            	android:layout_marginLeft="15dp"
+            	android:paddingBottom="5dp"
+            	android:text="@string/ipone_number" />
+            
+             <TextView 
+            	style="@style/TextViewStyle3"
+            	android:layout_marginLeft="15dp"
+            	android:layout_below="@+id/tv_ipone"
+            	android:paddingTop="5dp"
+            	android:text="@string/retrieve_password" />
+            
+        </RelativeLayout>
+        
+        <TextView 
+            android:id="@+id/tv_update_ipone"
+            android:layout_width="223dp"
+            android:layout_height="83dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/butt_style"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:nextFocusUp="@+id/tv_update_ipone"
+           	android:nextFocusDown="@+id/tv_update_paypassword"
+           	android:nextFocusLeft="@+id/fl_menu_02"
+           	android:nextFocusRight="@+id/tv_update_ipone"
+            android:layout_toRightOf="@+id/rl_ipone"
+            style="@style/FocusView"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="@string/update_ipone_number" />
+        
+    </RelativeLayout>
+    
+    <View 
+        android:id="@+id/view_line_00"
+        android:layout_width="1001dp"
+        android:layout_height="4dp"
+        android:layout_below="@+id/rl_update_ipone"
+        android:background="@drawable/dividing_line"
+        android:layout_gravity="center_horizontal"/>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_paypassword"
+        android:layout_width="1070dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/view_line_00"
+        android:background="#00000000" >
+        
+        <RelativeLayout 
+            android:id="@+id/rl_paypwd"
+            android:layout_width="720dp"
+            android:layout_height="150dp"
+            android:background="#00000000" >
+            
+            <TextView 
+                android:id="@+id/tv_paypassword"
+            	style="@style/TextViewStyle2"
+            	android:paddingBottom="5dp"
+            	android:layout_marginLeft="15dp"
+            	android:text="@string/pay_password" />
+            
+             <TextView 
+            	style="@style/TextViewStyle3"
+            	android:paddingTop="5dp"
+            	android:layout_marginLeft="15dp"
+            	android:layout_below="@+id/tv_paypassword"
+            	android:text="@string/pay_password_text" />
+            
+        </RelativeLayout>
+        
+        <TextView 
+            android:id="@+id/tv_update_paypassword"
+            android:layout_width="223dp"
+            android:layout_height="83dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/butt_style"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            style="@style/FocusView"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:nextFocusUp="@+id/tv_update_ipone"
+           	android:nextFocusDown="@+id/tv_uptate_account"
+           	android:nextFocusLeft="@+id/fl_menu_02"
+           	android:nextFocusRight="@+id/tv_update_paypassword"
+            android:layout_toRightOf="@+id/rl_paypwd"
+            android:textColor="#FFFFFF"
+            android:text="@string/update_pay_password" />
+        
+    </RelativeLayout>
+    
+    <View 
+        android:id="@+id/view_line_01"
+        android:layout_width="1001dp"
+        android:layout_height="4dp"
+        android:layout_below="@+id/rl_paypassword"
+        android:background="@drawable/dividing_line"
+        android:layout_gravity="center_horizontal"/>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_account_layout"
+        android:layout_width="1070dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="#00000000"
+        android:layout_below="@+id/view_line_01" >
+        
+        <RelativeLayout 
+            android:id="@+id/rl_account"
+            android:layout_width="720dp"
+            android:layout_height="150dp"
+            android:orientation="vertical" >
+            
+            <TextView 
+                android:id="@+id/tv_account"
+            	style="@style/TextViewStyle2" 
+            	android:paddingBottom="5dp"
+            	android:layout_marginLeft="15dp"
+            	android:text="@string/account_number"/>
+            
+             <TextView 
+            	style="@style/TextViewStyle3"
+            	android:layout_marginLeft="15dp"
+            	android:layout_below="@+id/tv_account"
+            	android:paddingTop="5dp"
+            	android:text="@string/present_account_number" />
+            
+        </RelativeLayout>
+        
+        <TextView 
+            android:id="@+id/tv_uptate_account"
+            android:layout_width="223dp"
+            android:layout_height="83dp"
+            android:layout_centerVertical="true"
+            android:nextFocusUp="@+id/tv_update_paypassword"
+           	android:nextFocusDown="@+id/tv_uptate_account"
+           	android:nextFocusLeft="@+id/fl_menu_02"
+           	android:nextFocusRight="@+id/tv_update_paypassword"
+            android:layout_toRightOf="@+id/rl_account"
+            android:background="@drawable/butt_style"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            style="@style/FocusView"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="@string/change_the_account_number" />
+        
+    </RelativeLayout>
+    
+    <View 
+        android:id="@+id/view_line_02"
+        android:layout_width="1001dp"
+        android:layout_height="4dp"
+        android:layout_below="@+id/rl_account_layout"
+        android:background="@drawable/dividing_line"
+        android:layout_gravity="center_horizontal"/>
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="30sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="45dp"
+        android:gravity="center|left"
+        android:layout_below="@+id/view_line_02"
+        android:text="@string/messge_three"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

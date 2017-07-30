@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="145dp"
+    android:layout_height="122dp"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/videoimage"
+        android:layout_width="145dp"
+        android:layout_height="122dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="1dp"
+        android:background="@drawable/share_video_left_style"
+        android:contentDescription="@null"
+        android:padding="5dp"
+        android:scaleType="fitXY"
+        android:soundEffectsEnabled="false" />
+
+    <ImageView
+        android:layout_width="37dp"
+        android:layout_height="64dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="1dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/share_video_tab" />
+
+    <ImageView
+        android:id="@+id/videoisselected"
+        android:layout_width="59dp"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@null"
+        android:soundEffectsEnabled="false" />
+
+</RelativeLayout>

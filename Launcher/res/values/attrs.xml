@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+    
+    <attr name="direction">
+        <enum name="rightToLeft" value="0" />
+        <enum name="bottomToTop" value="1" />
+        <enum name="leftToRight" value="2" />
+        <enum name="topToBottom" value="3" />
+    </attr>
+    
+    <declare-styleable name="MultiDirectionSlidingDrawer">
+        <attr name="handle" format="reference" />
+        <attr name="content" format="reference" />
+        <attr name="direction" />
+        <attr name="bottomOffset" format="dimension"  />
+        <attr name="topOffset" format="dimension"  />
+        <attr name="allowSingleTap" format="boolean" />
+        <attr name="animateOnClick" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="net.ft.CustomAnalogClock.CustomAnalogClock">
+        <attr name="dial" format="reference" />
+        <attr name="hand_hour" format="reference" />
+        <attr name="hand_minute" format="reference" />
+        <attr name="hand_second" format="reference" />
+    </declare-styleable>
+    
+     <declare-styleable name="SlipButton">
+        <attr name="layout_width" format="dimension"  />
+        <attr name="layout_height" format="dimension"  />
+    </declare-styleable>
+    
+</resources>

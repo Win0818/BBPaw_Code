@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://com.worldchip.bbp.ect"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:background="@drawable/note_txt_shape_bg">
+        <LinearLayout
+            android:id="@+id/ll_control_baby" 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            >        
+        <com.worldchip.bbpawphonechat.view.CircleImageView
+                android:id="@+id/iv_select_control_baby"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/image_null"
+                android:scaleType="centerInside"
+                android:src="@drawable/habit_show_head_default"
+                />
+        <TextView
+            android:id="@+id/tv_myControl_baby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black_thin1"
+            android:textSize="15sp"
+            android:background="@drawable/note_txt_select_contact_shapebg"
+            />
+        </LinearLayout>
+        
+      <!--   <TextView 
+            android:id="@+id/tv_note_select_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:background="@drawable/note_txt_select_contact_shapebg"
+            android:text="@string/please_selelct_contact_carefor"
+            android:textSize="15sp"
+            android:textColor="@color/black_thin2"
+            /> -->
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_habit_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="15dp" />
+
+</LinearLayout>

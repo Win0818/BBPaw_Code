@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#00000000"
+    android:baselineAligned="false" >
+
+    <RelativeLayout
+        android:id="@+id/rl_left"
+        android:layout_width="@dimen/myapp_rl_left_width"
+        android:layout_height="wrap_content"
+        android:background="@drawable/myapp_main_left_top"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_photo"
+            android:layout_width="@dimen/myapp_rl_photo_width"
+            android:layout_height="@dimen/myapp_rl_photo_height"
+            android:layout_gravity="top|center_horizontal"
+            android:layout_marginLeft="@dimen/myapp_rl_photo_left"
+            android:layout_marginRight="@dimen/myapp_rl_photo_right"
+            android:layout_marginTop="@dimen/myapp_rl_photo_top"
+            android:background="@drawable/myapp_image"
+            android:gravity="center"
+            android:padding="@dimen/myapp_rl_photo_padding" >
+
+            <com.worldchip.bbp.ect.view.RoundImageView
+                android:id="@+id/myappsrc"
+                android:layout_width="@dimen/myappsrc_width"
+                android:layout_height="@dimen/myappsrc_height"
+                android:src="@drawable/app_default_photo" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/myappname"
+            android:layout_width="@dimen/myappname_width"
+            android:layout_height="@dimen/myappname_height"
+            android:layout_below="@+id/rl_photo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/myappname_top"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/myappname_srcpadding"
+            android:soundEffectsEnabled="false"
+            android:textColor="#ffffff"
+            android:textSize="28sp" />
+
+        <LinearLayout
+            android:layout_width="@dimen/myappname_LinearLayout_height"
+            android:layout_height="@dimen/myappname_LinearLayout_height"
+            android:layout_below="@id/myappname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/myappname_LinearLayout_top"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/palytime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/myappname_palytime_top"
+                android:gravity="center_horizontal"
+                android:soundEffectsEnabled="false"
+                android:textColor="#000000"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:id="@+id/myapp_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/app_btn_style"
+                android:padding="@dimen/myappname_myapp_back_padding"
+                android:soundEffectsEnabled="false" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/rl_left"
+        android:background="@drawable/myapp_right_below"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/myapp_right_top"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/myappname_myapp_right_top_width"
+            android:layout_gravity="center_horizontal"
+            
+            android:soundEffectsEnabled="false" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/myappname_myapp_gridView_width"
+            android:layout_height="@dimen/myappname_myapp_gridView_height" 
+            >
+
+            <GridView
+                android:id="@+id/myapp_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:columnWidth="@dimen/myappname_myapp_gridView_columnWidth"
+                android:gravity="center"
+                android:horizontalSpacing="@dimen/myappname_myapp_gridView_horizontalSpacing"
+                android:listSelector="@drawable/grid_selector"
+                android:numColumns="5"
+                android:padding="@dimen/myappname_myapp_gridView_horizontalSpacing"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="@dimen/myappname_myapp_gridView_horizontalSpacing" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

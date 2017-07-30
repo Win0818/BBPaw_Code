@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/guide_main">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </android.support.v4.view.ViewPager>
+    
+    <TextView android:id="@+id/txt_start"
+        android:background="@drawable/drawable_guide_finish_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dip"
+        android:visibility="invisible"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/txt_start"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        />
+    
+    <TextView android:id="@+id/txt_start_no_guide"
+        android:background="@drawable/drawable_guide_finish_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="500dip"
+        android:visibility="invisible"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:text="@string/txt_start_no_guide"
+        />
+    
+</FrameLayout>

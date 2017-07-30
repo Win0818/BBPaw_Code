@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carefor_view_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_bar_layout" />
+
+    <RelativeLayout
+        android:id="@+id/rl_chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        >
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/tv_fragment_carefor_minute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/chronometer"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/chronometer"
+             />
+    </RelativeLayout>
+    
+    
+   <RelativeLayout
+        android:id="@+id/rl_carefor_state_and_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/rl_chronometer"
+        android:layout_centerHorizontal="true"
+        >
+
+    <TextView
+        android:id="@+id/tv_carefor_connect_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+    
+     <TextView
+        android:id="@+id/tv_carefor_connect_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_carefor_connect_state"
+        android:layout_alignBottom="@id/tv_carefor_connect_state"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black_thin2"
+        />
+     </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/fl_carefor_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_carefor_state_and_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/carefor_headset" >
+
+            <com.worldchip.bbpawphonechat.view.CircleImageView
+                android:id="@+id/iv_carefor_head"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="95dp"
+                android:src="@drawable/habit_show_head_default"
+                android:contentDescription="@string/image_null" />
+
+          <!--<ImageView
+                android:id="@+id/iv_carefor_show_online"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="15dp"
+                android:contentDescription="@string/image_null"
+                android:src="@drawable/habit_show_head_online" />-->
+            
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/iv_carefor_start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frameLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            
+            android:contentDescription="@string/image_null" />
+
+        <ImageView
+            android:id="@+id/iv_carefor_cancle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frameLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+           
+            android:contentDescription="@string/image_null"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_carefor_stop_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frameLayout1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            
+            android:contentDescription="@string/image_null"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

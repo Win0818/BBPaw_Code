@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/wifi_list_itme_height"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/wifi_list_itme_marginLeft">
+    <ImageView
+        android:id="@+id/list_line"
+        android:layout_width="@dimen/wifi_list_item_line_width"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_list_line" />
+    <LinearLayout
+        android:id="@+id/item_view"
+        android:layout_width="match_parent"
+        android:layout_height="65dip"
+        android:layout_below="@+id/list_line"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+    <ImageView
+        android:id="@+id/iv_isLock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/wifi_list_itme_marginLeft"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/iv_wifi_signal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_wifiname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:ellipsize="marquee"
+        android:gravity="center_horizontal"
+        android:paddingRight="45dip"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+</LinearLayout>
+</RelativeLayout>

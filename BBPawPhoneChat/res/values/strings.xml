@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BBPawPhoneChat</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <!-- other  string -->
+    <string name="image_null">Image loading failure</string>
+    <string name="learn_time">Time for learning:</string>
+    <string name="learn_content">Learning content:</string>
+    <string name="text_ack_msg">Read</string>
+    <string name="text_delivered_msg">Sent</string>
+
+    <!-- chat to someone -->
+    <string name="button_pushtotalk">Hold to talk</string>
+    <string name="attach_picture">Images</string>
+    <string name="attach_take_pic">Take photo</string>
+    <string name="move_up_to_cancel">Slide up to cancel.</string>
+    <string name="send_fail">Failed to send message</string>
+    <string name="delete_message">Delete message</string>
+    <string name="copy_message">Copy message</string>
+    <string name="delete_voice">Delete voice</string>
+    <string name="delete_video">Delete video</string>
+    <string name="delete">Delete</string>
+    <string name="resend">Resend</string>
+    <string name="confirm_resend">Do you want to resend this message?</string>
+    <string name="connect_failuer_toast">Please check your network or try again later.</string>
+    <string name="network_unavailable">Network unavailable, please check your network connection. </string>
+    <string name="copy">Copy</string>
+    <string name="ok">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="prompt">Notification</string>
+    <string name="clear_records">Clear record</string>
+    <string name="clear_all_records">Are you sure to clear all chat history?</string>
+    <string name="location_recv">Location</string>
+    <string name="location_message">Location information</string>
+    <string name="location_prefix">[My location]</string>
+    <string name="picture">[Images]</string>
+    <string name="video">[Video]</string>
+    <string name="file">[File]</string>
+    <string name="voice_call">[Voice call]</string>
+    <string name="network_isnot_available">Network unavailable</string>
+    <string name="recoding_fail">Recording failed, please try again!</string>
+    <string name="sd_card_does_not_exist">Cannot take pictures without SD card inserted.</string>
+    <string name="cant_find_pictures">Picture cannot be found.</string>
+    <string name="Send_voice_need_sdcard_support">Sending voice need SD card support.</string>
+    <string name="Recording_without_permission">No recording permission</string>
+    <string name="The_recording_time_is_too_short">Message too short</string>
+    <string name="send_failure_please">Failed to send, please check the server connection.</string>
+    <string name="Download_the_pictures">Downloading pictures: 0%</string>
+    <string name="Download_the_pictures_new">Downloading pictures:</string>
+    <string name="Is_download_voice_click_later">The voice is downloading, please click later.</string>
+
+    <!-- exit note -->
+    <string name="logout">Logging out</string>
+    <string name="exit_group">Logout</string>
+    <string name="connect_conflict">Your account has been logged on another device.</string>
+    <string name="em_user_remove">This user has been removed.</string>
+    <string name="exit_error">Exit failure</string>
+
+    <!-- setting -->
+    <string name="voice">Sound</string>
+    <string name="shake">Vibration</string>
+    <string name="Current_version">Current version</string>
+    <string name="Version_number_is_wrong">Version number error</string>
+
+    <!-- add new  friend -->
+    <string name="Add_a_friend">加个好友呗</string>
+    <string name="send_successful">Sending request successfully,please wait for friend\'s verification.</string>
+    <string name="Request_add_buddy_failure">Failed to send friend request:</string>
+    <string name="Network_error">Network error</string>
+    <string name="not_connect_to_server">Not connected to the server, please try again later.</string>
+    <string name="deleting">Deleting\.\.\.</string>
+    <string name="Delete_failed">Delete failure:</string>
+    <string name="being_added">Adding now\.\.\.</string>
+    <string name="Is_unblock">Removing Shield\.\.\.</string>
+    <string name="Add_a_button_was_clicked">Add button to be clicked</string>
+    <string name="Is_sending_a_request">Sending request now\.\.\.</string>
+    <string name="this_is_your_friend">This user has been your friend!</string>
+    <string name="add_this_friend">Adding the friend</string>
+
+    <!-- login and register -->
+    <string name="User_name_cannot_be_empty">Username cannot be empty！</string>
+    <string name="Password_cannot_be_empty">Confirm password cannot be empty！</string>
+    <!-- <string name="please_set_the_current">Set name for the current user for showing users'name under IOS offline-push</string> -->
+    <string name="Is_landing">Logging in\.\.\.</string>
+    <string name="list_is_for">You will get a list of friends and group chat in the background.\.\.\.</string>
+    <string name="login_failure_failed">Login failure: failed to get friends and group chat</string>
+    <string name="Login_failed">Login failure: account or password error</string>
+    
+    <string name="Logoff_notification">Offline notification</string>
+    <string name="Remove_the_notification">Remove notification</string>
+    <string name="Whether_to_send">Whether to send?</string>
+    <string name="Are_logged_out">Logging out..</string>
+    <string name="Confirm_password_cannot_be_empty">Confirm password cannot be empty.!</string>
+    <string name="Two_input_password">Your new and confirm password are different. Please re-enter your password.!</string>
+    <string name="Is_the_registered">Signing up\.\.\.</string>
+    <string name="Registered_successfully">Sign up successfully.</string>
+    <string name="network_anomalies">Network anomaly, please try again！</string>
+    <string name="User_already_exists">Username already exists！</string>
+    <string name="User_is_not_exists">The user ID you entered does not exist. Please check.！</string>
+    <string name="registration_failed_without_permission">Failed to sign up without permission!</string>
+    <string name="Registration_failed">Sign up failed:</string>
+    <string name="Registration_code_false">Incorrect verification code, please enter the code again.</string>
+    <string name="get_phone_code">Verification code has been sent to your phone.</string>
+    <string name="get_email_code">Verification code has been sent to your email.</string>
+    <string name="username_format_error">Your account format is not correct, please confirm!</string>
+
+    <!-- carefor -->
+    <string name="Are_connected_to_each_other">Connecting…\.\.\.</string>
+    <string name="Is_not_yet_connected_to_the_server">Not connected to the server</string>
+    <string name="have_connected_with">Waiting to be connected\.\.\.</string>
+    <string name="In_the_call">On the phone\.\.\.</string>
+    <string name="The_other_party_refused_to_accept">Your request is refused to accept\.\.\.</string>
+    <string name="Connection_failure">Fail to connect！\.\.\.</string>
+    <string name="The_other_party_is_not_online">The other side is offline, please dial later\.\.\.</string>
+    <string name="The_other_is_on_the_phone_please">The subscriber you dialed is busy now, please redial later.</string>
+    <string name="The_other_is_hang_up">The other party has hung up.</string>
+    <string name="The_other_party_did_not_answer_new">The other side has no answer</string>
+    <string name="make_call_is_not_connect">Not connected\.\.\.</string>
+    <string name="please_select_call_to_user">Please choose which one to be monitored</string>
+
+    <!-- change  psw -->
+    <string name="please_write_old_pass">Please input old password!</string>
+    <string name="please_write_new_pass">Please input new passwor!</string>
+    <string name="please_write_confirm_pass">Please confirm new password！</string>
+    <string name="please_write_change_password">Password is changing！</string>
+    <string name="please_login_again">Password successfully changed, please login again.</string>
+
+    <!-- forgot password -->
+    <string name="forget_psw_change_failed">Password reset failed, please try again</string>
+    <string name="forget_psw_change_success">Password has been reset！</string>
+    <string name="forget_psw_change_now">Password is resetting, please wait a moment！</string>
+    <string name="search_contacts">Click to enter account./././</string>
+    <string name="login_name_hint">Email</string>
+    <string name="login_pass_hint">Enter Password</string>
+    <string name="register_pass_hint">Enter 6-12 letters or digit.</string>
+    <string name="register_pass_confirm_hint">Please re-enter your password.</string>
+    <string name="forget_pass_new_psw">Please input new password</string>
+    <string name="forget_pass_confirm_hint">Please re-enter your password.</string>
+    <string name="please_write_confrim_code">Verification code cannot be empty.!</string>
+    <string name="register_confirm_code_hint">Please enter your verification code.</string>
+
+    <!-- habit manager -->
+    <string name="habit_item_minutes">minute(s)</string>
+    <string name="habit_item_hour">hour(s)</string>
+
+    <!-- question  and  feedback -->
+    <string name="userName">Username</string>
+    <string name="title_activity_feedback_and_suggest">Feedback and suggestions</string>
+    <string name="please_write_question_first">Please fill in relevant questions.</string>
+    <string name="thank_you_sugesst">Thanks for your valuable suggestions, we will reply you soon！</string>
+    <string name="you_commit_sugesst_failed">Submission failed, please re submit</string>
+    
+    
+    <!-- my info setting fragment -->
+    <string name="my_change_head_success">Avatar modified successfully</string>
+    <string name="my_change_head_failed">Failed to modify avatar, please try again later！</string>
+
+    <!-- habit fragment string -->
+    <string name="alert_dialog_lock_paid">Lock tablet</string>
+    <string name="is_time_wash_hands">It\'s time to wash your hands.</string>
+    <string name="is_time_eatting">Time to eat！</string>
+    <string name="is_time_drinking">Drinking water time!</string>
+    <string name="is_time_sporting">Time to do exercise!</string>
+    <string name="is_time_tooth_brush">Time to brush your teeth.</string>
+    <string name="is_time_take_shower">Time to take a shower!</string>
+    <string name="is_time_do_housework">It\'s time to do housework.</string>
+    <string name="is_time_lock_screen">Lock screen</string>
+    <string name="alert_dialog_open_paid">Unlock screen</string>
+    <string name="close_paid">Close BBpaw device</string>
+    
+    <string name="is_time_wash_hands_open">解除洗手的锁定</string>
+    <string name="is_time_eatting_open">解除吃饭的锁定</string>
+    <string name="is_time_drinking_open">解除喝水的锁定</string>
+    <string name="is_time_sporting_open">解除运动的锁定</string>
+    <string name="is_time_tooth_brush_open">解除刷牙洗脸的锁定</string>
+    <string name="is_time_take_shower_open">解除洗澡的锁定</string>
+    <string name="is_time_do_housework_open">解除做家务的锁定</string>
+    <string name="is_time_lock_screen_open">解除关闭屏幕锁定</string>
+    <string name="please_selelct_contact_carefor">Click a avatar to monitor</string>
+    <string name="please_add_contact">Please scan the relevant tablet.</string>
+
+    <!-- 2015.12.25 -->
+    <string name="app_name_init">Application Name:</string>
+    <string name="version_number">New Version Number:</string>
+    <string name="update_introduce">Update Instructions:</string>
+    <string name="old_psw">Original password:</string>
+    <string name="new_psw">New Password:</string>
+    <string name="please_input">Please fill your valuable comments</string>
+    <string name="explain">Pictures can be more illustrative</string>
+    <string name="allow_input">Writing 500 words</string>
+    <string name="you_input">you may enter up to </string>
+    <string name="word"> words</string>
+    <string name="question">Questions:</string>
+    <string name="BBPaw_reply">Bbpaw Offcial Reply:</string>
+    <string name="Related_Images">Related Pictures</string>
+    <string name="default_response">Please wait, our staff will respond very soon</string>
+    <string name="min">min</string>
+    <string name="comson">Coming soon</string>
+    <string name="committing">Feedback is submitting. Please wait.\.\.\.</string>
+    <string name="no_feedback">No feedback</string>
+    <string name="change_name_null">Nickname can\'t be empty</string>
+    <string name="setting_account_exit">Account Exit</string>
+    <string name="setting_account_other_place">Your account has been logged on another device.</string>
+    <string name="setting_account_not_serve">Not connected to the server, please try again later.</string>
+    <string name="setting_account_not_net">Please check your network or try again later.</string>
+    <string name="change_name_success">Succeed in revsing nickname</string>
+    <string name="change_name_fail">Failed in revising nickname</string>
+    <string name="setting_updateing">Downloading updates</string>
+    <string name="change_psw_ok">password updata success</string>
+    <string name="change_psw_fail">Password change failed, please try again later</string>
+    <string name="btn_voice">Hold to talk</string>
+    
+    <string name="updateing_nikename">Is modifying the nickname</string>
+    <string name="send_text">Send</string>
+    <string name="press_to_talk">Touch button to speak</string>
+    <string name="question_commit">Enviando, mantente a la espera…</string>
+    
+    <string name="login_only_can_input">qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890</string>
+
+    
+    <string name="update_head_now">Uploading Avatar</string>
+    <string name="save_picture">保存图片</string>
+    <string name="save_picture_failed">保存失败</string>
+    <string name="save_picture_success">图片成功保存至%s目录</string>
+    
+    <string name="ageree_protocol">同意协议</string>
+    <string name="agreee_protocol_link">《BBpaw用户协议》</string>
+    <string name="please_agree_protocol">请先确认同意协议</string>
+    
+    <string name="protovol1">END USER LICENSE AGREEMENT</string>
+    <string name="protovol">""</string>
+    <string name="note_be_deleted">You are not in his (her) friend list, to re add, to chat.</string>
+    
+    <string name="change_remark_name">Edit Name</string>
+    <string name="deleted_the_contacts">Unbind</string>
+    
+    
+</resources>

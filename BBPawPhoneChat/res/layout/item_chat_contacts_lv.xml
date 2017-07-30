@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://com.worldchip.bbp.conversation"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" 
+        android:paddingLeft="15dp"
+        >
+        <!-- <ImageView
+            android:id="@+id/item_chat_contact_head_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/image_null"
+            android:src="@drawable/chat_contact_big_head_bg" /> -->
+
+     <!--    <ImageView
+            android:id="@+id/item_iv_chat_contact_state_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/image_null"
+            android:src="@drawable/chat_contact_big_head_gray_bg" /> -->
+
+        <com.worldchip.bbpawphonechat.view.CircleImageView
+            android:id="@+id/item_chat_contact_head"
+            android:layout_width="@dimen/contact_head_image_width"
+            android:layout_height="@dimen/contact_head_image_width"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:contentDescription="@string/image_null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/setting_head_default"
+            imagecontrol:border_inside_color="#ff9933"
+            imagecontrol:border_outside_color="#ff9900" />
+
+        <TextView
+            android:id="@+id/item_chat_message_number"
+            android:layout_width="@dimen/contact_message_note_text_width"
+            android:layout_height="@dimen/contact_message_note_text_height"
+            android:layout_gravity="top|right"
+            android:background="@drawable/chat_contact_message_big_bg"
+            android:contentDescription="@string/image_null"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/contact_message_note_text_size"
+            android:visibility="gone" />
+
+       <!--  <ImageView
+            android:id="@+id/item_iv_chat_contact_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/selector_btn_delete_contact"
+            android:contentDescription="@string/image_null" /> -->
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/item_chat_contact_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:contentDescription="@string/image_null"
+        android:textColor="@color/black_thin2"
+        android:layout_gravity="center_vertical"
+        android:textSize="15sp" />
+
+</LinearLayout>

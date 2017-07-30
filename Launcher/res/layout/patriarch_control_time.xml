@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/parental_control_time_main_relayout_width"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="@dimen/parental_control_time_linlerlayout_width"
+        android:layout_height="@dimen/parental_control_time_linlerlayout_height"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/parental_control_time_linlerlayout_left"
+        android:layout_marginTop="@dimen/parental_control_time_linlerlayout_top"
+        android:background="@drawable/time_countdown_bg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/parental_control_time_relayout_top" >
+
+            <TextView
+                android:id="@+id/time_countdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/parental_control_time_countdown_top"
+                android:text="@string/set_time_limit"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_countdown1"
+                style="@style/SliderStyle"
+                android:layout_width="@dimen/parental_control_time_rl_countdown1_width"
+                android:layout_height="@dimen/parental_control_time_rl_countdown1_height"
+                android:layout_marginBottom="@dimen/parental_control_time_rl_countdown1_bottom"
+                android:background="@drawable/slider_close_bg"
+                android:soundEffectsEnabled="false" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_countdown_state1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/slider_bg"
+                    android:contentDescription="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_countdown2"
+                style="@style/SliderStyle"
+                android:layout_width="@dimen/parental_control_time_rl_countdown1_width"
+                android:layout_height="@dimen/parental_control_time_rl_countdown1_height"
+                android:layout_marginBottom="@dimen/parental_control_time_rl_countdown1_bottom"
+                android:background="@drawable/slider_open_bg"
+                android:soundEffectsEnabled="false"
+                android:visibility="gone" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_countdown_state2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/slider_bg"
+                    android:contentDescription="@null" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/time_countdown_reduce"
+            android:layout_width="@dimen/parental_control_time_countdown_reduce_width"
+            android:layout_height="@dimen/parental_control_time_countdown_reduce_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/parental_control_time_countdown_reduce_left"
+            android:background="@drawable/time_button_left_style"
+            android:soundEffectsEnabled="false" />
+
+        <TextView
+            android:id="@+id/time_countdown_value"
+            android:layout_width="@dimen/parental_control_time_countdown_value_width"
+            android:layout_height="@dimen/parental_control_time_countdown_value_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/parental_control_time_countdown_value_left"
+            android:layout_marginRight="@dimen/parental_control_time_countdown_value_top"
+            android:background="@drawable/time_text_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/parental_control_time_countdown_value_paddingleft"
+            android:paddingRight="@dimen/parental_control_time_countdown_value_paddingright"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time_countdown_increase"
+            android:layout_width="@dimen/parental_control_time_countdown_increase_width"
+            android:layout_height="@dimen/parental_control_time_countdown_increase_height"
+            android:layout_marginLeft="@dimen/parental_control_time_countdown_increase_left"
+            android:layout_gravity="center|right"
+            android:background="@drawable/time_button_right_style"
+            android:soundEffectsEnabled="false" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/imgbtn_edit_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/parental_control_imgbtn_edit_rl_right"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/parental_control_imgbtn_edit_rl_top"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/parental_control_imgbtn_edit_left"
+            android:background="@drawable/parentalcontrol_timecontrol_edit"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_time_quantum"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/parental_control_ll_time_quantum_height"
+        android:layout_marginLeft="@dimen/parental_control_ll_time_quantum_left"
+        android:layout_marginTop="@dimen/parental_control_ll_time_quantum_top"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/time_quantum_bg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/parental_control_RelativeLayout_left"
+            android:layout_marginTop="@dimen/parental_control_RelativeLayout_top" >
+
+            <TextView
+                android:id="@+id/time_quantum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/parental_control_time_quantum_top"
+                android:text="@string/clock_control"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_time1"
+                style="@style/SliderStyle"
+                android:layout_width="@dimen/parental_control_time_rl_countdown1_width"
+                android:layout_height="@dimen/parental_control_time_rl_countdown1_height"
+                android:layout_marginBottom="@dimen/parental_control_time_rl_countdown1_height"
+                android:background="@drawable/slider_close_bg"
+                android:soundEffectsEnabled="false" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_time_state1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/slider_bg"
+                    android:contentDescription="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_time2"
+                style="@style/SliderStyle"
+                android:layout_width="@dimen/parental_control_time_rl_countdown1_width"
+                android:layout_height="@dimen/parental_control_time_rl_countdown1_height"
+                android:layout_marginBottom="@dimen/parental_control_time_rl_countdown1_height"
+                android:background="@drawable/slider_open_bg"
+                android:soundEffectsEnabled="false"
+                android:visibility="gone" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_time_state2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/slider_bg"
+                    android:contentDescription="@null" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/parental_control_LinearLayouts_left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/parental_control_LinearLayoutsx_height"
+                android:layout_marginLeft="@dimen/parental_control_LinearLayoutsx_left"
+                android:layout_marginTop="@dimen/parental_control_LinearLayoutsx_top"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/time_start_hours_add"
+                    android:layout_width="@dimen/parental_control_time_start_hours_add_width"
+                    android:layout_height="@dimen/parental_control_time_start_hours_add_height"
+                    android:background="@drawable/passlock_time_right_style"
+                    android:soundEffectsEnabled="false" />
+
+                <TextView
+                    android:id="@+id/time_start_min_add"
+                    android:layout_width="@dimen/parental_control_time_start_hours_add_width"
+                    android:layout_height="@dimen/parental_control_time_start_hours_add_height"
+                    android:layout_marginLeft="@dimen/parental_control_time_start_min_add_left"
+                    android:background="@drawable/passlock_time_right_style"
+                    android:soundEffectsEnabled="false" />
+
+                <TextView
+                    android:id="@+id/time_end_hours_add"
+                    android:layout_width="@dimen/parental_control_time_start_hours_add_width"
+                    android:layout_height="@dimen/parental_control_time_start_hours_add_height"
+                    android:layout_marginLeft="@dimen/parental_control_time_end_hours_add_left"
+                    android:background="@drawable/passlock_time_right_style"
+                    android:soundEffectsEnabled="false" />
+
+                <TextView
+                    android:id="@+id/time_end_min_add"
+                    android:layout_width="@dimen/parental_control_time_start_hours_add_width"
+                    android:layout_height="@dimen/parental_control_time_start_hours_add_height"
+                    android:layout_marginLeft="@dimen/parental_control_time_start_min_add_left"
+                    android:background="@drawable/passlock_time_right_style"
+                    android:soundEffectsEnabled="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/parental_control_time_setting_bg_width"
+                android:layout_height="@dimen/parental_control_time_setting_bg_height"
+                android:layout_marginLeft="@dimen/parental_control_time_setting_bg_top"
+                android:layout_marginTop="@dimen/parental_control_time_setting_bg_top"
+                android:background="@drawable/time_setting_bg" >
+
+                <TextView
+                    android:id="@+id/time_start_hour"
+                    android:layout_width="@dimen/parental_control_time_start_hour_width"
+                    android:layout_height="@dimen/parental_control_time_start_hour_height"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/parental_control_time_start_hour_left"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/time_start_min"
+                    android:layout_width="@dimen/parental_control_time_start_hour_width"
+                    android:layout_height="@dimen/parental_control_time_start_hour_height"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/parental_control_time_start_hour_left"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/time_end_hour"
+                     android:layout_width="@dimen/parental_control_time_start_hour_width"
+                    android:layout_height="@dimen/parental_control_time_start_hour_height"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/parental_control_time_end_hour_left"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/time_end_min"
+                    android:layout_width="@dimen/parental_control_time_start_hour_width"
+                    android:layout_height="@dimen/parental_control_time_start_hour_height"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/parental_control_time_start_hour_left"
+                    android:gravity="center"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/parental_control_linearLayout_timestarts_height"
+                android:layout_marginLeft="@dimen/parental_control_linearLayout_timestarts_left"
+                android:layout_marginTop="@dimen/parental_control_linearLayout_timestarts_top" >
+
+                <TextView
+                    android:id="@+id/time_start_hours_subtract"
+                    android:layout_width="@dimen/parental_control_time_start_hours_subtract_width"
+                    android:layout_height="@dimen/parental_control_time_start_hours_subtract_height"
+                    android:background="@drawable/passlock_time_left_style"
+                    android:soundEffectsEnabled="false" />
+
+                <TextView
+                    android:id="@+id/time_start_min_subtract"
+                    android:layout_width="@dimen/parental_control_time_start_hours_subtract_width"
+                    android:layout_height="@dimen/parental_control_time_start_hours_subtract_height"
+                    android:layout_marginLeft="@dimen/parental_control_time_start_hours_subtract_left"
+                    android:background="@drawable/passlock_time_left_style"
+                    android:soundEffectsEnabled="false" />
+
+                <TextView
+                    android:id="@+id/time_end_hours_subtract"
+                    android:layout_width="@dimen/parental_control_time_start_hours_subtract_width"
+                    android:layout_height="@dimen/parental_control_time_start_hours_subtract_height"
+                    android:layout_marginLeft="@dimen/parental_control_time_end_hours_subtract_left"
+                    android:background="@drawable/passlock_time_left_style"
+                    android:soundEffectsEnabled="false" />
+
+                <TextView
+                    android:id="@+id/time_end_min_subtract"
+                    android:layout_width="@dimen/parental_control_time_start_hours_subtract_width"
+                    android:layout_height="@dimen/parental_control_time_start_hours_subtract_height"
+                    android:layout_marginLeft="@dimen/parental_control_time_start_hours_subtract_left"
+                    android:background="@drawable/passlock_time_left_style"
+                    android:soundEffectsEnabled="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/parental_control_time_date_bg_height"
+        android:layout_below="@id/ll_time_quantum"
+        android:layout_marginLeft="@dimen/parental_control_time_date_bg_left"
+        android:layout_marginTop="@dimen/parental_control_time_date_bg_top"
+        android:background="@drawable/time_date_bg"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/parental_control_time_date_bg_relayout_left"
+            android:layout_marginTop="@dimen/parental_control_time_date_bg_relayout_top" >
+
+            <TextView
+                android:id="@+id/time_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/parental_control_time_date_top"
+                android:text="@string/set_date"
+                android:textColor="#ffffff"
+                android:textSize="30sp" />
+
+            <RelativeLayout
+                android:id="@+id/rl_date1"
+                style="@style/SliderStyle"
+                android:layout_width="@dimen/parental_control_rl_date1_width"
+                android:layout_height="@dimen/parental_control_rl_date1_height"
+                android:layout_marginBottom="@dimen/parental_control_rl_date1_top"
+                android:background="@drawable/slider_close_bg"
+                android:soundEffectsEnabled="false" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_date_state1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/slider_bg"
+                    android:contentDescription="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_date2"
+                style="@style/SliderStyle"
+                android:layout_width="@dimen/parental_control_rl_date1_width"
+                android:layout_height="@dimen/parental_control_rl_date1_height"
+                android:background="@drawable/slider_open_bg"
+                android:soundEffectsEnabled="false"
+                android:visibility="gone" >
+
+                <ImageButton
+                    android:id="@+id/imgbtn_date_state2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/slider_bg"
+                    android:contentDescription="@null" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/parental_control_linlearlayout_weekselecter_width"
+            android:layout_height="@dimen/parental_control_linlearlayout_weekselecter_height"
+            android:layout_marginLeft="@dimen/parental_control_linlearlayout_weekselecter_left"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="@dimen/parental_control_linlearlayout_next_weekselecter_width"
+                android:layout_height="@dimen/parental_control_linlearlayout_next_weekselecter_height"
+                android:layout_marginTop="@dimen/parental_control_linlearlayout_next_weekselecter_left"
+                android:background="#00000000"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/time_date_mon"
+                    android:layout_width="@dimen/parental_control_time_date_mon_width"
+                    android:layout_height="@dimen/parental_control_time_date_mon_width"
+                    android:layout_marginLeft="@dimen/parental_control_time_date_mon_left"
+                    android:background="@drawable/time_date_noclick"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/time_date_mon"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/time_date_tues"
+                     android:layout_width="@dimen/parental_control_time_date_mon_width"
+                    android:layout_height="@dimen/parental_control_time_date_mon_width"
+                    android:layout_marginLeft="@dimen/parental_control_time_date_tues_left"
+                    android:background="@drawable/time_date_noclick"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/time_date_tues"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/time_date_wed"
+                     android:layout_width="@dimen/parental_control_time_date_mon_width"
+                    android:layout_height="@dimen/parental_control_time_date_mon_width"
+                    android:layout_marginLeft="@dimen/parental_control_time_date_tues_left"
+                    android:background="@drawable/time_date_noclick"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/time_date_wed"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/time_date_thur"
+                     android:layout_width="@dimen/parental_control_time_date_mon_width"
+                    android:layout_height="@dimen/parental_control_time_date_mon_width"
+                    android:layout_marginLeft="@dimen/parental_control_time_date_tues_left"
+                    android:background="@drawable/time_date_noclick"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/time_date_thur"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/time_date_fri"
+                     android:layout_width="@dimen/parental_control_time_date_mon_width"
+                    android:layout_height="@dimen/parental_control_time_date_mon_width"
+                    android:layout_marginLeft="@dimen/parental_control_time_date_tues_left"
+                    android:background="@drawable/time_date_noclick"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/time_date_fri"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/parental_control_linlearlayout_weekselecter_width"
+                android:layout_height="@dimen/parental_control_linlearlayout_weekselecter_height"
+                android:layout_marginTop="@dimen/parental_control_time_date_tues_lianlerayoot_lefts"
+                android:background="#00000000"
+                android:orientation="horizontal" >
+
+              <TextView
+                    android:id="@+id/time_date_sta"
+                    android:layout_width="@dimen/parental_control_time_date_mon_width"
+                    android:layout_height="@dimen/parental_control_time_date_mon_width"
+                   android:layout_marginLeft="@dimen/parental_control_time_date_tues_left"
+                    android:background="@drawable/time_date_noclick"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/time_date_sta"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/time_date_sun"
+                    android:layout_width="@dimen/parental_control_time_date_mon_width"
+                    android:layout_height="@dimen/parental_control_time_date_mon_width"
+                   android:layout_marginLeft="@dimen/parental_control_time_date_tues_left"
+                    android:background="@drawable/time_date_noclick"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/time_date_sun"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_transparent_baffle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/transparent_bg" >
+    </RelativeLayout>
+
+</RelativeLayout>

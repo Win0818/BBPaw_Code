@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_update_bg" >
+
+   <!--  <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/download_title_height" 
+        android:layout_marginTop="@dimen/download_title_marginTop"
+        android:layout_marginLeft="100dip"
+        android:layout_marginRight="80dip"> -->
+
+        <TextView
+            android:id="@+id/download_title"
+            android:layout_width="match_parent"
+        	android:layout_height="@dimen/download_title_height" 
+        	android:layout_marginTop="@dimen/download_title_marginTop"
+        	android:layout_marginLeft="@dimen/download_title_marginLeft"
+        	android:layout_marginRight="@dimen/download_title_marginLeft"
+        	android:gravity="center_vertical"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textColor="#60480F"
+            android:textSize="38sp" />
+   <!--  </RelativeLayout> -->
+
+    <ImageView
+        android:id="@+id/dowmload_close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dip"
+        android:background="@drawable/inform_detail_close" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/download_button_layout_margin" >
+
+        <ImageView
+            android:id="@+id/install_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_install_btn" />
+
+        <ImageView
+            android:id="@+id/dowmload_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_cancel_btn" />
+    </RelativeLayout>
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center" >
+
+        <com.worldchip.bbp.bbpawmanager.view.RoundProgress
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/download_progress_bg"
+            android:padding="5dip" />
+    </LinearLayout>
+    -->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20dip" >
+
+        <ImageView
+            android:id="@+id/round_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_round_progress" />
+
+        <ImageView
+            android:id="@+id/start_download_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/ic_start_btn" />
+
+        <TextView
+            android:id="@+id/download_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#5C9086"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</RelativeLayout>

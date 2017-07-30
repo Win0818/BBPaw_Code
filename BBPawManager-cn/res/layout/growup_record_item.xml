@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:layout_marginBottom="10dip">
+
+        <include layout="@layout/growup_section" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_below="@+id/item_time_title">
+
+            <LinearLayout
+                android:id="@+id/growup_item_layout"
+                android:layout_width="@dimen/growup_listview_item_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/growup_list_item_bg"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="@dimen/growup_listview__itme_icon_width"
+                    android:layout_height="@dimen/growup_listview__itme_icon_heigth"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:scaleType="fitXY"
+                    android:padding="5dip"
+                    android:background="@drawable/growth_icon_bg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_marginBottom="5dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="2"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/study_time_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="@string/study_time_title_text"
+                            android:textColor="#AD5709"
+                            android:textSize="@dimen/growup_listview_item_title_textsize"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/study_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="20dip"
+                            android:textColor="#35070F"
+                            android:textSize="@dimen/growup_listview_item_textsize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="3"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/study_content_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="@string/study_content_title_text"
+                            android:textColor="#AD5709"
+                            android:textSize="@dimen/growup_listview_item_title_textsize"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/study_content_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:layout_marginRight="20dip"
+                            android:paddingBottom="10dip"
+                            android:ellipsize="end"
+                            android:maxLines="3"
+                            android:textColor="#35070F"
+                            android:textSize="@dimen/growup_listview_item_textsize" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

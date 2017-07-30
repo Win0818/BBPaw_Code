@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="340dip"
+        android:layout_height="215dip"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/commodity_item_fosus"
+            android:layout_width="340dip"
+            android:layout_height="215dip"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/commodity_item_poster"
+            android:layout_width="310dip"
+            android:layout_height="180dip"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:contentDescription="@null"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="310dip"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dip"
+        android:background="@drawable/app_item_text_bg"
+        android:gravity="left" >
+
+        <TextView
+            android:id="@+id/txt_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="25dip"
+            android:contentDescription="@null"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txt_app_introl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_app_name"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="10dip"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+</FrameLayout>

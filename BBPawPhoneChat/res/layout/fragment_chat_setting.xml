@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://com.worldchip.bbp.conversation"
+    android:layout_width="200dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_setting_head_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_setting_head"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/setting_head_bg"
+            android:padding="2dp" >
+
+            <com.worldchip.bbpawphonechat.view.CircleImageView
+                android:id="@+id/iv_setting_bar_my_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:clickable="true"
+                android:contentDescription="@string/image_null"
+                android:scaleType="centerCrop"
+                android:src="@drawable/setting_head_default"
+                imagecontrol:border_inside_color="#ff9933"
+                imagecontrol:border_outside_color="#ff9900"
+                imagecontrol:border_thickness="2dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_setting_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="testname"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/btn_setting_edit"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                 />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_feedback_suggest"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_setting_first_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iv_chat_setting_suggest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_setting_check_update"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_setting_first_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iv_chat_setting_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                 />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_change_password"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_setting_first_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iv_chat_setting_change_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_setting"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_setting_first_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iv_chat_setting_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_setting_exit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_setting_first_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iv_chat_setting_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                 />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

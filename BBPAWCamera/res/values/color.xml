@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="top_bar_bg_color">#4e9bf1</color>
+    <color name="top_bar_text_color">#ffffffff</color>
+    <color name="edit_text_bg_color">#ffffffff</color>
+    <color name="edit_text_text_color">#8b8b8b</color>
+    <color name="edit_text_cursor_color">#4498f5</color>
+    <color name="transparent_color">#00000000</color>
+    <color name="red_color">#ff0000</color>
+    <color name="green_color">#0fbb38</color>
+    
+    <!-- For dialog -->
+    <color name="dialog_text_color">#000000</color>
+    
+    <!-- 主界面 -->
+    <color name="main_tab_bar_bg">#f7f7f7</color>
+    <color name="main_tab_bar_divider">#d3d3d3</color>
+    <color name="main_top_bar_bg">#4e9bf1</color>
+    <color name="main_jiatingbaojie_bg">#368ff4</color>
+    <color name="main_xinjukaihuang_bg">#747ae8</color>
+    <color name="main_jiajubaoyang_bg">#ff6779</color>
+    <color name="main_fuwuchengnuo_bg">#84d018</color>
+    <color name="main_youhuihuodong_bg">#0fc4d9</color>
+    <color name="main_gengduofuwu_bg">#ff864a</color>
+    <drawable name="main_tab_bar_text_color_normal">#afafaf</drawable>
+    <drawable name="main_tab_bar_text_color_press">#63add4</drawable>
+    
+    
+    <!-- 登陆 -->
+    <color name="login_regisit_text_color">#d6eaff</color>
+    <color name="login_bg_color">#e7f8ff</color>
+    <color name="find_pass_color">#4d9cf5</color>
+    <color name="agreement_color">#519ff6</color>
+    
+    <!-- 个人中心 -->
+    <color name="personal_center_bg_color">#e7f8ff</color>
+    <color name="personal_center_list_text_color">#aeaeae</color>
+    <color name="white">#ffffffff</color>
+    <color name="list_item_selected">#e7f8ff</color>
+    <color name="expense_list_title_color">#888C90</color>
+    <color name="light_blue">#A5C6D4</color>
+    
+    <color name="color_wheel_text_size_time">#FF111111</color>
+    <color name="color_wheel_text_size_weekday">#777</color>
+    <drawable name="half_transparent_background">#66000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+    
+    <drawable name="complatins_type_click_middle">#ff989898</drawable>
+    <drawable name="complatins_type_normal_middle">#ffffffff</drawable>
+    <drawable name="complatins_type_select_middle">#ffe7f8ff</drawable>
+    
+    <!-- 支付宝 -->
+    <color name="background_color">#ffd1dce9</color>
+    <color name="text_color">#ff666666</color>
+    <color name="TextColorBlack">#FF000000</color>
+    <color name="TextColorWhite">#FFFFFFFF</color>
+    <color name="BgColor">#ffd1dce9</color>
+    
+    <color name="TextColorGray">#FF505050</color>
+    <color name="ToastBgColor">#FF424242</color>
+    <color name="btnColor">#FFFFFF</color>
+    <color name="textColorforItemTitle">#FF666666</color>
+    <color name="secondbtntextColor">#FF496ea3</color>
+    <color name="textColorforCheckBox">#FF333333</color>
+    <color name="bgColor">#FFF2F2F2</color>
+    <color name="downLoadTextNomal">#FF3366CC</color>
+    <color name="downLoadTextPressed">#FFFFFFFF</color>
+    <color name="downLoadBackNomal">#FFFFFFFF</color>
+    <color name="downLoadBackFocus">#FF6698E7</color>
+    <color name="downLoadBackPressed">#FF3366CC</color>
+    <color name="dialog_tiltle_blue">#2277BB</color>
+</resources>

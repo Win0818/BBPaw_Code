@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/chat_view_top_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@drawable/chat_top_bar_bg" >
+
+        <TextView
+            android:id="@+id/chat_to_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/register_title_img" />
+
+        <ImageView
+            android:id="@+id/iv_protocol_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/image_null"
+            android:src="@drawable/top_back_btn" />
+        
+    </RelativeLayout>
+    
+  <WebView  
+    android:id="@+id/webview_compontent"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:layout_weight="1.0"   
+    />
+  
+</LinearLayout>

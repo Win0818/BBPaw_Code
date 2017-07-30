@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/top_bar_layout"/>
+    
+     <ImageView 
+        android:id="@+id/iv_null_contacts_note"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/image_null"
+        android:background="@drawable/note_txt_shape_bg"
+        />
+     
+     <ListView 
+        android:id="@+id/lv_chat_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@color/black_thin3"
+        android:cacheColorHint="@color/transparent"
+        android:layout_marginTop="15dp"
+      />
+   
+
+</LinearLayout>

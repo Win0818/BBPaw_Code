@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="723dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+     >
+
+    <com.worldchip.bbp.ect.view.SlipButton
+        android:id="@+id/charging_protect_togglebtn"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:soundEffectsEnabled="false"
+        android:layout_marginTop="@dimen/parental_control_pushmessage_toggleButton_margintop"
+        android:layout_centerHorizontal="true"
+        android:textOff=""
+        android:textOn="" >
+    </com.worldchip.bbp.ect.view.SlipButton>
+    <TextView
+        android:layout_width="586dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/parental_control_pushmessage_textview_margintop"
+        android:gravity="center"
+        android:maxLines="2"
+        android:padding="15dp"
+        android:text="@string/charging_protect_text"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+</RelativeLayout>

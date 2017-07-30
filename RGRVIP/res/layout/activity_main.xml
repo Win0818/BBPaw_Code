@@ -1,0 +1,113 @@
+<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	 	xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal"
+	    android:background="@drawable/bg"
+	    android:id="@+id/member_main">
+    
+    <RelativeLayout 
+        android:layout_width="210dp"
+        android:layout_marginTop="90dp"
+        android:layout_height="match_parent"
+        android:background="#00000000" >
+    
+    		<FrameLayout
+                android:id="@+id/fl_menu_00"
+                android:nextFocusUp="@+id/fl_menu_00"
+                android:nextFocusDown="@+id/fl_menu_01"
+                android:nextFocusLeft="@+id/fl_menu_00"
+                android:nextFocusRight="@+id/fl_balance_00"
+                style="@style/MenuFrameLayout" >
+
+                <TextView
+                    android:id="@+id/tv_menu_00"
+                    style="@style/MenuTextView" />
+            </FrameLayout>
+            
+    		<FrameLayout
+                android:id="@+id/fl_menu_01"
+                android:layout_below="@+id/fl_menu_00"
+                android:nextFocusUp="@+id/fl_menu_00"
+                android:nextFocusDown="@+id/fl_menu_02"
+                android:nextFocusLeft="@+id/fl_menu_01"
+                android:nextFocusRight="@+id/ed_details_00"
+                style="@style/MenuFrameLayout" >
+
+                <TextView
+                    android:id="@+id/tv_menu_01"
+                    style="@style/MenuTextView" />
+            </FrameLayout>
+            
+    		<FrameLayout
+                android:id="@+id/fl_menu_02"
+                android:layout_below="@+id/fl_menu_01"
+                android:nextFocusUp="@+id/fl_menu_01"
+                android:nextFocusDown="@+id/fl_menu_03"
+                android:nextFocusLeft="@+id/fl_menu_02"
+                android:nextFocusRight="@+id/tv_update_ipone"
+                style="@style/MenuFrameLayout" >
+
+                <TextView
+                    android:id="@+id/tv_menu_02"
+                    style="@style/MenuTextView" />
+            </FrameLayout>
+            
+    		<FrameLayout
+                android:id="@+id/fl_menu_03"
+                android:layout_below="@+id/fl_menu_02"
+                android:nextFocusUp="@+id/fl_menu_02"
+                android:nextFocusDown="@+id/fl_menu_04"
+                android:nextFocusLeft="@+id/fl_menu_03"
+                android:nextFocusRight="@+id/recordlist"
+                style="@style/MenuFrameLayout" >
+
+                <TextView
+                    android:id="@+id/tv_menu_03"
+                    style="@style/MenuTextView" />
+            </FrameLayout>
+            
+    		<FrameLayout
+                android:id="@+id/fl_menu_04"
+                android:layout_below="@+id/fl_menu_03"
+                android:nextFocusUp="@+id/fl_menu_03"
+                android:nextFocusDown="@+id/fl_menu_05"
+                android:nextFocusLeft="@+id/fl_menu_04"
+                style="@style/MenuFrameLayout" >
+
+                <TextView
+                    android:id="@+id/tv_menu_04"
+                    style="@style/MenuTextView" />
+            </FrameLayout>
+            
+    		<FrameLayout
+                android:id="@+id/fl_menu_05"
+                android:layout_below="@+id/fl_menu_04"
+                android:nextFocusUp="@+id/fl_menu_04"
+                android:nextFocusDown="@+id/fl_menu_05"
+                android:nextFocusLeft="@+id/fl_menu_05"
+                style="@style/MenuFrameLayout" >
+
+                <TextView
+                    android:id="@+id/tv_menu_05"
+                    style="@style/MenuTextView" />
+            </FrameLayout>
+            
+   	</RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_layout_right"
+        android:layout_width="1070dp"
+        android:layout_height="match_parent"
+        android:paddingTop="40dp"
+        android:focusable="false"
+        android:gravity="center"
+        android:focusableInTouchMode="false"
+        android:background="#00000000" >
+        
+        
+        
+    </RelativeLayout>
+
+</LinearLayout>

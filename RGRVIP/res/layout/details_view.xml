@@ -1,0 +1,292 @@
+<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	 	xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    style="@style/NOFocusView"
+	    android:background="#00000000">
+    
+    <RelativeLayout 
+        android:id="@+id/rl_details_00"
+        android:layout_width="1070dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        style="@style/NOFocusView"
+        android:background="#00000000" >
+        
+        <TextView 
+            android:id="@+id/tv_details_00"
+            style="@style/TextViewStyle"
+            android:text="@string/user_number" />
+        
+        <EditText 
+            android:id="@+id/ed_details_00"
+            style="@style/EditTextStyle"
+            android:layout_toRightOf="@+id/tv_details_00"
+            android:nextFocusLeft="@+id/fl_menu_01"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="#00000000"
+            android:text="1899-2332-123" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_details_01"
+        android:layout_width="1070dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        android:background="#00000000"
+        style="@style/NOFocusView"
+        android:layout_below="@+id/rl_details_00" >
+        
+        <TextView 
+            android:id="@+id/tv_details_01"
+            style="@style/TextViewStyle"
+            android:text="@string/real_name" />
+        
+        <EditText 
+            android:id="@+id/ed_details_01"
+            android:layout_toRightOf="@+id/tv_details_01"
+            android:nextFocusLeft="@+id/fl_menu_01"
+            android:nextFocusDown="@+id/ed_details_03"
+            style="@style/EditTextStyle"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="#00000000"
+            android:text="芒果乐" />
+        
+    </RelativeLayout>
+    
+   <RelativeLayout 
+        android:id="@+id/rl_details_02"
+        android:layout_width="1070dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        android:background="#00000000"
+        style="@style/NOFocusView"
+        android:layout_below="@+id/rl_details_01" >
+        
+        <TextView 
+            android:id="@+id/tv_details_02"
+            style="@style/TextViewStyle"
+            android:text="@string/contact_phone" />
+        
+        <EditText 
+            android:id="@+id/ed_details_02"
+            android:layout_toRightOf="@+id/tv_details_02"
+            android:nextFocusLeft="@+id/fl_menu_01"
+            style="@style/EditTextStyle"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="#00000000"
+            android:text="183-8154-1862" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_details_03"
+        android:layout_width="1070dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        android:background="#00000000"
+        style="@style/NOFocusView"
+        android:layout_below="@+id/rl_details_02" >
+        
+        <TextView 
+            android:id="@+id/tv_details_03"
+            style="@style/TextViewStyle"
+            android:text="@string/common_telephone" />
+        
+        <EditText 
+            android:id="@+id/ed_details_03"
+            android:layout_toRightOf="@+id/tv_details_03"
+            android:nextFocusLeft="@+id/fl_menu_01"
+            android:nextFocusUp="@+id/ed_details_01"
+            style="@style/EditTextStyle"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="#00000000"
+            android:text="0755-83231242" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_details_04"
+        android:layout_width="1070dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        android:background="#00000000"
+        style="@style/NOFocusView"
+        android:layout_below="@+id/rl_details_03" >
+        
+        <TextView 
+            android:id="@+id/tv_details_04"
+            style="@style/TextViewStyle"
+            android:text="@string/street_address" />
+        
+        <EditText 
+            android:id="@+id/ed_details_04"
+            android:layout_toRightOf="@+id/tv_details_04"
+            android:nextFocusLeft="@+id/fl_menu_01"
+            style="@style/EditTextStyle"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="#00000000"
+            android:text="深圳宝安区沙井镇沙三路" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_details_05"
+        android:layout_width="1070dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        android:background="#00000000"
+        style="@style/NOFocusView"
+        android:layout_below="@+id/rl_details_04" >
+        
+        <TextView 
+            android:id="@+id/tv_details_05"
+            style="@style/TextViewStyle"
+            android:text="@string/cell_name" />
+        
+        <EditText 
+            android:id="@+id/ed_details_05"
+            android:layout_toRightOf="@+id/tv_details_05"
+            android:nextFocusLeft="@+id/fl_menu_01"
+            style="@style/EditTextStyle"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:background="#00000000"
+            android:text="沙三上下围创业工业园" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_details_06"
+        android:layout_width="1070dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="30dp"
+        android:background="#00000000"
+        style="@style/NOFocusView"
+        android:layout_below="@+id/rl_details_05" >
+        
+        <TextView 
+            android:id="@+id/tv_details_06"
+            style="@style/TextViewStyle"
+            android:text="@string/corridor_unit" />
+        
+        <EditText 
+            android:id="@+id/ed_details_06"
+            android:layout_toRightOf="@+id/tv_details_06"
+            android:nextFocusLeft="@+id/fl_menu_01"
+            android:nextFocusDown="@+id/save"
+            style="@style/EditTextStyle"
+            android:background="#00000000"
+            android:enabled="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:text="一栋四楼401室" />
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_operation"
+        android:layout_width="1070dp"
+        android:layout_height="83dp"
+        android:layout_marginLeft="30dp"
+        android:background="#00000000"
+        style="@style/NOFocusView"
+        android:layout_below="@+id/rl_details_06" >
+        
+        <TextView 
+            android:id="@+id/editing"
+            android:layout_width="180dp"
+            android:layout_height="83dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            style="@style/NOFocusView"
+            android:textColor="#fe0000"
+            android:visibility="gone"
+            android:text="@string/editing" />
+        
+        <TextView 
+            android:id="@+id/modify"
+            android:layout_width="283dp"
+            android:layout_height="63dp"
+            android:layout_toRightOf="@+id/editing"
+            android:background="@drawable/butt_style"
+            android:layout_marginLeft="520dp"
+            android:layout_marginRight="30dp"
+            android:nextFocusUp="@+id/modify"
+            android:nextFocusDown="@+id/modify"
+            android:nextFocusLeft="@+id/fl_menu_01"
+            android:nextFocusRight="@+id/modify"
+            style="@style/FocusView"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:text="@string/modify_user_information" />
+        
+        <TextView 
+            android:id="@+id/save"
+            android:layout_width="283dp"
+            android:layout_height="83dp"
+            android:layout_toRightOf="@+id/editing"
+            android:background="@drawable/butt_save_style"
+            android:layout_marginLeft="520dp"
+            android:layout_marginRight="30dp"
+            android:nextFocusUp="@+id/ed_details_06"
+            android:nextFocusDown="@+id/save"
+            android:nextFocusLeft="@+id/fl_menu_01"
+            android:nextFocusRight="@+id/save"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textSize="36sp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:text="@string/preservation" />
+        
+    </RelativeLayout>
+    
+    <View 
+        android:id="@+id/view_line"
+        android:layout_width="1001dp"
+        android:layout_height="4dp"
+        style="@style/NOFocusView"
+        android:background="@drawable/dividing_line"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/rl_operation" />
+    
+    <TextView 
+        android:id="@+id/tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="30sp"
+        android:layout_marginLeft="65dp"
+        android:gravity="center|left"
+        android:text="@string/messge_one"
+        style="@style/NOFocusView"
+        android:layout_below="@+id/view_line" 
+        android:textColor="#FFFFFF" />
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="30sp"
+        android:gravity="center|left"
+        style="@style/NOFocusView"
+        android:layout_below="@+id/tv_message" 
+        android:layout_marginLeft="65dp"
+        android:text="@string/messge_two"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

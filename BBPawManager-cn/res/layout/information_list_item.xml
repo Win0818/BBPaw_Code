@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/infrom_item_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/inform_item_bg"
+            android:orientation="horizontal" >
+            
+            <CheckBox
+	            android:id="@+id/delete_select"
+	            android:layout_width="60dip"
+	            android:layout_height="match_parent"
+	            android:paddingLeft="30dip"
+	            android:focusable="false"
+	            android:visibility="gone"
+	            android:button="@null"  
+    			android:drawableLeft="@drawable/delete_selector" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="@dimen/inform_listview_item_icon_width"
+                android:layout_height="@dimen/inform_listview_item_icon_height"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/title_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dip"
+                    android:singleLine="true"
+                    android:textColor="#261B1B"
+                    android:textSize="@dimen/inform_listview_item_title_textsize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/content_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dip"
+                    android:maxLines="2"
+                    android:textColor="#261B1B"
+                    android:textSize="@dimen/inform_listview_item_textsize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:gravity="center_vertical|right"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/read_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dip"
+                    android:orientation="vertical" >
+                    <TextView
+                        android:id="@+id/read_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:layout_gravity="center"
+                        android:textColor="#261B1B"
+                        android:textSize="28sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#261B1B"
+                    android:textSize="25sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

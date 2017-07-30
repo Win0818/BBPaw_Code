@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="text_size_30dp">30dp</dimen>
+    <dimen name="middle_text_size">18dp</dimen>
+    <dimen name="camera_preview_width">800dip</dimen>
+    <dimen name="camera_preview_height">600dip</dimen>
+    <dimen name="effect_gridview_width">130dip</dimen>
+    <dimen name="effect_gridview_height">600dip</dimen>
+    <dimen name="final_picture_width">800dip</dimen>
+    <dimen name="final_picture_height">600dip</dimen>
+    <dimen name="video_record_timer_layout_width">150dip</dimen>
+    
+    <dimen name="global_alert_dialog_width">0.85dp</dimen>
+    
+    
+</resources>

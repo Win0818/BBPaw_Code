@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true" 
+    android:focusableInTouchMode="true"
+    android:background="@drawable/launchersetting_background" >
+
+    <EditText
+        android:id="@+id/et_psd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="490dip"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/wifi_psw_input_padding"
+        android:singleLine="true"
+        android:maxLength="50"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/password_input_bg"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="35sp" />
+    <TextView 
+        android:id="@+id/wifi_psw_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_psd"
+        android:layout_marginTop="20dip"
+        android:textColor="#FF9D16"
+        android:textSize="26sp"/>
+
+    <Button
+        android:id="@+id/btn_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/et_psd"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/et_psd"
+        android:background="@drawable/button_selector"
+        android:text="@string/enter"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/btn_enter"
+        android:layout_below="@id/btn_enter"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_selector"
+        android:text="@string/cancel"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="40sp" />
+
+</RelativeLayout>

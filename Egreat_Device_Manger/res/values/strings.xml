@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Egreat_Device_Manger</string>
+    <string name="hello_world">Hello world!</string>
+
+     <string name="short_cut">快捷工具栏</string>
+     <string name="people_live">便民服务</string>
+</resources>

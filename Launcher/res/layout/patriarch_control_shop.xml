@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/relayout_gagdeg_width"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <!-- <RelativeLayout
+        android:id="@+id/rl_goole_shop"
+        android:layout_width="279dp"
+        android:layout_height="320dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/bbpaw_shop_rl_bbpaw_shop_left" >
+
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="@string/shop_google"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="279dp"
+            android:layout_height="266dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@null"
+            android:src="@drawable/shop_google_src" />
+    </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/rl_bbpaw_shop"
+        android:layout_width="279dp"
+        android:layout_height="320dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        
+        android:layout_marginRight="@dimen/bbpaw_shop_rl_bbpaw_shop_left" >
+
+        <ImageView
+            android:layout_width="279dp"
+            android:layout_height="266dp"
+            android:contentDescription="@null"
+            android:src="@drawable/shop_bbp_src"
+            android:tag="@string/shop_bbpaw" />
+
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="@string/shop_bbpaw"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

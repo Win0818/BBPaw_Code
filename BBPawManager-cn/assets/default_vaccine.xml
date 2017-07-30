@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vaccine>
+   <menu id ="0">
+        <item key="age"  value="0"></item><!-- 年龄以月为单位计算 -->
+        <item key="ageTitle"  value="出生时"></item>
+        <item key="vaccineTypeName" value="卡尔苗"></item>
+        <item key="vaccineType" value="0"></item>
+        <item key="vaccineExplain" value="初种"></item>
+        <item key="date" value=""></item>
+    </menu> 
+    
+    <menu id ="1">
+        <item key="age"  value="0"></item>
+         <item key="ageTitle"  value="出生时"></item>
+        <item key="vaccineTypeName" value="乙肝疫苗"></item>
+        <item key="vaccineType" value="1"></item>
+        <item key="vaccineExplain" value="第一针"></item>
+        <item key="date" value=""></item>
+    </menu> 
+    
+     <menu id ="2">
+        <item key="age"  value="1"></item>
+        <item key="ageTitle"  value="1月足"></item>
+        <item key="vaccineTypeName" value="乙肝疫苗"></item>
+        <item key="vaccineType" value="2"></item>
+        <item key="vaccineExplain" value="第二针"></item>
+        <item key="date" value=""></item>
+    </menu> 
+    
+      <menu id ="3">
+        <item key="age"  value="2"></item>
+        <item key="ageTitle"  value="2月足"></item>
+        <item key="vaccineTypeName" value="骨髓灰质炎活疫苗"></item>
+        <item key="vaccineType" value="3"></item>
+        <item key="vaccineExplain" value="第一次"></item>
+        <item key="date" value=""></item>
+    </menu> 
+    
+    <menu id ="4">
+        <item key="age"  value="3"></item>
+        <item key="ageTitle"  value="3月足"></item>
+        <item key="vaccineTypeName" value="卡介苗"></item>
+        <item key="vaccineType" value="4"></item>
+        <item key="vaccineExplain" value="OT复查"></item>
+        <item key="date" value=""></item>
+    </menu> 
+    
+   <menu id ="5">
+        <item key="age"  value="3"></item>
+        <item key="ageTitle"  value="3月足"></item>
+        <item key="vaccineTypeName" value="骨髓灰质炎活疫苗"></item>
+        <item key="vaccineType" value="5"></item>
+        <item key="vaccineExplain" value="第二次"></item>
+        <item key="date" value=""></item>
+    </menu> 
+    
+    <menu id ="6">
+        <item key="age"  value="3"></item>
+        <item key="ageTitle"  value="3月足"></item>
+        <item key="vaccineTypeName" value="百白破制剂"></item>
+        <item key="vaccineType" value="6"></item>
+        <item key="vaccineExplain" value="第一次"></item>
+        <item key="date" value=""></item>
+    </menu> 
+    
+     <menu id ="7">
+        <item key="age"  value="4"></item>
+        <item key="ageTitle"  value="4月足"></item>
+        <item key="vaccineTypeName" value="脊髓灰质炎活疫苗"></item>
+        <item key="vaccineType" value="7"></item>
+        <item key="vaccineExplain" value="第三次"></item>
+        <item key="date" value=""></item>
+    </menu> 
+    
+     <menu id ="8">
+        <item key="age"  value="4"></item>
+        <item key="ageTitle"  value="4月足"></item>
+        <item key="vaccineTypeName" value="百白破制剂"></item>
+        <item key="vaccineType" value="8"></item>
+        <item key="vaccineExplain" value="第二次"></item>
+        <item key="date" value=""></item>
+    </menu> 
+    
+      <menu id ="9">
+        <item key="age"  value="5"></item>
+        <item key="ageTitle"  value="5月足"></item>
+        <item key="vaccineTypeName" value="百白破制剂"></item>
+        <item key="vaccineType" value="9"></item>
+        <item key="vaccineExplain" value="第三次"></item>
+        <item key="date" value=""></item>
+    </menu>
+    
+    <menu id ="10">
+        <item key="age"  value="6"></item>
+        <item key="ageTitle"  value="6月足"></item>
+        <item key="vaccineTypeName" value="乙肝疫苗"></item>
+        <item key="vaccineType" value="10"></item>
+        <item key="vaccineExplain" value="第三针"></item>
+        <item key="date" value=""></item>
+    </menu>
+    
+      <menu id ="11">
+        <item key="age"  value="8"></item>
+        <item key="ageTitle"  value="8月足"></item>
+        <item key="vaccineTypeName" value="麻疹活疫"></item>
+        <item key="vaccineType" value="11"></item>
+        <item key="vaccineExplain" value="第一针"></item>
+        <item key="date" value=""></item>
+    </menu>
+    
+      <menu id ="12">
+        <item key="age"  value="12"></item>
+        <item key="ageTitle"  value="1岁"></item>
+        <item key="vaccineTypeName" value="乙脑疫苗"></item>
+        <item key="vaccineType" value="12"></item>
+        <item key="vaccineExplain" value="初免两针"></item>
+        <item key="date" value=""></item>
+    </menu>
+    
+     <menu id ="13">
+        <item key="age"  value="18-24"></item>
+        <item key="ageTitle"  value="1岁半至2岁"></item>
+        <item key="vaccineTypeName" value="脊髓灰质炎活疫苗"></item>
+        <item key="vaccineType" value="13"></item>
+        <item key="vaccineExplain" value="加强"></item>
+        <item key="date" value=""></item>
+    </menu>
+    
+   <menu id ="14">
+        <item key="age"  value="18-24"></item>
+        <item key="ageTitle"  value="1岁半至2岁"></item>
+        <item key="vaccineTypeName" value="百白破制剂"></item>
+        <item key="vaccineType" value="14"></item>
+        <item key="vaccineExplain" value="加强"></item>
+        <item key="date" value=""></item>
+    </menu>
+    
+      <menu id ="15">
+        <item key="age"  value="18-24"></item>
+        <item key="ageTitle"  value="1岁半至2岁"></item>
+        <item key="vaccineTypeName" value="乙脑疫苗"></item>
+        <item key="vaccineType" value="15"></item>
+        <item key="vaccineExplain" value="加强"></item>
+        <item key="date" value=""></item>
+    </menu>
+    
+    <menu id ="16">
+        <item key="age"  value="48"></item>
+        <item key="ageTitle"  value="4岁"></item>
+        <item key="vaccineTypeName" value="脊髓灰质炎活疫苗"></item>
+        <item key="vaccineType" value="16"></item>
+        <item key="vaccineExplain" value="加强"></item>
+        <item key="date" value=""></item>
+    </menu>
+    
+    <menu id ="17">
+        <item key="age"  value="48"></item>
+        <item key="ageTitle"  value="4岁"></item>
+        <item key="vaccineTypeName" value="麻疹活疫"></item>
+        <item key="vaccineType" value="17"></item>
+        <item key="vaccineExplain" value="加强"></item>
+        <item key="date" value=""></item>
+    </menu>
+    
+    <menu id ="18">
+        <item key="age"  value="84"></item>
+        <item key="ageTitle"  value="7岁"></item>
+        <item key="vaccineTypeName" value="百白破制剂"></item>
+        <item key="vaccineType" value="18"></item>
+        <item key="vaccineExplain" value="加强(白破)"></item>
+        <item key="date" value=""></item>
+    </menu>
+    
+    <menu id ="19">
+        <item key="age"  value="84"></item>
+        <item key="ageTitle"  value="7岁"></item>
+        <item key="vaccineTypeName" value="麻疹活疫"></item>
+        <item key="vaccineType" value="19"></item>
+        <item key="vaccineExplain" value="加强"></item>
+        <item key="date" value=""></item>
+    </menu>
+    
+    <menu id ="20">
+        <item key="age"  value="84"></item>
+        <item key="ageTitle"  value="7岁"></item>
+        <item key="vaccineTypeName" value="乙脑疫苗"></item>
+        <item key="vaccineType" value="20"></item>
+        <item key="vaccineExplain" value="加强"></item>
+        <item key="date" value=""></item>
+    </menu>
+    
+    <menu id ="21">
+        <item key="age"  value="144"></item>
+        <item key="ageTitle"  value="12岁"></item>
+        <item key="vaccineTypeName" value="卡介苗"></item>
+        <item key="vaccineType" value="21"></item>
+        <item key="vaccineExplain" value="加强(农村)"></item>
+        <item key="date" value=""></item>
+    </menu>
+    
+</vaccine>

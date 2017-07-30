@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">会员</string>
+    
+    <string name="le_currency_total">乐币余额：</string>
+    <string name="total">0</string>
+    <string name="more">赚取更多乐币</string>
+    <string name="recommend">推荐商品：</string>
+    <string name="money">￥</string>
+    <string name="bracket_left"> ( </string>
+    <string name="bracket_right"> )</string>
+    <string name="fold">折</string>
+    <string name="more_sp">购买更多商品</string>
+    
+    <string name="user_number">用户编号：</string>
+    <string name="real_name">真实姓名：</string>
+    <string name="contact_phone">联系电话：</string>
+    <string name="common_telephone">常用电话：</string>
+    <string name="street_address">街道地址：</string>
+    <string name="cell_name">小区名称：</string>
+    <string name="corridor_unit">楼道单元：</string>
+    <string name="editing">* 编辑中</string>
+    <string name="modify_user_information">修改用户信息</string>
+    <string name="preservation">保存</string>
+    <string name="messge_one">* 以上信息将直接影响到兑换商品时的物品派送，请保持真实有效</string>
+    <string name="messge_two">* 我们会对以上信息绝对保密</string>
+    
+    <string name="update_ipone_number">修改认证手机</string>
+    <string name="update_pay_password">修改支付密码</string>
+    <string name="change_the_account_number">更改提现帐号</string>
+    <string name="ipone_number">已绑定的认证手机：135****2546</string>
+    <string name="retrieve_password">* 认证手机用于找回支付密码等操作</string>
+    <string name="pay_password">支付密码：*************</string>
+    <string name="pay_password_text">* 支付密码用于兑换商品时进行支付确认</string>
+    <string name="account_number">提现帐号：（芒***户） 4336********88</string>
+    <string name="present_account_number">* 账号用户将乐币转换为人民币，提供所需要的银行帐号</string>
+    <string name="messge_three">* 修改以上信息时请准备好已绑定的手机，并确保可以发短信</string>
+    
+    <string name="messge_four">* 按‘OK’键显示提货验证码；长按‘OK’键可删除记录</string>
+    
+    <string name="withdrawals">此服务尚在紧锣密鼓打造中  敬请期待</string>
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="left" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="49dp"
+        android:background="#00000000"
+        android:gravity="center" >
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="@string/payment_remind"
+        android:textColor="#000000"
+        android:textSize="32sp" />
+        
+        <ImageView
+            android:id="@+id/img_qrcode_src"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/img_qrcode_src"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/user_info_tip19"
+            android:textColor="#000000"
+            android:textSize="32sp" />
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>

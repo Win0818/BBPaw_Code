@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/browser_background" >
+
+    <RelativeLayout
+        android:id="@+id/rl_logo"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_back"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/browser_back_btn"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_forward"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imgbtn_back"
+            android:background="@drawable/browser_forward_btn"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_close"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/browser_close_btn"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_collection"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/imgbtn_close"
+            android:background="@drawable/browser_url_collection_btn"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_logo" >
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+
+        <ListView
+            android:id="@+id/lv_url"
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="110dp"
+            android:background="@drawable/browser_url_show"
+            android:divider="@null"
+            android:paddingTop="40dp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</RelativeLayout>

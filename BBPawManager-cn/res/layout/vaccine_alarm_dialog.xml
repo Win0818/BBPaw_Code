@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="1024dip"
+        android:layout_height="600dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/vaccine_alarm_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/vaccine_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="40dip"
+                android:layout_marginLeft="100dip"
+                android:layout_marginRight="100dip"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/vaccine_logo_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/vaccine_name_tv"
+                android:background="@anim/vaccine_logo_anim"/>
+
+            <TextView
+                android:id="@+id/vaccine_date_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/vaccine_logo_iv"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_above="@+id/vaccine_date_tv"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/vaccine_clock_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@anim/vaccine_clock_anim" />
+                <com.worldchip.bbp.bbpawmanager.cn.view.ClockView
+                    android:id="@+id/clock_view"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:layout_gravity="center" 
+            		android:layout_marginTop="14dip"
+            		android:layout_marginLeft="3dip"
+            		android:background="@drawable/clock_bg"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

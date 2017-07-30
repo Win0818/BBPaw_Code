@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/launchersetting_background" >
+
+    <LinearLayout
+        android:id="@+id/ll_terms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="9"
+            android:background="@drawable/terms_pic"
+            android:orientation="vertical" >
+
+            <WebView
+                android:id="@+id/terms_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:layout_margin="20dip"
+                android:scrollbars="none"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_selector"
+                android:text="@string/back"
+                android:textColor="#ffffff"
+                android:textSize="40sp" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_selector"
+                android:text="@string/next"
+                android:textColor="#ffffff"
+                android:textSize="40sp" />
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toLeftOf="@+id/btn_next"
+                android:layout_toRightOf="@id/btn_back"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb_disagree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:button="@null"
+                    android:drawableLeft="@drawable/radiobtn_state"
+                    android:text="@string/disagree_text"
+                    android:textColor="#ff9900"
+                    android:textSize="35sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_agree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableLeft="@drawable/radiobtn_state"
+                    android:paddingLeft="20dp"
+                    android:text="@string/agree_text"
+                    android:textColor="#ff9900"
+                    android:textSize="35sp" />
+            </RadioGroup>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_inquire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_inquire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/inquire"
+            android:gravity="center"
+            android:text="@string/terms_inquire"
+            android:textColor="#ffffff"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/enter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv_inquire"
+            android:layout_below="@id/tv_inquire"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="@string/disagree_text"
+            android:textColor="#ffffff"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/enter"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/enter"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:padding="5dip"
+            android:text="@string/cancel"
+            android:textColor="#ffffff"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

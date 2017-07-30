@@ -1,0 +1,20 @@
+<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	 	xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    style="@style/NOFocusView"
+	    android:background="#00000000">
+    
+    
+    <TextView 
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="10dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="40sp"
+        android:text="@string/withdrawals"/>
+    
+</RelativeLayout>

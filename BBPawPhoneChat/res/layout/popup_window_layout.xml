@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/onlong_click_bg_shapebg"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/tv_change_remarkname"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/change_remark_name"
+        android:gravity="center"
+        android:textColor="@color/black_thin2"
+        android:background="@drawable/note_txt_select_contact_shapebg"
+        android:textSize="18sp"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_delect_contact"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="@string/deleted_the_contacts"
+        android:textColor="@color/black_thin2"
+        android:background="@drawable/note_txt_select_contact_shapebg"
+        android:textSize="18sp"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_pupopwindow_cancle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/black_thin2"
+        android:background="@drawable/note_txt_select_contact_shapebg"
+        android:textSize="18sp"
+        />
+</LinearLayout>

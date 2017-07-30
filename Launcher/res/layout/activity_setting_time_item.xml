@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_mian_image_name_bg" >
+
+    <ImageView
+        android:id="@+id/settingg_standbytime_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@null"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/home_name_close_style" />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/setting_image_bg" >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/setting_image_src_bg"
+            android:contentDescription="@null"
+            android:padding="54dp"
+            android:scaleType="centerCrop"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/setting_up_standbytime" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/setting_standbytime_reduce"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="180dp"
+        android:contentDescription="@null"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/sound_decrease_style" />
+
+    <TextView
+        android:id="@+id/timeValue"
+        android:layout_width="160dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/setting_standbytime_selection_box_cn"
+        android:gravity="center|left"
+        android:paddingLeft="30dp"
+        android:soundEffectsEnabled="false"
+        android:textColor="#010000"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/setting_standbytime_increase"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="180dp"
+        android:contentDescription="@null"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/sound_increase_style" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="105dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/setting_light_seekbar_bg"
+        android:gravity="center" >
+
+        <SeekBar
+            android:id="@+id/timeSeekBar"
+            android:layout_width="427dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:max="70"
+            android:maxHeight="60dp"
+            android:minHeight="60dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:progressDrawable="@drawable/setting_seekbar_selector"
+            android:thumb="@drawable/setting_sound_seekbar_bule_push_button" />
+    </RelativeLayout>
+
+</RelativeLayout>

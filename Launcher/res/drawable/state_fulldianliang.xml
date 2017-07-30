@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list xmlns:android="http://schemas.android.com/apk/res/android">   
+    <item android:minLevel="0" android:maxLevel="15"  android:drawable="@drawable/zz_chongdian1" />   
+    <item android:minLevel="16" android:maxLevel="75" android:drawable="@drawable/zz_chongdian2" />   
+    <item android:minLevel="76" android:maxLevel="100" android:drawable="@drawable/zz_chongdian3" />   
+</level-list> 

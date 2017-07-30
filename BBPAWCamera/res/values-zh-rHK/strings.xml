@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<string name="app_name">BBPAW相机</string>
+    <string name="action_settings">设置</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="camera_set_parameters_error">目前相机不支持这些参数设置</string>
+    <string name="camera_connect_error">无法连接到相机!</string>
+	 <string name="no_storage">"使用前请先插入SD卡!"</string>
+    <string name="preparing_sd">"准备SD卡…"</string>
+    <string name="access_sd_fail">"无法访问SD卡！"</string>
+    <string name="spaceIsLow_content">"SD卡空间不够。请删除一些照片或其他文件。"</string>
+    <string name="video_reach_size_limit">"视频文件已达到最大大小。"</string>
+    <string name="global_alert_dialog_title" >警告</string>
+    <string name="discard_message" >"你想放弃这次操作吗？"</string>
+    <string name="saving_msg" >正在保存 ...</string>
+    <string name="open_gallery_error_msg">"无法打开相册！"</string>
+</resources>

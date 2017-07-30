@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BBPawPhoneChat</string>
+
+    <!-- other  string -->
+    <string name="image_null">Fotos cargada de fracaso</string>
+    <string name="learn_time">Es hora de aprender:</string>
+    <string name="learn_content">El contenido de aprendizaje:</string>
+    <string name="text_ack_msg">Leído</string>
+    <string name="text_delivered_msg">Enviado</string>
+
+    <!-- chat to someone -->
+    <string name="button_pushtotalk">Pulsa para hablar</string>
+    <string name="attach_picture">Imágenes</string>
+    <string name="attach_take_pic">Tomar foto</string>
+    <string name="move_up_to_cancel">Desliza hacia arriba para cancelar</string>
+    <string name="send_fail">Falla de envío de mensaje</string>
+    <string name="delete_message">Eliminar mensaje</string>
+    <string name="copy_message">Copiar mensaje</string>
+    <string name="delete_voice">Eliminar mensaje de voz</string>
+    <string name="delete_video">Eliminar video</string>
+    <string name="delete">Eliminar</string>
+    <string name="resend">Reenviar</string>
+    <string name="confirm_resend">¿Quieres reenviar este mensaje？</string>
+    <string name="connect_failuer_toast">Chequea tu red o inténtalo luego</string>
+    <string name="network_unavailable">Red no disponible, chequea la conexión de red</string>
+    <string name="copy">Copiar</string>
+    <string name="ok">Confirmar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="prompt">Notificación</string>
+    <string name="clear_records">Limpiar historial</string>
+    <string name="clear_all_records">¿Seguro que quieres limpiar todo el historial de chat？</string>
+    <string name="location_recv">[%1$sUbicación]</string>
+    <string name="location_message">Información de ubicación</string>
+    <string name="location_prefix">[Mi ubicación]</string>
+    <string name="picture">[Imagen]</string>
+    <string name="video">[Video]</string>
+    <string name="file">[Archivo]</string>
+    <string name="voice_call">[Llamada de voz]</string>
+    <string name="network_isnot_available">Red no disponible</string>
+    <string name="recoding_fail">Falló la grabación. ¡Inténtalo de nuevo!</string>
+    <string name="sd_card_does_not_exist">No puedes tomar fotos sin insertar la tarjeta SD</string>
+    <string name="cant_find_pictures">No se encontró la imagen</string>
+    <string name="Send_voice_need_sdcard_support">El envío de voz necesita el soporte de la tarjeta SD</string>
+    <string name="Recording_without_permission">Sin permiso para grabar</string>
+    <string name="The_recording_time_is_too_short">Mensaje muy corto</string>
+    <string name="send_failure_please">No se pudo enviar. Chequea la conexión al servidor</string>
+    <string name="Download_the_pictures">Descargando imágenes: 0%</string>
+    <string name="Download_the_pictures_new">Descargando imágenes:</string>
+    <string name="Is_download_voice_click_later">El mensaje de voz se está descargando, pulsa luego</string>
+
+    <!-- exit note -->
+    <string name="logout">Cerrar sesión</string>
+    <string name="exit_group">Cierre de sesión</string>
+    <string name="connect_conflict">Tu cuenta está en sesión en otro dispositivo</string>
+    <string name="em_user_remove">Este usuario ha sido eliminado</string>
+    <string name="exit_error">Error de desconexión</string>
+
+    <!-- setting -->
+    <string name="voice">Sonido</string>
+    <string name="shake">Vibración</string>
+    <string name="Current_version">Versión actual</string>
+    <string name="Version_number_is_wrong">Error en número de versión</string>
+
+    <!-- add new  friend -->
+    <string name="Add_a_friend">Falla de envío de solicitud a tu amigo</string>
+    <string name="send_successful">Envío exitoso de solicitud, espera la verificación de tu amigo</string>
+    <string name="Request_add_buddy_failure">Falla de envío de solicitud a tu amigo:</string>
+    <string name="Network_error">Error de red</string>
+    <string name="not_connect_to_server">No estás conectado al servidor, inténtalo luego</string>
+    <string name="deleting">Eliminando\.\.\.</string>
+    <string name="Delete_failed">Error al borrar:</string>
+    <string name="being_added">Agregando ahora\.\.\.</string>
+    <string name="Is_unblock">正在解除屏蔽\.\.\.</string>
+    <string name="Add_a_button_was_clicked">Añadir botón</string>
+    <string name="Is_sending_a_request">Enviando solicitud\.\.\.</string>
+    <string name="this_is_your_friend">¡Este usuario ya es tu amigo!</string>
+    <string name="add_this_friend">Agregando el amigo</string>
+
+    <!-- login and register -->
+    <string name="User_name_cannot_be_empty">El nombre de usuario no puede estar vacío！</string>
+    <string name="Password_cannot_be_empty">La contraseña no puede estar vacía！</string>
+    <string name="please_set_the_current">Configura el nombre de usuario actual\n用于ios离线推送时显示用户昵称</string>
+    <string name="Is_landing">Iniciando sesión\.\.\.</string>
+    <string name="list_is_for">Obtendrás una lista de amigos y de grupos en tu entorno\.\.\.</string>
+    <string name="login_failure_failed">Falla de inicio de sesión: no se pudieron encontrar amigos ni grupos de chat</string>
+    <string name="Login_failed">Falla de inicio de sesión: error de cuenta o de contraseña</string>
+    
+    <string name="Logoff_notification">Notificación de desconexión</string>
+    <string name="Remove_the_notification">Notificación de eliminación</string>
+    <string name="Whether_to_send">¿Enviar o no?？</string>
+    <string name="Are_logged_out">Cerrar sesión..</string>
+    <string name="Confirm_password_cannot_be_empty">La contraseña no puede estar vacía al confirmar</string>
+    <string name="Two_input_password">Tu contraseña nueva y la confirmación son distintas, introduce de nuevo tu contraseña</string>
+    <string name="Is_the_registered">Registrando\.\.\.</string>
+    <string name="Registered_successfully">Inicio de sesión exitoso</string>
+    <string name="network_anomalies">Falla de red, inténtalo de nuevo</string>
+    <string name="User_already_exists">¡El usuario ya existe!</string>
+    <string name="User_is_not_exists">El ID de usuario que introdujiste no existe. Por favor revísalo.</string>
+    <string name="registration_failed_without_permission">No se pudo registrar sin permiso!</string>
+    <string name="Registration_failed">Falla de inicio de sesión:</string>
+    <string name="Registration_code_false">Código de verificación incorrecto, introduce tu código de nuevo</string>
+    <string name="get_phone_code">Se ha enviado el código de verificación a tu teléfono</string>
+    <string name="get_email_code">Se ha enviado el código de verificación a tu correo electrónico</string>
+    <string name="username_format_error">Tu formato de cuenta no es correcto, chequéalo!</string>
+
+    <!-- carefor -->
+    <string name="Are_connected_to_each_other">Connectando\.\.\.</string>
+    <string name="Is_not_yet_connected_to_the_server">No conectado al servidor</string>
+    <string name="have_connected_with">Esperando la conexión\.\.\.</string>
+    <string name="In_the_call">Llamada\.\.\.</string>
+    <string name="The_other_party_refused_to_accept">Tu petición no ha sido aceptada\.\.\.</string>
+    <string name="Connection_failure">Falla de conexión\.\.\.</string>
+    <string name="The_other_party_is_not_online">El otro usuario no está conectado, inténtalo más tarde\.\.\.</string>
+    <string name="The_other_is_on_the_phone_please">El suscriptor al que llamaste esta ocupado, inténtalo más tarde</string>
+    <string name="The_other_is_hang_up">La otra persona cortó la llamada</string>
+    <string name="The_other_party_did_not_answer_new">El otro usuario no ha contestado</string>
+    <string name="make_call_is_not_connect">No conectado\.\.\.</string>
+    <string name="please_select_call_to_user">Conecta primero la tableta a monitorear</string>
+
+    <!-- change  psw -->
+    <string name="please_write_old_pass">Introduce tu contraseña actual</string>
+    <string name="please_write_new_pass">Introduce tu nueva contraseña</string>
+    <string name="please_write_confirm_pass">Confirma tu nueva contraseña</string>
+    <string name="please_write_change_password">La contraseña se está cambiando</string>
+    <string name="please_login_again">La contraseña se cambió exitosamente, por favor inicia una nueva sesión</string>
+
+    <!-- forgot password -->
+    <string name="forget_psw_change_failed">Falla al restablecer la contraseña, inténtalo de nuevo</string>
+    <string name="forget_psw_change_success">La contraseña ha sido restablecida</string>
+    <string name="forget_psw_change_now">La contraseña se está restableciendo, espera un momento</string>
+    <string name="search_contacts">Pulsa para introducir una cuenta./././</string>
+    <string name="login_name_hint">Correo electrónico</string>
+    <string name="login_pass_hint">Introduce una contraseña</string>
+    <string name="register_pass_hint">Introduce una contraseña de 6 a 12 caracteres alfanuméricos</string>
+    <string name="register_pass_confirm_hint">Introduce la contraseña de nuevo</string>
+    <string name="forget_pass_new_psw">Introduce la nueva contraseña</string>
+    <string name="forget_pass_confirm_hint">Introduce la nueva contraseña otra vez</string>
+    <string name="please_write_confrim_code">El código de verificación no puede estar vacío!</string>
+    <string name="register_confirm_code_hint">Introduce el código de verificación</string>
+
+    <!-- habit manager -->
+    <string name="habit_item_minutes">minuto(s)</string>
+    <string name="habit_item_hour">hora(s)</string>
+
+    <!-- question  and  feedback -->
+    <string name="userName">Nombre de usuario </string>
+    <string name="title_activity_feedback_and_suggest">Comentarios y sugerencias</string>
+    <string name="please_write_question_first">Completa las preguntas pertinentes</string>
+    <string name="thank_you_sugesst">Gracias por tus valiosas sugerencias. Pronto te responderemos</string>
+    <string name="you_commit_sugesst_failed">No tuvo éxito, por favor volver a intentar más tarde.</string>
+    
+    <!-- my info setting fragment -->
+    <string name="my_change_head_success">Avatar modificado exitosamente</string>
+    <string name="my_change_head_failed">Falla en la modificación del avatar, inténtalo luego</string>
+
+    <!-- habit fragment string -->
+    <string name="alert_dialog_lock_paid">Bloquear la tableta</string>
+    <string name="is_time_wash_hands">¡Es hora de que te \n laves las manos!</string>
+    <string name="is_time_eatting">¡Es hora de comer!</string>
+    <string name="is_time_drinking">¡Es hora de tomar agua!</string>
+    <string name="is_time_sporting">¡Es hora de hacer ejercicio!</string>
+    <string name="is_time_tooth_brush">¡Es hora de \n lavarte los dientes!</string>
+    <string name="is_time_take_shower">¡Es hora de ducharte!</string>
+    <string name="is_time_do_housework">Es hora de hacer las tareas de la casa</string>
+    <string name="is_time_lock_screen">Bloquear la pantalla</string>
+    <string name="alert_dialog_open_paid">Desbloquear la pantalla</string>
+    <string name="close_paid">Close BBpaw device</string>
+    
+    <string name="is_time_wash_hands_open">解除洗手的锁定</string>
+    <string name="is_time_eatting_open">解除吃饭的锁定</string>
+    <string name="is_time_drinking_open">解除喝水的锁定</string>
+    <string name="is_time_sporting_open">解除运动的锁定</string>
+    <string name="is_time_tooth_brush_open">解除刷牙洗脸的锁定</string>
+    <string name="is_time_take_shower_open">解除洗澡的锁定</string>
+    <string name="is_time_do_housework_open">解除做家务的锁定</string>
+    <string name="is_time_lock_screen_open">解除关闭屏幕锁定</string>
+    <string name="please_selelct_contact_carefor">Pulsa un avatar para monitorearlo</string>
+    <string name="please_add_contact">Escanea el código de la tableta pertinente</string>
+    <string name="app_name_init">Nombre de la \n aplicación:</string>
+    <string name="version_number">Número de la \n nueva versión:</string>
+    <string name="update_introduce">Intrucciones para \n la actualización:</string>
+    <string name="old_psw">Contraseña \n original:</string>
+    <string name="new_psw">Contraseña  \n  nueva:</string>
+    <string name="please_input">Escribe tus comentarios!</string>
+    <string name="explain">A veces una imagen vale más que mil palabras！</string>
+    <string name="allow_input">Puedes escribiir hasta 500 caracteres</string>
+    <string name="you_input">También puedes escribir</string>
+    <string name="word">palabras</string>
+    <string name="question">dudas:</string>
+    <string name="BBPaw_reply">Respuesta oficial de BBPwaw:</string>
+    <string name="Related_Images">Imágenes relacionadas</string>
+    <string name="default_response">No te impacientes, nuestra plantilla te constestará pronto.</string>
+    <string name="min">min(s)</string>
+    <string name="comson">Próximamente</string>
+    <string name="committing">Se están enviando los comentarios. Por favor espera\.\.\.</string>
+    <string name="no_feedback">Aún no has enviado feedback</string>
+    <string name="change_name_null">El nombre de usuario no puede estar vacío</string>
+    <string name="setting_account_exit">¡Has cerrado sesión!</string>
+    <string name="setting_account_other_place">Tu cuenta está en sesión en otro dispositivo</string>
+    <string name="setting_account_not_serve">No estás conectado al servidor, inténtalo luego</string>
+    <string name="setting_account_not_net">Chequea tu red o inténtalo luego</string>
+    <string name="change_name_success">El usuario se ha modificado exitosamente</string>
+    <string name="change_name_fail">Falla en la modificación del usuario</string>
+    <string name="setting_updateing">¡Has cerrado sesión!</string>
+    <string name="change_psw_ok">¡Modificación de la contraseña existosa!</string>
+    <string name="change_psw_fail">Falla en la modificación de la contraseña, inténtalo luego</string>
+    <string name="btn_voice">Pulsa para hablar</string>
+    
+     <string name="updateing_nikename">Modificando nombre de usuario</string>
+     <string name="send_text">Enviar</string>
+     <string name="press_to_talk">El toque de un botón</string>
+     <string name="question_commit">Enviando, mantente a la espera…</string>
+     
+     
+     <string name="login_only_can_input">qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890</string>
+
+    <string name="update_head_now">Es subir la imagen</string>
+    <string name="save_picture">保存图片</string>
+    <string name="save_picture_failed">保存失败</string>
+    <string name="save_picture_success">图片成功保存至%s目录</string>
+    
+    <string name="note_be_deleted">Usted no ha estado en él (ella) en la lista de amigos, añadir de nuevo antes de hablar.</string>
+     
+    
+    <string name="change_remark_name">Editar nombre</string>
+    <string name="deleted_the_contacts">Desligado</string>
+     
+</resources>

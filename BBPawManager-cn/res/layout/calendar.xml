@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/calendar_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="5dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/preYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/pre_year" />
+        <ImageView
+            android:id="@+id/preMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/pre_month" />
+
+        <TextView
+            android:id="@+id/currentMonth"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginLeft="20dip"
+            android:textColor="#177ed6"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/nextMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/next_month" />
+        <ImageView
+            android:id="@+id/nextYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/next_year" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_margin="3dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:background="@drawable/calendar_week_bg">
+
+        <TextView
+            style="@style/weekName"
+            android:text="@string/calendar_sun_text"
+            android:textColor="#177ed6" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="@string/calendar_mon_text" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="@string/calendar_tues_text" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="@string/calendar_wed_text" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="@string/calendar_thur_text" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="@string/calendar_fri_text" />
+
+        <TextView
+            style="@style/weekName"
+            android:text="@string/calendar_sat_text"
+            android:textColor="#177ed6" />
+    </LinearLayout>
+
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:paddingRight="3dip"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:layout_marginLeft="10dip" 
+        android:layout_marginRight="10dip"
+        android:background="@drawable/calendar_grid_bg"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/cancel_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dip"
+                android:background="@drawable/ic_cancle_btn" />
+
+            <ImageView
+                android:id="@+id/ok_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/ic_confirm_btn" />
+        </RelativeLayout>
+   </LinearLayout>
+
+</LinearLayout>

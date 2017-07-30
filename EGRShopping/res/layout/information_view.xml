@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:background="#00000000" >
+    
+    <TextView 
+        android:id="@+id/tv_message_00"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:textColor="#000000"
+        android:gravity="center|left"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="26sp"
+        style="@style/NoFocusableStyle"
+        android:text="@string/user_info_tip1" />
+    
+    <RelativeLayout
+        android:id="@+id/rl_real_name"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/tv_message_00"
+        android:layout_height="63dp"
+        android:layout_marginLeft="30dp">
+        
+        <TextView 
+            android:id="@+id/tv_real_name"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            style="@style/TextViewStyle2"
+            android:text="@string/tip_name" />
+        
+        <RelativeLayout 
+            android:id="@+id/rl_ed_real_name"
+            android:layout_width="359dp"
+            android:layout_height="63dp"
+            android:layout_toRightOf="@+id/tv_real_name" >
+            
+            <EditText
+	            android:id="@+id/et_real_name"
+	            android:layout_centerVertical="true"
+	            style="@style/EditTextStyle"/>
+            
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_contact_phone"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/rl_real_name"
+        android:layout_height="63dp"
+        android:layout_marginLeft="30dp">
+        
+        <TextView 
+            android:id="@+id/tv_contact_phone"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            style="@style/TextViewStyle2"
+            android:text="@string/tip_phone" />
+        
+        <RelativeLayout 
+            android:id="@+id/rl_ed_contact_phone"
+            android:layout_width="359dp"
+            android:layout_height="63dp"
+            android:layout_toRightOf="@+id/tv_contact_phone" >
+            
+	        <EditText
+	            android:id="@+id/et_contact_phone"
+	            android:layout_centerVertical="true"
+	            style="@style/EditTextStyle" />
+        
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_common_telephone"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/rl_contact_phone"
+        android:layout_height="63dp"
+        android:layout_marginLeft="30dp">
+        
+        <TextView 
+            android:id="@+id/tv_common_telephone"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            style="@style/TextViewStyle2"
+            android:text="@string/tip_phone2" />
+        
+        <RelativeLayout 
+            android:id="@+id/rl_ed_common_telephone"
+            android:layout_width="359dp"
+            android:layout_height="63dp"
+            android:layout_toRightOf="@+id/tv_common_telephone" >
+	        
+	        <EditText
+	            android:id="@+id/et_common_telephone"
+	            android:layout_centerVertical="true"
+	            style="@style/EditTextStyle" />
+	        
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_street_address"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/rl_common_telephone"
+        android:layout_height="63dp"
+        android:layout_marginLeft="30dp">
+        
+        <TextView 
+            android:id="@+id/tv_street_address"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            style="@style/TextViewStyle2"
+            android:text="@string/tip_address" />
+        
+        <RelativeLayout 
+            android:id="@+id/rl_ed_street_address"
+            android:layout_width="359dp"
+            android:layout_height="63dp"
+            android:layout_toRightOf="@+id/tv_street_address" >
+	        
+	        <EditText
+	            android:id="@+id/et_street_address"
+	            android:layout_centerVertical="true"
+	            style="@style/EditTextStyle" />
+	        
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_cell_name"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/rl_street_address"
+        android:layout_height="63dp"
+        android:layout_marginLeft="30dp">
+        
+        <TextView 
+            android:id="@+id/tv_cell_name"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            style="@style/TextViewStyle2"
+            android:text="@string/tip_home" />
+        
+       	<RelativeLayout 
+            android:id="@+id/rl_ed_cell_name"
+            android:layout_width="359dp"
+            android:layout_height="63dp"
+            android:layout_toRightOf="@+id/tv_cell_name" >
+	        
+	        <EditText
+	            android:id="@+id/et_cell_name"
+	            android:layout_centerVertical="true"
+	            style="@style/EditTextStyle" />
+	        
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rl_corridor_unit"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/rl_cell_name"
+        android:layout_height="63dp"
+        android:layout_marginLeft="30dp">
+        
+        <TextView 
+            android:id="@+id/tv_corridor_unit"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            style="@style/TextViewStyle2"
+            android:text="@string/tip_home_part" />
+        
+        <RelativeLayout 
+            android:id="@+id/rl_ed_corridor_unit"
+            android:layout_width="359dp"
+            android:layout_height="63dp"
+            android:layout_toRightOf="@+id/tv_corridor_unit" >
+	        
+	        <EditText
+	            android:id="@+id/et_corridor_unit"
+	            android:layout_centerVertical="true"
+	            style="@style/EditTextStyle" />
+        
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/rl_corridor_unit">
+        
+        <TextView 
+            android:id="@+id/tv_remarks"
+            android:layout_width="560dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginLeft="30dp"
+            android:singleLine="true"
+            android:text="@string/user_info_tip2"/>
+        
+        <TextView 
+            android:id="@+id/tv_next_step"
+            android:layout_width="251dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_toRightOf="@+id/tv_remarks"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            style="@style/FocusableStyle"
+            android:background="@drawable/butt_bg_style"
+            android:textSize="32sp"
+            android:text="@string/next_step"/>
+    </RelativeLayout>
+</RelativeLayout>

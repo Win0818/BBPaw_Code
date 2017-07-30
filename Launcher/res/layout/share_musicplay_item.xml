@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+     <LinearLayout
+         android:id="@+id/linerlayout_music_bg"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:background="@drawable/musictiao_bg"
+         android:orientation="horizontal" >
+
+         <ImageView
+             android:id="@+id/playermusic"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="30dp"
+             android:contentDescription="@null"
+             android:soundEffectsEnabled="false"
+             android:src="@drawable/music_play" />
+
+         <TextView
+             android:id="@+id/music_value"
+             style="@style/TextViewStyle"
+             android:layout_width="720dp"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:contentDescription="@null"
+             android:gravity="center|left"
+             android:paddingLeft="20dp"
+             android:soundEffectsEnabled="false"
+             android:textColor="#000000"
+             android:textSize="30sp" />
+
+         <TextView
+             android:id="@+id/music_time"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center_vertical"
+             android:layout_marginLeft="20dp"
+             android:contentDescription="@null"
+             android:gravity="center|right"
+             android:soundEffectsEnabled="false"
+             android:textColor="#000000"
+             android:textSize="30sp" />
+     </LinearLayout>
+
+</RelativeLayout>

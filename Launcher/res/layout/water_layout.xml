@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/water_rl"
+    android:layout_width="@dimen/water_rl_width"
+    android:layout_height="@dimen/water_rl_height">
+
+      <ImageView 
+        android:id="@+id/water_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_water_01"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/water_01_marginleft"
+        android:layout_marginBottom="@dimen/water_01_marginbottom"
+        android:visibility="gone"
+		/>
+      <ImageView 
+        android:id="@+id/water_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/water_02_margintop"
+        android:layout_marginLeft="@dimen/water_02_marginright"
+        android:background="@drawable/ic_water_02"
+        android:visibility="gone"
+		/>
+      <ImageView 
+        android:id="@+id/water_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/water_03_marginbottom"
+        android:layout_marginRight="@dimen/water_03_marginright"
+        android:background="@drawable/ic_water_03"
+        android:visibility="gone"
+		/>
+      <ImageView 
+        android:id="@+id/water_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_water_04"
+        android:visibility="gone"
+		/>
+      
+</RelativeLayout>

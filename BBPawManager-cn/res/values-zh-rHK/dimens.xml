@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="skin_brower_title_textsize">18sp</dimen>
+    <dimen name="skin_browser_item_width">260dp</dimen>
+    <dimen name="skin_browser_item_height">185dp</dimen>
+    <dimen name="skin_brower_list_item_textsize">28sp</dimen>
+    <dimen name="update_bt_textsize">26sp</dimen>
+</resources>

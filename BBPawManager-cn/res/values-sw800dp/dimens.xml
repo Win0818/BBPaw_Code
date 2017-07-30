@@ -1,0 +1,109 @@
+<resources>
+
+    <!--
+         Customize dimensions originally defined in res/values/dimens.xml (such as
+         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
+    -->
+     <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <dimen name="skin_brower_title_textsize">18sp</dimen>
+    <dimen name="skin_browser_item_width">260dp</dimen>
+    <dimen name="skin_browser_item_height">185dp</dimen>
+    <dimen name="skin_brower_list_item_textsize">28sp</dimen>
+    <dimen name="update_bt_textsize">26sp</dimen>
+    
+    <dimen name="input_password_layout_width">497dip</dimen>
+    <dimen name="input_password_layout_height">652dip</dimen>
+    
+    <dimen name="input_password_cancle_paddingBottom">50dip</dimen>
+    <dimen name="input_password_modify_password_paddingBottom">40dip</dimen>
+    <dimen name="input_password_textsize">30sp</dimen>
+    
+    <dimen name="input_password_keyboard_marginTop">160dip</dimen>
+	<dimen name="textsize_30sp">40sp</dimen>
+	
+	<dimen name="main_page_webview_width">740dip</dimen>
+	<dimen name="main_page_webview_height">400dip</dimen>
+	<dimen name="main_page_webview_marginRight">90dip</dimen>
+	<dimen name="main_page_webview_marginBottom">130dip</dimen>
+	
+	<dimen name="main_page_parent_title_marginLeft">130dip</dimen>
+	<dimen name="main_page_parent_title_marginTop">80dip</dimen>
+	<dimen name="parent_title_textsize">32sp</dimen>
+	<!-- growup  dimen -->
+	<dimen name="growup_listview_width">1120dip</dimen>
+	<dimen name="growup_listview_heigth">560dip</dimen>
+	<dimen name="growup_listview_marginBottom">75dip</dimen>
+	<dimen name="growup_vertical_line_width">10dip</dimen>
+	<dimen name="growup_vertical_line_heigth">576dip</dimen>
+	<dimen name="growup_vertical_line_marginLeft">168dip</dimen>
+	<dimen name="growup_horizontal_line_marginLeft">10dip</dimen>
+	<dimen name="growup_listview_item_width">920dip</dimen>
+	<dimen name="growup_listview_item_title_textsize">28sp</dimen>
+	<dimen name="growup_listview_item_textsize">25sp</dimen>
+	<dimen name="growup_listview_section_textsize">24sp</dimen>
+	<dimen name="growup_listview_itme_icon_width">72dip</dimen>
+	<dimen name="growup_listview_itme_icon_heigth">72dip</dimen>
+	<dimen name="growup_back_btn_marginLeft">30dip</dimen>
+	<!-- information dimen -->
+	<dimen name="radio_group_width">1110dip</dimen>
+	<dimen name="radio_group_marginTop">25dip</dimen>
+	<dimen name="refresh_marginTop">90dip</dimen>
+	<dimen name="refresh_marginRight_cn">442dip</dimen>
+	<dimen name="refresh_marginRight_eng">352dip</dimen>
+	<dimen name="search_fl_width">310dip</dimen>
+	<dimen name="search_fl_margin">80dip</dimen>
+	<dimen name="search_edit_width">285dip</dimen>
+	<dimen name="search_edit_textSize">28sp</dimen>
+	<dimen name="search_edit_paddingRight">40dip</dimen>
+	<dimen name="inform_menus_ll_marginBottom">70dip</dimen>
+	<dimen name="inform_menus_ll_marginTop">10dip</dimen>
+	<dimen name="inform_menus_ll_marginRight">100dip</dimen>
+	<dimen name="inform_menus_ll_marginLeft">110dip</dimen>
+	<dimen name="inform_menus_textSize">30sp</dimen>
+	<dimen name="inform_menus_select_textSize">34sp</dimen>
+	<dimen name="inform_menus_marginTop">5dip</dimen>
+	<dimen name="scrollbar_ll_marginRight">30dip</dimen>
+	<dimen name="inform_listview_item_title_textsize">28sp</dimen>
+	<dimen name="inform_listview_item_textsize">22sp</dimen>
+	<dimen name="inform_listview_item_icon_width">100dip</dimen>
+	<dimen name="inform_listview_item_icon_height">100dip</dimen>
+	<dimen name="inform_detail_title_textsize">32sp</dimen>
+	<dimen name="inform_detail_title_marginTop">40dip</dimen>
+	<dimen name="inform_detail_content_marginBottom">90dip</dimen>
+	<dimen name="inform_detail_content_marginTop">40dip</dimen>
+	<dimen name="inform_detail_content_marginRight">100dip</dimen>
+	<dimen name="inform_detail_content_marginLeft">100dip</dimen>
+	<dimen name="detail_image_maxHeight">260dip</dimen>
+	<dimen name="detail_image_maxWidth">260dip</dimen>
+	
+	<!-- Eyecare dimen -->
+	
+	<dimen name="eyecare_screen_time_marginTop">20dip</dimen>
+	<dimen name="eyecare_title_textsize">48sp</dimen>
+	<dimen name="eyecare_seekbar_title_textsize">30sp</dimen>
+	<dimen name="eyecare_seekbar_height">100dip</dimen>
+	<dimen name="eyecare_seekbar_paint_size">24sp</dimen>
+	<dimen name="eyecare_seekbar_paddingBottom">20dip</dimen>
+	<dimen name="eyecare_seekbar_ll_marginTop">10dip</dimen>
+	<dimen name="eyecare_marginBottom">80dip</dimen>
+	<dimen name="eyecare_marginTop">80dip</dimen>
+	<dimen name="eyecare_marginRight">100dip</dimen>
+	<dimen name="eyecare_marginLeft">100dip</dimen>
+	<dimen name="eyecare_switchButton_width">105dip</dimen>
+	<dimen name="eyecare_switchButton_height">55dip</dimen>
+	
+	<dimen name="download_title_height">80dip</dimen>
+	<dimen name="download_title_marginTop">75dip</dimen>
+	<dimen name="download_title_marginLeft">120dip</dimen>
+	
+	<dimen name="download_button_layout_margin">120dip</dimen>
+	<dimen name="eyecare_settings_marginTop">50dip</dimen>
+	<dimen name="eyecare_settings_paddingBottom">20dip</dimen>
+	
+	<!-- vaccine dimen -->
+	<dimen name="vaccine_title_marginTop">70dip</dimen>
+	<dimen name="vaccine_calendar_text_paddingTop">20dip</dimen>
+	
+</resources>

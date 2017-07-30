@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/buy_all_background"
+    android:gravity="center" >
+
+    <FrameLayout
+        android:id="@+id/layout_user_area"
+        android:layout_width="891dip"
+        android:layout_height="531dip"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buy_background"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/step_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tip1"
+                style="@style/USER_CENTER_BUTTON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dip"
+                android:layout_marginTop="50dip"
+                android:text="@string/user_info_tip1" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/step_1_area_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tip1"
+                android:layout_marginTop="15dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/USER_CENTER_TIP_TEXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="70dip"
+                    android:gravity="top|left"
+                    android:text="*" >
+                </TextView>
+
+                <TextView
+                    style="@style/USER_CENTER_TIP_TEXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/tip_name" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edit_user_name"
+                    android:layout_width="359dip"
+                    android:layout_height="55dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_bg_selector"
+                    android:inputType="text"
+                    android:text="@string/str_null"
+                    android:textColor="#ffffff" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/step_1_area_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step_1_area_1"
+                android:layout_marginTop="1dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/USER_CENTER_TIP_TEXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="70dip"
+                    android:gravity="top|left"
+                    android:text="*" >
+                </TextView>
+
+                <TextView
+                    style="@style/USER_CENTER_TIP_TEXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/tip_phone" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edit_user_phone"
+                    android:layout_width="359dip"
+                    android:layout_height="55dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_bg_selector"
+                    android:inputType="phone"
+                    android:text="@string/str_null"
+                    android:textColor="#ffffff" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/step_1_area_3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step_1_area_2"
+                android:layout_marginTop="1dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/USER_CENTER_TIP_TEXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="85dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/tip_phone2" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edit_user_phone2"
+                    android:layout_width="359dip"
+                    android:layout_height="50dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_bg_selector"
+                    android:inputType="phone"
+                    android:text="@string/str_null"
+                    android:textColor="#ffffff" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/step_1_area_4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step_1_area_3"
+                android:layout_marginTop="1dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/USER_CENTER_TIP_TEXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="85dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/tip_address" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edit_user_address"
+                    android:layout_width="359dip"
+                    android:layout_height="55dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_bg_selector"
+                    android:inputType="text"
+                    android:text="@string/str_null"
+                    android:textColor="#ffffff" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/step_1_area_5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step_1_area_4"
+                android:layout_marginTop="1dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/USER_CENTER_TIP_TEXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="85dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/tip_home" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edit_user_home"
+                    android:layout_width="359dip"
+                    android:layout_height="55dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_bg_selector"
+                    android:inputType="text"
+                    android:text="@string/str_null"
+                    android:textColor="#ffffff" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/step_1_area_6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step_1_area_5"
+                android:layout_marginTop="1dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/USER_CENTER_TIP_TEXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="85dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/tip_home_part" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edit_user_home_part"
+                    android:layout_width="359dip"
+                    android:layout_height="55dip"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edit_bg_selector"
+                    android:inputType="text"
+                    android:text="@string/str_null"
+                    android:textColor="#ffffff" >
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tip2"
+                style="@style/USER_CENTER_BUTTON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step_1_area_6"
+                android:layout_marginLeft="50dip"
+                android:layout_marginTop="25dip"
+                android:text="@string/user_info_tip2"
+                android:textSize="18sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/step_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:gravity="left|top"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tip3"
+                style="@style/USER_CENTER_BUTTON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dip"
+                android:layout_marginTop="50dip"
+                android:text="@string/user_info_tip3" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/tip4"
+                style="@style/USER_CENTER_BUTTON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tip3"
+                android:layout_marginLeft="80dip"
+                android:layout_marginTop="60dip"
+                android:text="@string/user_info_tip4"
+                android:textSize="20sp" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/step_2_btn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tip4"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/edit_message"
+                    android:layout_width="300dip"
+                    android:layout_height="60dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dip"
+                    android:background="@drawable/edit_bg_selector"
+                    android:inputType="number"
+                    android:text="@string/str_null"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" >
+                </EditText>
+
+                <Button
+                    android:id="@+id/btn_send_msg"
+                    android:layout_width="252dip"
+                    android:layout_height="71dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dip"
+                    android:background="@drawable/operate_bg_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="重新发送"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tip5"
+                style="@style/USER_CENTER_BUTTON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step_2_btn_layout"
+                android:layout_marginLeft="50dip"
+                android:layout_marginTop="80dip"
+                android:text="@string/user_info_tip5"
+                android:textSize="18sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/step_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|left"
+            android:gravity="left|top"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tip6"
+                style="@style/USER_CENTER_BUTTON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dip"
+                android:layout_marginTop="60dip"
+                android:text="@string/user_info_tip6" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/step3_btn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tip6"
+                android:layout_marginTop="70dip"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="300dip"
+                    android:layout_height="60dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dip"
+                    android:background="@drawable/edit_bg_selector"
+                    android:inputType="numberPassword"
+                    android:text="@string/str_null"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/edit_password_require"
+                    android:layout_width="300dip"
+                    android:layout_height="60dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/edit_bg_selector"
+                    android:inputType="numberPassword"
+                    android:text="@string/str_null"
+                    android:textColor="#ffffff"
+                    android:textSize="30sp" >
+                </EditText>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tip7"
+                style="@style/USER_CENTER_BUTTON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step3_btn_layout"
+                android:layout_marginLeft="50dip"
+                android:layout_marginTop="120dip"
+                android:text="@string/user_info_tip7"
+                android:textSize="18sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/step_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="130dip"
+                android:contentDescription="@string/str_null"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_complete" >
+            </ImageView>
+
+            <TextView
+                style="@style/USER_CENTER_BUTTON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_complete"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dip"
+                android:gravity="center_horizontal"
+                android:text="@string/user_info_tip8"
+                android:textSize="22sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/step_5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tip9"
+                style="@style/USER_CENTER_BUTTON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/user_info_tip9"
+                android:textSize="28sp" >
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/step5_btn_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tip9"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/btn_count_reduce"
+                    android:layout_width="49dip"
+                    android:layout_height="92dip"
+                    android:background="@drawable/left"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/edit_count"
+                    android:layout_width="140dip"
+                    android:layout_height="80dip"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="30dip"
+                    android:background="@drawable/edit_bg_selector"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textColor="#000000"
+                    android:textSize="32sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/btn_count_add"
+                    android:layout_width="49dip"
+                    android:layout_height="92dip"
+                    android:layout_marginLeft="20dip"
+                    android:background="@drawable/right"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tip10"
+                style="@style/USER_CENTER_BUTTON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/step5_btn_layout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dip"
+                android:text="@string/user_info_tip10"
+                android:textSize="20sp" >
+            </TextView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/step_6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/step_6_left_part"
+                android:layout_width="500dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="top|left"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tip11"
+                    style="@style/USER_CENTER_BUTTON"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dip"
+                    android:layout_marginTop="50dip"
+                    android:text="@string/user_info_tip11" >
+                </TextView>
+
+                <LinearLayout
+                    android:id="@+id/step_6_area_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tip11"
+                    android:layout_marginTop="25dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/USER_CENTER_TIP_TEXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/tip_name" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txt_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/str_null"
+                        android:textColor="#9D9D9D"
+                        android:textSize="20sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/step_6_area_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/step_6_area_1"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/USER_CENTER_TIP_TEXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/tip_phone" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txt_user_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/str_null"
+                        android:textColor="#9D9D9D"
+                        android:textSize="20sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/step_6_area_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/step_6_area_2"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/USER_CENTER_TIP_TEXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/tip_phone2" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txt_user_phone2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/str_null"
+                        android:textColor="#9D9D9D"
+                        android:textSize="20sp" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/step_6_area_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/step_6_area_3"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/USER_CENTER_TIP_TEXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/tip_address" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txt_user_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/str_null"
+                        android:textColor="#9D9D9D" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/step_6_area_5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/step_6_area_4"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/USER_CENTER_TIP_TEXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/tip_home" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txt_user_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/str_null"
+                        android:textColor="#9D9D9D" >
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/step_6_area_6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/step_6_area_5"
+                    android:layout_marginTop="20dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/USER_CENTER_TIP_TEXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="40dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/tip_home_part" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txt_user_home_part"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/str_null"
+                        android:textColor="#9D9D9D" >
+                    </TextView>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_modify_address"
+                    android:layout_width="250dip"
+                    android:layout_height="70dip"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="30dip"
+                    android:layout_marginRight="40dip"
+                    android:background="@drawable/nextstep_bg_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:text="修改收货地址"
+                    android:textColor="#ffffff"
+                    android:textSize="26sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="389dip"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@id/step_6_left_part" >
+
+                <ImageView
+                    android:id="@+id/img_poster"
+                    android:layout_width="300dip"
+                    android:layout_height="340dip"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_marginTop="10dip"
+                    android:contentDescription="@string/str_null"
+                    android:gravity="center_horizontal"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="300dip"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_poster"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txt_buycount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dip"
+                        android:ellipsize="marquee"
+                        android:gravity="left|center_horizontal"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/exchange_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left|center_vertical"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="兑换数量："
+                        android:textColor="#ffffff"
+                        android:textSize="22sp" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/exchange_sum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:gravity="left|center_vertical"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="合计："
+                        android:textColor="#ffffff"
+                        android:textSize="24sp" >
+                    </TextView>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_nextStep"
+            android:layout_width="250dip"
+            android:layout_height="70dip"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="30dip"
+            android:layout_marginRight="40dip"
+            android:background="@drawable/nextstep_bg_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+    </FrameLayout>
+
+</RelativeLayout>

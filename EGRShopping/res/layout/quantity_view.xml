@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#00000000" >
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="#ff0000"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:layout_marginTop="30dp"
+        android:textSize="38sp"
+        style="@style/NoFocusableStyle"
+        android:text="@string/user_info_tip9_info" />
+    
+    <TextView 
+        android:id="@+id/tv_quantity_message"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:singleLine="true"
+        android:layout_marginTop="120dp"
+        android:textSize="34sp"
+        style="@style/NoFocusableStyle"
+        android:text="@string/user_info_tip9" />
+    
+    <RelativeLayout
+        android:id="@+id/rl_quantity_message" 
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:gravity="center"
+        android:layout_below="@+id/tv_quantity_message"
+        android:layout_centerInParent="true"
+        android:background="#00000000">
+        
+        <TextView 
+            android:id="@+id/img_quantity_left"
+            android:layout_width="59dp"
+            android:layout_height="102dp"
+            android:background="@drawable/left" />
+        
+        <EditText 
+	        android:id="@+id/et_exchange_quantity"
+	        android:layout_width="100dp"
+	        android:layout_height="72dp"
+	        android:inputType="number"
+	        android:gravity="center"
+	        android:textSize="40sp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:textColor="#FFFFFF"
+	        android:layout_centerInParent="true"
+	        android:layout_toRightOf="@+id/img_quantity_left"
+	        style="@style/FocusableStyle"
+	        android:text="@string/zero"
+	        android:background="@drawable/edit_bg_style" />
+        
+        <TextView 
+            android:id="@+id/img_quantity_right"
+            android:layout_width="59dp"
+            android:layout_height="102dp"
+            android:layout_toRightOf="@+id/et_exchange_quantity"
+            android:background="@drawable/right" />
+        
+    </RelativeLayout>
+    
+    <TextView 
+            android:id="@+id/tv_quantity_next_step"
+            android:layout_width="251dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/rl_quantity_message"
+            android:layout_centerHorizontal="true"
+            style="@style/FocusableStyle"
+            android:background="@drawable/butt_bg_style"
+            android:textSize="32sp"
+            android:text="@string/next_step"/>
+    
+    <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:gravity="center|bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tv_quantity_next_step"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:text="@string/user_info_tip10"/>
+    
+</RelativeLayout>

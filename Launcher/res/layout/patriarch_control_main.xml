@@ -1,0 +1,224 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/patriarch_popupWindow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#00000000"
+    android:baselineAligned="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="@dimen/parentalcontrol_background_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/parentalcontrol_background_left_bg"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="@dimen/parentalcontrol_ScrollView_width"
+            android:layout_height="@dimen/parentalcontrol_ScrollView_height"
+            android:layout_gravity="center"
+            android:fadeScrollbars="false"
+            android:scrollbarFadeDuration="0"
+            android:scrollbarThumbVertical="@drawable/parentalcontrol_slider"
+            android:scrollbarTrackVertical="@drawable/parentalcontrol_chute" >
+
+            <RadioGroup
+                android:id="@+id/parentalcontrol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="15dp" >
+
+                <RadioButton
+                    android:id="@+id/time_control"
+                    android:layout_width="@dimen/parentalcontrol_time_control_width"
+                    android:layout_height="@dimen/parentalcontrol_time_control_height"
+                    android:layout_marginTop="@dimen/parentalcontrol_time_control_top"
+                    android:layout_marginLeft="@dimen/parentalcontrol_time_control_left"
+                    android:background="@drawable/parentalcontrol_button_style"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/the_use_of_time_control"
+                    android:textColor="#000000"
+                    android:visibility="gone"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/behavior_statistics"
+                     android:layout_width="@dimen/parentalcontrol_time_control_width"
+                    android:layout_height="@dimen/parentalcontrol_time_control_height"
+                    android:layout_marginTop="@dimen/parentalcontrol_time_control_top"
+                    android:layout_marginLeft="@dimen/parentalcontrol_time_control_left"
+                    android:background="@drawable/parentalcontrol_button_style"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/behavior_statistics"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/mediashare"
+                     android:layout_width="@dimen/parentalcontrol_time_control_width"
+                    android:layout_height="@dimen/parentalcontrol_time_control_height"
+                    android:layout_marginTop="@dimen/parentalcontrol_time_control_top"
+                    android:layout_marginLeft="@dimen/parentalcontrol_time_control_left"
+                    android:background="@drawable/parentalcontrol_button_style"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/mediashare"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/app_management"
+                     android:layout_width="@dimen/parentalcontrol_time_control_width"
+                    android:layout_height="@dimen/parentalcontrol_time_control_height"
+                    android:layout_marginTop="@dimen/parentalcontrol_time_control_top"
+                    android:layout_marginLeft="@dimen/parentalcontrol_time_control_left"
+                    android:background="@drawable/parentalcontrol_button_style"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/the_app_management"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/browse_web_management"
+                     android:layout_width="@dimen/parentalcontrol_time_control_width"
+                    android:layout_height="@dimen/parentalcontrol_time_control_height"
+                    android:layout_marginTop="@dimen/parentalcontrol_time_control_top"
+                    android:layout_marginLeft="@dimen/parentalcontrol_time_control_left"
+                    android:background="@drawable/parentalcontrol_button_style"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/browse_the_web_management"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/shop"
+                     android:layout_width="@dimen/parentalcontrol_time_control_width"
+                    android:layout_height="@dimen/parentalcontrol_time_control_height"
+                    android:layout_marginTop="@dimen/parentalcontrol_time_control_top"
+                    android:layout_marginLeft="@dimen/parentalcontrol_time_control_left"
+                    android:background="@drawable/parentalcontrol_button_style"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/shop"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+                 <RadioButton
+                    android:id="@+id/charging_protect"
+                     android:layout_width="@dimen/parentalcontrol_time_control_width"
+                    android:layout_height="@dimen/parentalcontrol_time_control_height"
+                    android:layout_marginTop="@dimen/parentalcontrol_time_control_top"
+                    android:layout_marginLeft="@dimen/parentalcontrol_time_control_left"
+                    android:background="@drawable/parentalcontrol_button_style"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/charging_protect"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/push_message"
+                    android:layout_width="@dimen/parentalcontrol_time_control_width"
+                    android:layout_height="@dimen/parentalcontrol_time_control_height"
+                    android:layout_marginTop="@dimen/parentalcontrol_time_control_top"
+                    android:layout_marginLeft="@dimen/parentalcontrol_time_control_left"
+                    android:background="@drawable/parentalcontrol_button_style"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/push_message"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/parent_mode"
+                     android:layout_width="@dimen/parentalcontrol_time_control_width"
+                    android:layout_height="@dimen/parentalcontrol_time_control_height"
+                    android:layout_marginTop="@dimen/parentalcontrol_time_control_top"
+                    android:layout_marginLeft="@dimen/parentalcontrol_time_control_left"
+                    android:background="@drawable/parentalcontrol_button_style"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/the_parent_mode"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/password_manager"
+                     android:layout_width="@dimen/parentalcontrol_time_control_width"
+                    android:layout_height="@dimen/parentalcontrol_time_control_height"
+                    android:layout_marginTop="@dimen/parentalcontrol_time_control_top"
+                    android:layout_marginLeft="@dimen/parentalcontrol_time_control_left"
+                    android:background="@drawable/parentalcontrol_button_style"
+                    android:button="@null"
+                    android:contentDescription="@null"
+                    android:gravity="center"
+                    android:soundEffectsEnabled="false"
+                    android:text="@string/password_manager"
+                    android:textColor="#000000"
+                    android:textSize="24sp" />
+            </RadioGroup>
+        </ScrollView>
+     <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/parentalcontrol_main_back"
+            android:layout_width="@dimen/parentalcontrol_main_back_width"
+            android:layout_height="@dimen/parentalcontrol_main_back_height"
+            android:background="@drawable/parentalcontrol_main_back_bg"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="true"
+            android:src="@drawable/parentalcontrol_back" />
+    </RelativeLayout>
+  </LinearLayout>
+    <LinearLayout
+        android:id="@+id/parentalcontrol_main_right"
+        android:layout_width="@dimen/parentalcontrol_main_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/parentalcontrol_background_right_bg"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_hide_softinput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/hello_world"
+        android:visibility="gone" />
+    
+
+</RelativeLayout>

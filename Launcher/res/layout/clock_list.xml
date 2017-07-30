@@ -1,0 +1,263 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clock_list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/clock_settingup_bg"
+    android:baselineAligned="false"
+     >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/clock_list_right"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/clock_alarm_title_bg"
+        android:gravity="center"
+        android:text="@string/clock_alarm_title"
+        android:textColor="#38a910"
+        android:textSize="37sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/clock_layout_00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/clock_layout_00_left"
+        android:layout_marginTop="@dimen/clock_layout_00_top"
+        android:background="#00000000"
+        android:baselineAligned="false" >
+
+        <CheckBox
+            android:id="@+id/clcok_alarm_use_00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/clock_use"
+            android:button="@null"
+            android:soundEffectsEnabled="false" />
+
+        <TextView
+            android:id="@+id/clock_alarm_time_00"
+            android:layout_width="@dimen/clock_alarm_time_00_width"
+            android:layout_height="@dimen/clock_alarm_time_00_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="96dp"
+            android:gravity="center|left"
+            android:background="@drawable/clock_text_select_style"
+            android:drawableLeft="@drawable/clock_item_add"
+            android:drawablePadding="15dp"
+            android:paddingLeft="30dp"
+            android:textColor="#38a910"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/clock_alarm_del_00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="85dp"
+            android:contentDescription="@null"
+            android:padding="20dp"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/clock_alarm_del"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/clock_layout_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clock_layout_00"
+        android:layout_marginLeft="@dimen/clock_layout_00_left"
+        android:layout_marginTop="15dp"
+        android:background="#00000000"
+        android:baselineAligned="false" >
+
+        <CheckBox
+            android:id="@+id/clcok_alarm_use_01"
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/clock_use"
+            android:button="@null"
+            android:soundEffectsEnabled="false" />
+
+        <TextView
+            android:id="@+id/clock_alarm_time_01"
+            android:layout_width="@dimen/clock_alarm_time_00_width"
+            android:layout_height="@dimen/clock_alarm_time_00_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="96dp"
+            android:background="@drawable/clock_text_select_style"
+            android:drawableLeft="@drawable/clock_item_add"
+            android:drawablePadding="15dp"
+            android:gravity="center|left"
+            android:paddingLeft="30dp"
+            android:textColor="#38a910"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/clock_alarm_del_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="85dp"
+            android:contentDescription="@null"
+            android:padding="20dp"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/clock_alarm_del"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/clock_layout_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clock_layout_01"
+       android:layout_marginLeft="@dimen/clock_layout_00_left"
+        android:layout_marginTop="15dp"
+        android:background="#00000000"
+        android:baselineAligned="false" >
+
+        <CheckBox
+            android:id="@+id/clcok_alarm_use_02"
+           android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/clock_use"
+            android:button="@null"
+            android:soundEffectsEnabled="false" />
+
+        <TextView
+            android:id="@+id/clock_alarm_time_02"
+            android:layout_width="@dimen/clock_alarm_time_00_width"
+            android:layout_height="@dimen/clock_alarm_time_00_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="96dp"
+            android:background="@drawable/clock_text_select_style"
+            android:drawableLeft="@drawable/clock_item_add"
+            android:drawablePadding="15dp"
+            android:gravity="center|left"
+            android:paddingLeft="30dp"
+            android:textColor="#38a910"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/clock_alarm_del_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="85dp"
+            android:contentDescription="@null"
+            android:padding="20dp"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/clock_alarm_del"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/clock_layout_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clock_layout_02"
+        android:layout_marginLeft="@dimen/clock_layout_00_left"
+        android:layout_marginTop="15dp"
+        android:background="#00000000"
+        android:baselineAligned="false" >
+
+        <CheckBox
+            android:id="@+id/clcok_alarm_use_03"
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/clock_use"
+            android:button="@null"
+            android:soundEffectsEnabled="false" />
+
+        <TextView
+            android:id="@+id/clock_alarm_time_03"
+          android:layout_width="@dimen/clock_alarm_time_00_width"
+            android:layout_height="@dimen/clock_alarm_time_00_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="96dp"
+            android:background="@drawable/clock_text_select_style"
+            android:drawableLeft="@drawable/clock_item_add"
+            android:drawablePadding="15dp"
+            android:gravity="center|left"
+            android:paddingLeft="30dp"
+            android:textColor="#38a910"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/clock_alarm_del_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="85dp"
+            android:contentDescription="@null"
+            android:padding="20dp"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/clock_alarm_del"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/clock_layout_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clock_layout_03"
+        android:layout_marginLeft="@dimen/clock_layout_00_left"
+        android:layout_marginTop="15dp"
+        android:background="#00000000"
+        android:baselineAligned="false" >
+
+        <CheckBox
+            android:id="@+id/clcok_alarm_use_04"
+            android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/clock_use"
+            android:button="@null"
+            android:soundEffectsEnabled="false" />
+
+        <TextView
+            android:id="@+id/clock_alarm_time_04"
+          android:layout_width="@dimen/clock_alarm_time_00_width"
+            android:layout_height="@dimen/clock_alarm_time_00_height"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="96dp"
+            android:background="@drawable/clock_text_select_style"
+            android:drawableLeft="@drawable/clock_item_add"
+            android:drawablePadding="15dp"
+            android:gravity="center|left"
+            android:paddingLeft="30dp"
+            android:textColor="#38a910"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/clock_alarm_del_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="85dp"
+            android:contentDescription="@null"
+            android:padding="20dp"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/clock_alarm_del"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

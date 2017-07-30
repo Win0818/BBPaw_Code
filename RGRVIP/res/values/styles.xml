@@ -1,0 +1,69 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="FocusView">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+    
+    <style name="NOFocusView">
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+    
+    <style name="TextView">
+        <item name="android:textSize">32.0sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+    </style>
+    
+    <style name="MenuFrameLayout" parent="@style/FocusView">
+        <item name="android:background">@drawable/iv_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <style name="MenuTextView" parent="@style/TextView">
+        <item name="android:layout_width">210.0dp</item>
+        <item name="android:layout_height">83.0dp</item>
+    </style>
+    
+    <style name="TextViewStyle" parent="@style/NOFocusView">
+        <item name="android:layout_width">180.0dp</item>
+        <item name="android:layout_height">70.0dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+    
+    <style name="TextViewStyle2" parent="@style/NOFocusView">
+        <item name="android:layout_width">720.0dp</item>
+        <item name="android:layout_height">75.0dp</item>
+        <item name="android:gravity">center|left|bottom</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+    
+    <style name="TextViewStyle3" parent="@style/NOFocusView">
+        <item name="android:layout_width">720.0dp</item>
+        <item name="android:layout_height">75.0dp</item>
+        <item name="android:gravity">center|left|top</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+    
+    <style name="EditTextStyle">
+        <item name="android:layout_width">802.0dp</item>
+        <item name="android:layout_height">70.0dp</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+    
+    <style name="FrameLayout" parent="@style/FocusView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+</resources>

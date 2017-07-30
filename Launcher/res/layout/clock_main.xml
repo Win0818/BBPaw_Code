@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clock_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#000000"
+    android:baselineAligned="false" >
+
+    <RelativeLayout
+        android:id="@+id/clockcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+   <RelativeLayout
+        android:id="@+id/clock_tooltip"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/clock_tooltip"
+        android:baselineAligned="false" /> 
+
+    <com.worldchip.bbp.ect.view.MultiDirectionSlidingDrawer
+        xmlns:my="http://schemas.android.com/apk/res/com.worldchip.bbp.ect"
+        android:id="@+id/drawer"
+        android:layout_width="166dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        my:content="@+id/content"
+        my:direction="leftToRight"
+        my:handle="@+id/handle" >
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/clock_left_hide_bg"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/clocktop"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:contentDescription="@null"
+                android:padding="15dp"
+                android:soundEffectsEnabled="false"
+                android:src="@drawable/clocktop" />
+
+            <ImageView
+                android:id="@+id/digitalclock"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:contentDescription="@null"
+                android:padding="15dp"
+                android:soundEffectsEnabled="false"
+                android:src="@drawable/digitalclock" />
+
+            <ImageView
+                android:id="@+id/alarmclock"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:contentDescription="@null"
+                android:padding="15dp"
+                android:soundEffectsEnabled="false"
+                android:src="@drawable/alarmclock" />
+
+            <ImageView
+                android:id="@+id/settingup"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:contentDescription="@null"
+                android:padding="15dp"
+                android:soundEffectsEnabled="false"
+                android:src="@drawable/settingup"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/clockback"
+                android:layout_width="200dp"
+                android:layout_height="140dp"
+                android:contentDescription="@null"
+                android:padding="15dp"
+                android:soundEffectsEnabled="false"
+                android:src="@drawable/clockback" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@id/handle"
+            android:layout_width="49dp"
+            android:layout_height="109dp"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/draw_right" />
+    </com.worldchip.bbp.ect.view.MultiDirectionSlidingDrawer>
+
+</RelativeLayout>

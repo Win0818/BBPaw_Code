@@ -1,0 +1,36 @@
+<resources>
+	<dimen name="language_list_width">410dip</dimen>
+	<dimen name="language_list_height">400dip</dimen>
+	<dimen name="language_fragment_list_width">330dip</dimen>
+	<dimen name="logo_layout_marginLeft">10dip</dimen>
+	<dimen name="language_list_itme_height">70dip</dimen>
+	<dimen name="language_list_itme_text_maxWidth">250dip</dimen>
+	<dimen name="wifi_list_width">500dip</dimen>
+	<dimen name="wifi_list_height">440dip</dimen>
+	<dimen name="wifi_list_item_line_width">420dip</dimen>
+	<dimen name="wifi_list_itme_height">100dip</dimen>
+	<dimen name="wifi_list_itme_marginLeft">30dip</dimen>
+	<dimen name="wifi_psw_input_padding">20dip</dimen>
+	<dimen name="register_content_marginTop">40dip</dimen>
+	<dimen name="register_content_item_marginTop">20dip</dimen>
+	<dimen name="register_photo_width">290dip</dimen>
+	<dimen name="register_photo_height">290dip</dimen>
+	<dimen name="register_input_edit_paddingLeft">20dip</dimen>
+	<dimen name="register_input_edit_textSize">30sp</dimen>
+	
+	<dimen name="register_send_code_width">120dip</dimen>
+	<dimen name="register_send_code_height">70dip</dimen>
+	<dimen name="register_input_edit_email_height">80dip</dimen>
+	
+	<dimen name="system_pic_btn_marginRight">50dip</dimen>
+	<dimen name="custom_avatar_btn_marginLeft">50dip</dimen>
+	
+	<dimen name="birthday_pop_width">457dip</dimen>
+	<dimen name="birthday_pop_height">103dip</dimen>
+	<dimen name="birthday_pop_paddingTop">15dip</dimen>
+	
+	<dimen name="brithday_edit_pop_show_y">80dip</dimen>
+	<dimen name="gender_edit_pop_show_y">100dip</dimen>
+	<dimen name="edit_pop_input_textSize">30sp</dimen>
+	
+</resources>

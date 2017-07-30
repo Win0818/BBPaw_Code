@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+      <GridView
+            android:id="@+id/effect_gridview"
+            android:layout_width="@dimen/effect_gridview_width"
+            android:layout_height="@dimen/effect_gridview_height"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:layout_centerInParent="true"
+            android:numColumns="1"
+            android:stretchMode="columnWidth"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:listSelector="@drawable/effect_bg_selector"
+            android:background="@drawable/ic_effect_list_bg"
+            android:visibility="visible"/>
+</RelativeLayout>

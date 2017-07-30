@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">BBPaw Center</string>
+    
+    <string name="str_null"></string>
+    
+    <string name="activity_not_found">敬请期待!</string>
+    <string name="start_app_error">无法打开该应用!</string>
+    <string name="start_bbpaw_browser_error"> 无法打开BBPaw浏览器!</string>
+    
+    <string name="study_time_title_text">"学习时间:"</string>
+    <string name="study_content_title_text">"内容介绍:"</string>
+    <string name="vaccine_title_text">"疫苗接种时间表"</string>
+    <string name="vaccine_birth_date_text">"宝宝出生日期"</string>
+    <string name="vaccine_calculate_btn_text">"开始计算"</string>
+    <string name="vaccine_recalculate_btn_text">"重新计算"</string>
+    <string name="vaccine_all_select_text">"一键提醒"</string>
+    <string name="vaccine_checkebox_title_text">"提醒"</string>
+    
+    <string name="vaccine_item_age_title">"年龄"</string>
+    <string name="vaccine_item_type_title">"疫苗种类"</string>
+    <string name="vaccine_item_explain_title">"说明"</string>
+    <string name="vaccine_item_date_title">"接种日期"</string>
+    
+     <string name="calendar_sun_text">"日"</string>
+    <string name="calendar_mon_text">"一"</string>
+    <string name="calendar_tues_text">"二"</string>
+    <string name="calendar_wed_text">"三"</string>
+    <string name="calendar_thur_text">"四"</string>
+    <string name="calendar_fri_text">"五"</string>
+    <string name="calendar_sat_text">"六"</string>
+    <string name ="calendar_top_format_text"><xliff:g id="year">%1$s</xliff:g>年<xliff:g id="month">%2$s</xliff:g>月</string>
+    <string name="calendar_cancel_text">"取消"</string>
+    <string name="calendar_ok_text">"确定"</string>
+    
+    <!-- 专家资讯 -->
+    <string name="information_title_text">"专家资讯"</string>
+    <string name="information_all_text">"全部"</string>
+    <string name="information_expert_text">"育儿专家"</string>
+    <string name="information_recommend_text">"优能推荐"</string>
+    <string name="information_activity_text">"活动"</string>
+    <string name="information_other_text">"其它"</string>
+    <string name="information_unread_text">"未读"</string>
+    <string name="information_read_text">"已读"</string>
+    <string name="information_favorites_text">"收藏夹"</string>
+    <string name ="download_title_text_format">正在下载<xliff:g id="fileName">%1$s</xliff:g></string>
+    <string name ="download_complete_title_text_format">已完成下载<xliff:g id="fileName">%1$s</xliff:g></string>
+    <string name ="download_cancel_text_format">是否取消<xliff:g id="fileName">%1$s</xliff:g>下载?</string>
+    <string name ="network_error_msg">当前网络有问题，请检查当前网络!</string>
+    <string name ="no_memory_error_msg">当前下载空间剩余不足!</string>
+    <string name ="global_title_text">温馨提示</string>
+    <string name ="global_background_download_msg">关闭后将转入后台继续下载?</string>
+     <string name ="download_unknown_error_msg">未找到可下载文件!</string>
+    <string name ="yes_text">是</string>
+    <string name ="no_text">否</string>
+    <string name ="no_sdcard_text">未发现SD卡</string>
+    <string name ="sdcard_unread_text">SD卡不能读写</string>
+    <string name ="task_full_text">任务列表已满</string>
+    
+    <string name="yesterday_text">"昨天"</string>
+     <string name="input_password_text">"输入密码"</string>
+     <string name="forget_password_text">忘记密码</string>
+     <string name="cancel_text">取消</string>
+     <string name="input_psw_error">"密码输入有误!"</string>
+     
+    <!-- 疫苗 -->
+     <string name ="vaccine_alarm_text_format">今天要打<xliff:g id="vaccineName">%1$s</xliff:g>啦</string>
+     <string name ="vaccine_alert_content">"\t\t我们将会根据您提交的宝宝\n的出生日期重新确认疫苗接种的\n时间."</string>
+     <string name ="vaccine_alert_title">温馨提示:</string>
+     
+     <!-- 护眼 -->
+      <string name ="screen_time_page_title">防沉迷:</string>
+      <string name ="screen_time_use_time">每次使用时长(5-45分钟):</string>
+      <string name ="screen_time_sleep_time">每次休息时长(5-45分钟):</string>
+      <string name ="screen_time_day_use_time">每天使用时间段(00:00-24:00):</string>
+      <string name ="minute_text">分钟</string>
+      <string name ="seconds_text">秒</string>
+      
+      <string name ="eyecare_page_distance_title">距离感应:</string>
+      <string name ="eyecare_page_reverse_title">反转感应:</string>
+      <string name ="eyecare_page_light_sensor_title">环境光感应:</string>
+      
+      <string name ="default_information01_title">"美国专家训练宝宝\“一心两用\”"</string>
+      <string name ="default_information02_title">"美国的爸爸妈妈们如何培养孩子的创造力？"</string>
+      <string name ="default_information03_title">"放暑假了，爸爸妈妈我们去哪儿？"</string>
+      <string name ="default_information04_title">"优能推荐"</string>
+      <string name ="default_information05_title">"其它"</string>
+      
+      <string name ="default_information01_description">"\“一心\”完全可以\“两用\”甚至\“多用\”"</string>
+      <string name ="default_information02_description">"美国的幼教专家认为，每个孩子都有无穷的创造力"</string>
+      <string name ="default_information03_description">"爸爸妈妈快来看，这里有我最想和你们一起去的儿童乐园。"</string>
+      <string name ="default_information04_description">"孩子的个性化培养需要我们用心观察他们的日常言行"</string>
+      <string name ="default_information05_description">"在这里，精彩不停！"</string>
+      
+      <string name ="default_information_text">"活动正在紧锣密鼓筹划中。\n敬请期待。。。"</string>
+      
+      
+</resources>

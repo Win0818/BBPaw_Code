@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog"
+    android:orientation="vertical"
+    android:padding="4dp" >
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/draw_btton_focus"
+        android:gravity="center"
+        android:text="@string/update_app"
+        android:textColor="@color/white"
+        android:textSize="30sp" >
+    </Button>
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/draw_btton_focus"
+        android:gravity="center"
+        android:text="@string/update_canel"
+        android:textColor="@color/white"
+        android:textSize="30sp" >
+    </Button>
+
+</LinearLayout>

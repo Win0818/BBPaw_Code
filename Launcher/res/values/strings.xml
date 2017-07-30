@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">ECT</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="add_web">Add</string>
+    <string name="titil_web">theme</string>
+    <!-- 设置 -->
+    <string name="name_and_image_text">Account Management</string>
+    <string name="stand_by_time_text">Stand-By-Time</string>
+    <string name="sound_text">Volume</string>
+    <string name="brightness_text">Brightness</string>
+    <string name="wifi_text">Wi-Fi</string>
+    <string name="bluetooth_text">Bluetooth</string>
+    <string name="accelerometer_text">G-sensor</string>
+    <!-- 亮度 -->
+    <string name="brigthness_setting">Brightness Setting</string>
+
+    <!-- image&name -->
+    <string name="system_image">System Image</string>
+    <string name="costom_image">Custom Image</string>
+    <string name="loading_image">Loading the image</string>
+    <string name="image_cancel">cancel</string>
+
+    <!-- 家长控制 -->
+     <string name="password_manager">Password Management</string>
+    <string name="behavior_statistics">Behavior Statistics</string>
+    <string name="the_use_of_time_control">Time Management</string>
+    <string name="mediashare">MediaShare</string>
+    <string name="the_app_management">App Management</string>
+    <string name="browse_the_web_management">Browser Settings</string>
+    <string name="shop">Shop</string>
+    <string name="charging_protect">Charging Protect</string>
+    <string name="the_parent_mode">Parent Mode</string>
+    <string name="push_message">Push Messages</string>
+    <string name="default_password">Confirm Password</string>
+    <string name="change_password">New Password</string>
+    <string name="retype_password">Reset Code</string>
+    <string name="set_problem">Set problem</string>
+    <string name="the_answer">The answer</string>
+
+    <!-- passlock -->
+   <string name="passlock_textview">Enter your password</string>
+    <string name="passlock_question">Type the command</string>
+    <string name="passlock_time">Increase Time</string>
+
+    <!-- time -->
+    <string name="time_countdown_control">Count Down</string>
+    <string name="time_time_quantum">Time</string>
+    <string name="time_date_control">Date</string>
+    <string name="time_date_mon">Mon</string>
+    <string name="time_date_tues">Tues</string>
+    <string name="time_date_wed">Wed</string>
+    <string name="time_date_thur">Thur</string>
+    <string name="time_date_fri">Fri</string>
+    <string name="time_date_sta">Sta</string>
+    <string name="time_date_sun">Sun</string>
+	<!-- charging protect -->
+    <string name="charging_protect_text">Would you like to open charging protection function?</string>
+     <!-- parent mode -->
+    <string name="parent_mode">Would you like to enter parent mode?</string>
+
+    <!-- shop -->
+    <string name="shop_google">Google shop</string>
+    <string name="shop_bbpaw">BBPAW shop</string>
+
+    <!-- behavior_statistics -->
+    <string name="behavior_statistics_vales">Choose whether to push latest bbpaw news</string>
+
+    <!-- share -->
+    <!-- share -->
+    <string name="share_picture">Picture</string>
+    <string name="share_music">Music</string>
+    <string name="share_video">Video</string>
+    <!-- share video -->
+    <string name="share_video_left">MediaShare</string>
+    <string name="share_video_right">Agreed to split</string>
+    <string name="loading_share">The data load</string>
+
+    <!-- apk -->
+    <string name="share_apk_left">All App</string>
+    <string name="share_apk_right">Trusted App</string>
+    <string name="delete_app">Are you sure you want to delete the APP?</string>
+
+    <!-- MyAPP -->
+    <string name="play_time">PLAY TIME</string>
+
+    <!-- Clock -->
+     <string name="clock_maohao">:</string>
+    <string name="clock_alarm_title">Clock</string>
+    <string name="clock_number">00</string>
+    <string name="default_label">"Alarm clock "</string>
+    <string name="silent_alarm_summary">"On silent mode"</string>
+    <string name="every_day">"Every day"</string>
+    <string name="never">" Never"</string>
+    <string name="day_concat">", "</string>
+    <string name="background_music">Background Music</string>
+    <string name="volume_setting">Volume Setting</string>
+    <string name="set_time_limit">Set Time Limit</string>
+    <string name="clock_control">Clock Control</string>
+    <string name="set_date">Set Date</string>
+    <string name="wifi_on">Open network</string>
+    <string name="wifi_off">Close network</string>
+    <string name="accelerometer_on">Open Gravity sensor</string>
+    <string name="accelerometer_off">Close Gravity sensor </string>
+    <!-- babyinfo  -->
+    <string name="babyinfo_edit">edit</string>
+    <string name="age_str_format"><xliff:g id="num">%1$s</xliff:g></string>
+    <string name="babyinfo_nicheng">baby name:</string>
+    <string name="babyinfo_man">boy</string>
+    <string name="babyinfo_girl">girl</string>
+    <string name="babyinfo_brithday">brithday:</string>
+    <string name="babyinfo_three_four">3&#8211;4</string>
+    <string name="babyinfo_four_five">4&#8211;5</string>
+    <string name="babyinfo_five_six">5&#8211;6</string>
+    <string name="babyinfo_brithday_year">year</string>
+     <string name="babyinfo_brithday_yue">month</string>
+      <string name="babyinfo_brithday_ri">date</string>
+    <string name="age_group_text01">"3-4"</string>
+    <string name="age_group_text02">"4-5"</string>
+    <string name="age_group_text03">"5-6"</string>
+    <string-array name="age_set">
+        <item >3-4</item>
+    </string-array>
+	
+    <string-array name="age_group_arry">
+        <item >3-4</item>
+        <item >4-5</item>
+        <item >5-6</item>
+    </string-array>
+    
+    <string name ="birthday_text_format"><xliff:g id="year">%1$s</xliff:g>-<xliff:g id="month">%2$s</xliff:g>-<xliff:g id="day">%3$s</xliff:g></string>
+    <string name="start_app_error_toast">"Unable to open the application!"</string>
+    <string name="not_found_app_error_toast">"Stay tuned for!"</string>
+     <string name="account_number">account\nnumber:</string>
+      <string name="pass_wrod">password:</string>
+      <string name="forget_passwrod">Forget password</string>
+      <string name="register">register</string>
+      <string name="xiugaimima">change password</string>
+      <string name="jiumima">Original\nPassword:</string>
+      <string name="xinmima">New\nPassword:</string>
+      <string name="comfrincode">Confirm\nPassword:</string>
+      <string name="emailfind">Rmail find:</string>
+       <string name="or">Or:</string>
+       <string name="phonemessagefind">Message find:</string>
+       <string name="inputyanzhengma">Input code:</string>
+       <string name="login_not_user_error">The account does not exist!</string>
+       <string name="login_seccuss">Login success!</string>
+       <string name="login_failure">Logon failure!</string>
+       <string name="update_password_failure">Change failed!</string>
+       <string name="update_password_suceecss">Change success!</string>
+       <string name="code_input_agen">Password is not consistent, please re-enter!</string>
+       <string name="code_not_empty">Password can not be empty!</string>
+       <string name="account_not_empty">Account can not be empty!</string>
+       <string name="login_psw_error">Password is error</string>
+       <string name="validate_psw_empty_error">"Password Error \n The password can only be 6 to 16 for the Numbers or letters!"</string>
+       
+      
+       <string name="login_input_error">Account or Password can not be empty!</string>
+       <string name="reset_code_error">Rest code error!</string>
+       
+       <string name="load_pic_error">Unable to load picture! </string>
+       
+       <string name="default_year">2012</string>
+	   <string name="default_month">10</string>
+	   <string name="default_day">10</string>
+	   <string name="bbpaw_web_home_page">www.bbpaw.com</string>
+	   
+	   <string name="default_username">Bob</string>
+	   <string name="default_age">6</string>
+	   <string name="default_birthday">2008-10-10</string>
+	   <string name="default_sex">1</string>
+	   
+	   <string name="account_title">Account:</string>
+	   <string name="account_title_text">Account</string>
+	   
+	   <!-- add by lee 20151030 begin -->
+	   <string name="please_login_first">please login frist</string>
+	   <string name="original_psw_error_text">Password error!  </string>
+	   <string name="original_eq_newpsw_error_text">The new password can not be the same as the original password!</string>
+	   <string name="network_error_text">Network error,please check your network settings!</string>
+	   <string name="validate_code_error_text">Verification code error! </string>
+	   <string name="req_excption_error_text">Operation failed!</string>
+	   <string name="login_account_hint_text">Email</string>
+	   <string name="login_account_hint_password">Password</string>
+	   <string name="validate_code_hint_text">Please enter your verification code</string>
+	   <string name="validate_code_sendent">Verification code has sent out!</string>
+	   <string name="find_account_empty_error">Please enter your email!</string>
+	   <string name="verfication_code_empty_error">Please enter your verification code!</string>
+	   <string name="account_error_text"> Account error!</string>
+	   <string name="input_six_code">Please enter 6 digit password!</string>
+       <string name="update_code_not_correct">Incorrect password!</string>
+       <string name="time_set_success">Time setting</string>
+	   <!-- add by lee 20151030 end -->
+	   
+	   
+	    <!--add by 20151110 -->
+	   <string name="ip_name_exist">This name already exists!</string>
+	   <string name="url_exist">This URL already exists!</string>
+	   <string name="add_success">Added Successfully</string>
+	   <string name="add_failed">Added failed</string>
+	   <string name="title_not_empty">Title and website cannot be empty</string>
+	   
+	   
+	   <string name="password_updata_success">password updata success</string>
+	   <string name="passwords_nots_match">Passwords do not match</string>
+	   <string name="default_password_empty">Default password can not be null</string>
+	   <string name="input_six_password">Please input effective 6-digit password</string>
+	   <string name="change_password_not_empty">Change password can not be null</string>
+	   <string name="system_application_cannot_deleted">System application cannot be deleted</string>
+	   
+	    <string name="install_app_tips">All apps installed successed!</string>
+	   
+</resources>

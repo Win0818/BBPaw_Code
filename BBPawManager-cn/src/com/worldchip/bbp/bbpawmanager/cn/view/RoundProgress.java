@@ -1,0 +1,128 @@
+package com.worldchip.bbp.bbpawmanager.cn.view;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Paint.Cap;
+import android.graphics.Paint.Style;
+import android.graphics.RectF;
+import android.util.AttributeSet;
+import android.widget.ProgressBar;
+
+
+public class RoundProgress extends ProgressBar
+{
+	
+	private static final int DEFAULT_TEXT_SIZE = 30;
+	private static final int DEFAULT_TEXT_COLOR = 0XFFFC00D1;
+	private static final int DEFAULT_COLOR_UNREACHED_COLOR = 0xFFd3d6da;
+	private static final int DEFAULT_HEIGHT_REACHED_PROGRESS_BAR = 20;
+	private static final int DEFAULT_HEIGHT_UNREACHED_PROGRESS_BAR = 13;
+	//private static final int DEFAULT_SIZE_TEXT_OFFSET = 10;
+
+	protected Paint mPaint = new Paint();
+	protected int mTextColor = DEFAULT_TEXT_COLOR;
+	protected int mTextSize = DEFAULT_TEXT_SIZE;
+
+	/**
+	 * offset of draw progress
+	 */
+	//protected int mTextOffset = dp2px(DEFAULT_SIZE_TEXT_OFFSET);
+
+	/**
+	 * height of reached progress bar
+	 */
+	protected int mReachedProgressBarHeight = DEFAULT_HEIGHT_REACHED_PROGRESS_BAR;
+
+	/**
+	 * height of unreached progress bar
+	 */
+	protected int mUnReachedProgressBarHeight = DEFAULT_HEIGHT_UNREACHED_PROGRESS_BAR;
+	/**
+	 * view width except padding
+	 */
+	protected int mRealWidth;
+
+	protected boolean mIfDrawText = true;
+
+	protected static final int VISIBLE = 0;
+	/**
+	 * mRadius of view
+	 */
+	private int mRadius = 30;
+	private int mMaxPaintWidth;
+
+	public RoundProgress(Context context)
+	{
+		this(context, null);
+	}
+
+	public RoundProgress(Context context, AttributeSet attrs)
+	{
+		super(context, attrs, 0);
+		mPaint.setTextSize(mTextSize);
+		mPaint.setColor(mTextColor);
+		mReachedProgressBarHeight = (int) (mUnReachedProgressBarHeight * 2.0f);
+		mPaint.setStyle(Style.STROKE);
+		mPaint.setAntiAlias(true);
+		mPaint.setDither(true);
+		mPaint.setStrokeCap(Cap.ROUND);
+	}
+
+	
+	/**
+	 * 这里默认在布局中padding值要么不设置，要么全部设置
+	 */
+	@Override
+	protected synchronized void onMeasure(int widthMeasureSpec,
+			int heightMeasureSpec)
+	{
+
+		mMaxPaintWidth = Math.max(mReachedProgressBarHeight,
+				mUnReachedProgressBarHeight);
+		int expect = mRadius * 2 + mMaxPaintWidth + getPaddingLeft()
+				+ getPaddingRight();
+		int width = resolveSize(expect, widthMeasureSpec);
+		int height = resolveSize(expect, heightMeasureSpec);
+		int realWidth = Math.min(width, height);
+
+		mRadius = (realWidth - getPaddingLeft() - getPaddingRight() - mMaxPaintWidth) / 2;
+
+		setMeasuredDimension(realWidth, realWidth);
+
+	}
+
+	@SuppressLint("DrawAllocation")
+	@Override
+	protected synchronized void onDraw(Canvas canvas)
+	{
+
+		//String text = getProgress() + "%";
+		//float textWidth = mPaint.measureText(text);
+		//float textHeight = (mPaint.descent() + mPaint.ascent()) / 2;
+
+		canvas.save();
+		canvas.translate(getPaddingLeft() + mMaxPaintWidth / 2, getPaddingTop()
+				+ mMaxPaintWidth / 2);
+		mPaint.setStyle(Style.STROKE);
+		// draw unreaded bar
+		//mPaint.setColor(mUnReachedBarColor);
+		//mPaint.setStrokeWidth(mUnReachedProgressBarHeight);
+		//canvas.drawCircle(mRadius, mRadius, mRadius, mPaint);
+		// draw reached bar
+		//mPaint.setColor(mReachedBarColor);
+		mPaint.setColor(Color.parseColor("#FF6D5D"));
+		mPaint.setStrokeWidth(mReachedProgressBarHeight);
+		float sweepAngle = getProgress() * 1.0f / getMax() * 360;
+		canvas.drawArc(new RectF(0, 0, mRadius * 2, mRadius * 2), 0,
+				sweepAngle, false, mPaint);
+		// draw text
+		//mPaint.setStyle(Style.FILL);
+		//canvas.drawText(text, mRadius - textWidth / 2, mRadius - textHeight,
+		//		mPaint);
+		canvas.restore();
+
+	}
+}

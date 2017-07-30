@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/change_nick_cancle_press_btn" android:state_pressed="true"/>
+    <item android:drawable="@drawable/change_nick_cancle_default_btn"/>
+
+</selector>

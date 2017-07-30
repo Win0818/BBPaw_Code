@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_time_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/section_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/icon_section_bg"
+            android:singleLine="true"
+            android:textColor="#250506"
+            android:textSize="@dimen/growup_listview_section_textsize" />
+        <View
+            android:id="@+id/item_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/growup_vertical_line_width"
+            android:layout_marginLeft="@dimen/growup_horizontal_line_marginLeft"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ic_horizontal_line" />
+
+</LinearLayout>

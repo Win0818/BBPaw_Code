@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">80dp</dimen>
+    <dimen name="activity_vertical_margin">80dp</dimen>
+
+    <!-- menu_item.xml配置 -->
+    <dimen name="nameTxt_height">60dp</dimen>
+    <dimen name="nameTxt_text_size">28sp</dimen>
+
+    <!-- menu_layout.xml配置 -->
+    <dimen name="funcList_space">30dp</dimen>
+
+    <!-- dialog_app_item.xml配置 -->
+    <dimen name="appImage_width_height">90dp</dimen>
+    <dimen name="appImage_bottom_top_margin">10dp</dimen>
+    <dimen name="appImage_left_margin">15dp</dimen>
+    <dimen name="appNameTxt_left_margin">10dp</dimen>
+    <dimen name="appNameTxt_txt_size">20sp</dimen>
+
+</resources>

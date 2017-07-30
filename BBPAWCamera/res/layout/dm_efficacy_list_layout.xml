@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+      <GridView
+            android:id="@+id/dm_effect_gridview"
+            android:layout_width="135dip"
+            android:layout_height="400dip"
+            android:layout_centerInParent="true"
+            android:numColumns="1"
+            android:stretchMode="columnWidth"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:listSelector="@drawable/effect_bg_selector"
+            android:background="@drawable/ic_dm_effects_bg"
+            android:visibility="visible"/>
+</RelativeLayout>

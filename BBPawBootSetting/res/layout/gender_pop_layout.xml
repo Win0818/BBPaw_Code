@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/birthday_pop_width"
+    android:layout_height="@dimen/birthday_pop_height"
+    android:background="@drawable/edit_pop_bg" >
+
+    <RadioGroup
+        android:id="@+id/rg_gender_select"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="@dimen/birthday_pop_paddingTop"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/boy_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_edit_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="@string/boy_text"
+                android:textColor="#909090"
+                android:textSize="@dimen/edit_pop_input_textSize" />
+
+            <RadioButton
+                android:id="@+id/girl_radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_edit_bg"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_marginLeft="60dip"
+                android:layout_gravity="center_vertical"
+                android:text="@string/girl_text"
+                android:textColor="#909090"
+                android:textSize="@dimen/edit_pop_input_textSize" />
+    </RadioGroup>
+
+</RelativeLayout>

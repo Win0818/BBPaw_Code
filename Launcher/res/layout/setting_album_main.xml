@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/setting_album_main_bg" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="@dimen/setting_album_main_relativeLayout1_width"
+        android:layout_height="@dimen/setting_album_main_relativeLayout1_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/setting_album_main_relativeLayout1_margintop"
+        android:background="@drawable/setting_album_main_layout_bg" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/setting_album_main_textview_margintop"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:text="@string/system_image"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/iv_system_pre"
+            android:layout_width="27dip"
+            android:layout_height="48dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/left_arrow" />
+
+        <com.worldchip.bbp.ect.adapter.HorizontalScrollView
+            android:id="@+id/horizontal_scrollview_system"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/setting_album_main_horizontal_scrollview_systemmarginbottom"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="72dp"
+            android:layout_marginTop="@dimen/setting_album_main_horizontal_scrollview_systemmargintop"
+            android:scrollbars="none" />
+
+        <ImageView
+            android:id="@+id/iv_system_next"
+            android:layout_width="27dip"
+            android:layout_height="48dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/right_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/setting_album_main_relativeLayout1_width"
+        android:layout_height="@dimen/setting_album_main_relativeLayout1_height"
+       android:layout_below="@id/relativeLayout1"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/setting_album_main_relativeLayout2_marginbottom"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/setting_album_main_layout_bg" >
+<!--  android:layout_alignParentBottom="true" -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="@dimen/setting_album_main_textview_margintop"
+            android:gravity="center"
+            android:text="@string/costom_image"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/iv_costom_pre"
+            android:layout_width="27dip"
+            android:layout_height="48dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/left_arrow" />
+
+        <com.worldchip.bbp.ect.adapter.HorizontalScrollViewCostom
+            android:id="@+id/horizontal_scrollview_costom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginRight="72dp"
+            android:layout_marginTop="65dp"
+            android:scrollbars="none" />
+
+        <ImageView
+            android:id="@+id/iv_costom_next"
+            android:layout_width="27dip"
+            android:layout_height="48dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/right_arrow" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/setting_image_back"
+        android:layout_width="@dimen/setting_album_main_setting_image_back_width"
+        android:layout_height="@dimen/setting_album_main_setting_image_back_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="@dimen/setting_album_main_setting_image_back_marginleft"
+        android:contentDescription="@null"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/parentalcontrol_back_style" />
+
+</RelativeLayout>

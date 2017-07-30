@@ -1,0 +1,284 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clock_alarm_main"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/clock_settingup_bg"
+    android:baselineAligned="false"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/clock_alarm_clock_alarm_layout_width"
+        android:layout_height="@dimen/clock_alarm_clock_alarm_layout_height"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/clock_alarm_clock_alarm_xiugailayout_left"
+        android:layout_marginTop="@dimen/clock_alarm_clock_alarm_xiugailayout_top"
+        android:background="@drawable/clock_alarm_bg" >
+
+        <RelativeLayout
+            android:id="@+id/rl_hour"
+            android:layout_width="@dimen/clock_alarm_clock_alarm_rl_hour_layout_width"
+            android:layout_height="@dimen/clock_alarm_clock_alarm_rl_hour_layout_height"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="@dimen/clock_alarm_clock_alarm_rl_hour_margintop" >
+
+            <ImageView
+                android:id="@+id/alarm_up_hours"
+                android:layout_width="81dp"
+                android:layout_height="58dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/clock_alarm_clock_alarm_up_hours_margintop"
+                android:contentDescription="@null"
+                android:soundEffectsEnabled="false"
+                android:src="@drawable/alarm_up" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/alarm_hour_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/clock_alarm_number_0" />
+
+                <TextView
+                    android:id="@+id/alarm_hour_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/clock_alarm_number_0" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/alarm_down_hours"
+                android:layout_width="81dp"
+                android:layout_height="58dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/clock_alarm_clock_alarm_down_hours_marginbottom"
+                android:contentDescription="@null"
+                android:soundEffectsEnabled="false"
+                android:src="@drawable/alarm_down" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_minute"
+            android:layout_width="@dimen/clock_alarm_clock_alarm_rl_minute_layout_width"
+            android:layout_height="@dimen/clock_alarm_clock_alarm_rl_minute_layout_height"
+            android:layout_marginLeft="12dp"
+             android:layout_marginTop="@dimen/clock_alarm_clock_alarm_rl_minute_margintop"
+            android:layout_toRightOf="@id/rl_hour" >
+
+            <ImageView
+                android:id="@+id/alarm_up_minute"
+                android:layout_width="81dp"
+                android:layout_height="58dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/clock_alarm_clock_alarm_up_minute_margintop"
+                android:contentDescription="@null"
+                android:soundEffectsEnabled="false"
+                android:src="@drawable/alarm_up" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="117dp"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/alarm_minute_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/clock_alarm_number_0" />
+
+                <TextView
+                    android:id="@+id/alarm_minute_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/clock_alarm_number_0" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/alarm_down_minute"
+                android:layout_width="81dp"
+                android:layout_height="58dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/clock_alarm_clock_alarm_down_minute_marginbottom"
+                android:contentDescription="@null"
+                android:soundEffectsEnabled="false"
+                android:src="@drawable/alarm_down" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="435dp"
+        android:layout_height="62dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/clock_alarm_clock_alarm_title_right"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/clock_alarm_title_bg"
+        android:gravity="center"
+        android:text="@string/clock_alarm_title"
+        android:textColor="#38a910"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/clock_song"
+        android:layout_width="@dimen/clock_alarm_clock_alarm_listview_width"
+        android:layout_height="@dimen/clock_alarm_clock_alarm_listview_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/clock_alarm_clock_alarm_listview_top"
+        android:layout_marginRight="@dimen/clock_alarm_clock_alarm_listview_right"
+        android:background="@drawable/clock_song_bg"
+        android:cacheColorHint="#00000000"
+        android:divider="#38a910"
+        android:dividerHeight="10sp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="60dp"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/clock_alarm_clock_alarm_xingqiselecter_width"
+        android:layout_height="@dimen/clock_alarm_clock_alarm_xingqiselecter_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/clock_alarm_clock_alarm_xingqiselecter_bottom"
+        android:layout_marginLeft="@dimen/clock_alarm_clock_alarm_xingqiselecter_left"
+        android:layout_marginTop="@dimen/clock_alarm_clock_alarm_xingqiselecter_top" >
+
+        <LinearLayout
+            android:layout_width="@dimen/clock_alarm_clock_alarm_xingqiselecter_top_width"
+            android:layout_height="@dimen/clock_alarm_clock_alarm_xingqiselecter_top_height"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="60dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/clock_weed_add_mon"
+                android:layout_width="@dimen/clock_alarm_clock_alarm_weed_width"
+                android:layout_height="fill_parent"
+                android:background="@drawable/clock_week_style"
+                android:drawableLeft="@drawable/clock_week_mon"
+                android:button="@null"
+                android:paddingLeft="@dimen/clock_alarm_clock_alarm_weed_paddingleft"
+                android:soundEffectsEnabled="false" />
+
+            <CheckBox
+                android:id="@+id/clock_weed_add_tues"
+                android:layout_width="@dimen/clock_alarm_clock_alarm_weed_width"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/clock_week_style"
+                android:button="@null"
+                android:drawableLeft="@drawable/clock_week_tues"
+                android:paddingLeft="@dimen/clock_alarm_clock_alarm_weed_paddingleft"
+                android:soundEffectsEnabled="false" />
+
+            <CheckBox
+                android:id="@+id/clock_weed_add_wed"
+                android:layout_width="@dimen/clock_alarm_clock_alarm_weed_width"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/clock_week_style"
+                android:button="@null"
+                android:drawableLeft="@drawable/clock_week_wed"
+                android:paddingLeft="@dimen/clock_alarm_clock_alarm_weed_paddingleft"
+                android:soundEffectsEnabled="false" />
+
+            <CheckBox
+                android:id="@+id/clock_weed_add_thur"
+                android:layout_width="@dimen/clock_alarm_clock_alarm_weed_width"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/clock_week_style"
+                android:button="@null"
+                android:drawableLeft="@drawable/clock_week_thur"
+               android:paddingLeft="@dimen/clock_alarm_clock_alarm_weed_paddingleft"
+                android:soundEffectsEnabled="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="689dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <CheckBox
+                android:id="@+id/clock_weed_add_fri"
+               android:layout_width="@dimen/clock_alarm_clock_alarm_weed_width"
+                android:layout_height="fill_parent"
+                android:background="@drawable/clock_week_style"
+                android:button="@null"
+                android:drawableLeft="@drawable/clock_week_fri"
+                android:paddingLeft="@dimen/clock_alarm_clock_alarm_weed_paddingleft"
+                android:soundEffectsEnabled="false" />
+
+            <CheckBox
+                android:id="@+id/clock_weed_add_sat"
+                android:layout_width="@dimen/clock_alarm_clock_alarm_weed_width"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/clock_week_style"
+                android:button="@null"
+                android:drawableLeft="@drawable/clock_week_sat"
+                android:paddingLeft="@dimen/clock_alarm_clock_alarm_weed_paddingleft"
+                android:soundEffectsEnabled="false" />
+
+            <CheckBox
+                android:id="@+id/clock_weed_add_sun"
+               android:layout_width="@dimen/clock_alarm_clock_alarm_weed_width"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/clock_week_style"
+                android:button="@null"
+                android:drawableLeft="@drawable/clock_week_sun"
+                android:paddingLeft="@dimen/clock_alarm_clock_alarm_weed_paddingleft"
+                android:soundEffectsEnabled="false" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/clcok_alarm_save"
+        android:layout_width="@dimen/clock_alarm_clock_alarm_save_width"
+        android:layout_height="@dimen/clock_alarm_clock_alarm_save_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/clock_alarm_clock_alarm_save_right"
+        android:layout_marginTop="@dimen/clock_alarm_clock_alarm_save_top"
+        android:background="@drawable/clock_save_cancel_style"
+        android:contentDescription="@null"
+        android:padding="14dp"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/clock_week_save" />
+
+    <ImageView
+        android:id="@+id/clcok_alarm_cancel"
+        android:layout_width="@dimen/clock_alarm_clock_alarm_cancel_width"
+        android:layout_height="@dimen/clock_alarm_clock_alarm_cancel_height"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/clock_alarm_clock_alarm_cancel_right"
+        android:layout_marginTop="@dimen/clock_alarm_clock_alarm_cancel_top"
+        android:background="@drawable/clock_save_cancel_style"
+        android:contentDescription="@null"
+        android:padding="18dp"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/clock_week_cancel" />
+
+</RelativeLayout>

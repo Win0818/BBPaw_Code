@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    
+    <dimen name="height_top_bar">40dp</dimen>
+    <dimen name="padding_search_bar">5dp</dimen>
+    <dimen name="height_row_weixin">59dp</dimen>
+    <dimen name="size_avatar">50dp</dimen>
+    <dimen name="margin_chat_activity">5dp</dimen>
+    <dimen name="field_textsize">14sp</dimen>
+    <dimen name="field_margin_right">5dp</dimen>
+    <dimen name="call_button_padding_vertical">10dp</dimen>
+    <dimen name="call_button_padding_left">25dp</dimen>
+    <dimen name="call_button_padding_right">25dp</dimen>
+    <dimen name="sidebar_text_size">10dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="image_thumbnail_size">100dp</dimen>
+    <dimen name="image_thumbnail_spacing">1dp</dimen>
+    
+    <!--register  activity -->
+    <dimen name="register_item_height">40dp</dimen>
+    <dimen name="register_edittext_width">220dp</dimen>
+    
+    <!--setting fragment -->
+    <dimen name="slidingmenu_offset">160dp</dimen>
+    <dimen name="shadow_width">1dp</dimen>
+    
+    <!--  contact list head  -->
+    <dimen name="contact_head_image_width">40dp</dimen>
+    <dimen name="contact_head_image_height">40dp</dimen>
+    <dimen name="contact_message_note_text_width">18dp</dimen>
+    <dimen name="contact_message_note_text_height">18dp</dimen>
+    <dimen name="contact_message_note_text_size">12sp</dimen>
+    
+    
+
+</resources>

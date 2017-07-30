@@ -1,0 +1,54 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+     <style name="NoFocusableStyle" >
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+    
+    <style name="FocusableStyle" >
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+    
+     <style name="Customer_Loading">
+        <item name="android:indeterminateDrawable">@drawable/loading_progress_img</item>
+        <item name="android:minWidth">30dip</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:indeterminate">false</item>
+    </style>
+    
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="MenuPopupAnimation" >
+	    <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+	    <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+	</style>
+	
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_tool_view_in</item>
+        <item name="android:windowExitAnimation">@anim/bottom_tool_view_out</item>
+    </style>
+ 
+     <style name="NAV_CATEGORY_BUTTON">
+        <item name="android:textSize">25.0sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:singleLine">true</item>
+		<item name="android:ellipsize">none</item>
+    </style>
+</resources>

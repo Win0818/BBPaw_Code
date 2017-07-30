@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/rl_mediashare"
+        android:layout_width="@dimen/activity_media_rl_mediashare_width"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/mediashare_left_bg" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/activity_media_imgbtn_back_margintop"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/setting_back_style"
+            android:contentDescription="@null"
+            android:soundEffectsEnabled="false" />
+
+        <RadioGroup
+            android:id="@+id/rg_mediashare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/activity_media_radiogroup_marginbottom"
+            android:layout_marginLeft="15dip"
+            android:layout_above="@id/imgbtn_back"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rbtn_pic"
+                android:layout_width="@dimen/activity_media_radiobutton_width"
+                android:layout_height="@dimen/activity_media_radiobutton_height"
+                android:background="@drawable/mediashare_pic_button_style"
+                android:button="@null"
+                android:soundEffectsEnabled="false" />
+
+            <RadioButton
+                android:id="@+id/rbtn_video"
+                android:layout_width="@dimen/activity_media_radiobutton_width"
+                android:layout_height="@dimen/activity_media_radiobutton_height"
+                android:background="@drawable/mediashare_video_button_style"
+                android:button="@null"
+                android:soundEffectsEnabled="false" />
+
+            <RadioButton
+                android:id="@+id/rbtn_music"
+                android:layout_width="@dimen/activity_media_radiobutton_width"
+                android:layout_height="@dimen/activity_media_radiobutton_height"
+                android:background="@drawable/mediashare_music_button_style"
+                android:button="@null"
+                android:soundEffectsEnabled="false" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_right_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/mediashare_right_bg" >
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/rl_right_bg"
+        android:layout_toRightOf="@id/rl_mediashare"
+        android:background="@drawable/mediashare_content_bg" >
+    </FrameLayout>
+
+</RelativeLayout>

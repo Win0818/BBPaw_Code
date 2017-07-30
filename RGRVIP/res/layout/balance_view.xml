@@ -1,0 +1,743 @@
+<RelativeLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	 	xmlns:tools="http://schemas.android.com/tools"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="#00000000"
+	    style="@style/NOFocusView"
+	    android:id="@+id/balanclayout">
+	    
+    <LinearLayout
+        android:id="@+id/rl_balance_view"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        style="@style/NOFocusView"
+        android:orientation="horizontal">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="@string/le_currency_total"
+            android:layout_gravity="bottom"
+            android:textSize="32sp"
+            android:textColor="#FFFFFF"
+            style="@style/NOFocusView"
+            android:gravity="bottom|center_horizontal"/>
+        
+        <TextView 
+            android:id="@+id/tv_lb_total"
+            android:layout_width="399dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="75dp"
+            android:text="@string/total"
+            android:textSize="36sp"
+            style="@style/NOFocusView"
+            android:paddingLeft="30dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/lb_total"/>
+
+        <TextView
+            android:id="@+id/tv_lb_more"
+            android:layout_width="262dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="120dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/lb_more_style"
+            style="@style/FocusView"
+            android:gravity="center"
+            android:text="@string/more"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+    
+    <View 
+        android:id="@+id/v_line"
+        android:layout_width="1001dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="20dp"
+        style="@style/NOFocusView"
+        android:layout_below="@+id/rl_balance_view"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/dividing_line"/>
+    
+    <TextView 
+        android:id="@+id/tv_balance_recommend"
+        android:layout_width="wrap_content" 
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:gravity="center|left"
+        android:layout_below="@+id/v_line"
+        style="@style/NOFocusView"
+        android:text="@string/recommend"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"/>   
+        
+    <RelativeLayout 
+        android:id="@+id/rl_balance_frame"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:gravity="center"
+        style="@style/NOFocusView"
+        android:layout_below="@+id/tv_balance_recommend"
+        android:background="#00000000"
+        android:orientation="horizontal">
+        
+        <FrameLayout 
+		    android:id="@+id/fl_balance_00"
+		    style="@style/FrameLayout"
+		    android:padding="10dp"
+		    android:nextFocusUp="@+id/tv_lb_more"
+		    android:nextFocusDown="@+id/tv_more_exchange"
+		    android:nextFocusLeft="@+id/fl_menu_00"
+		    android:nextFocusRight="@+id/fl_balance_01"
+		    android:background="@drawable/frame_bg"
+		    android:layout_gravity="center" >
+		    
+		    <RelativeLayout
+		        android:layout_width="216dip"
+		        android:layout_height="300dip"
+		        style="@style/NOFocusView"
+		        android:padding="5dp"
+        		android:gravity="center"
+        		android:background="#00000000"
+		        android:layout_gravity="center" >
+		        
+		        <ImageView
+			        android:id="@+id/img_src_00"
+			        android:layout_width="206dip"
+			        android:layout_height="290dip"
+			        android:layout_gravity="center"
+			        style="@style/NOFocusView"
+			        android:contentDescription="@null"
+			        android:scaleType="fitXY"
+			        android:src="@drawable/commdity_gb" />
+			
+			    <LinearLayout
+			        android:layout_width="206dp"
+			        android:layout_height="76dp"
+			        android:gravity="center"
+			        android:layout_alignParentBottom="true"
+			        style="@style/NOFocusView"
+			        android:background="#FFFFFF"
+			        android:orientation="horizontal" >
+			
+			        <LinearLayout
+			            android:layout_width="150dp"
+			            android:layout_height="match_parent"
+			            style="@style/NOFocusView"
+			            android:orientation="vertical" >
+			
+			            <LinearLayout
+			                android:layout_width="match_parent"
+			                android:layout_height="26dp"
+			                style="@style/NOFocusView"
+			                android:layout_marginTop="10dp"
+			                android:gravity="bottom"
+			                android:orientation="horizontal" >
+							
+			                <TextView
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_marginLeft="2dip"
+				                android:gravity="right|center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:text="人民币："
+				                android:textColor="#ff0000"
+				                android:textSize="15sp" />
+			                <TextView
+			                    android:id="@+id/tv_rmb_now_price_00"
+			                    android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:gravity="left|center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:textColor="#ff0000"
+				                android:textSize="15sp"/>
+
+			            </LinearLayout>
+			
+			           <LinearLayout
+				                android:layout_width="match_parent"
+				                android:layout_height="26dp"
+				                android:layout_marginTop="10dp"
+				                android:gravity="bottom"
+				                style="@style/NOFocusView"
+				                android:orientation="horizontal" >
+				            <TextView
+				                android:id="@+id/txt_price_label_00"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_marginLeft="2dip"
+				                android:gravity="center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:text="乐币："
+				                android:textColor="#ff0000"
+				                android:textSize="20sp" />
+						
+				            <TextView
+				                android:id="@+id/tv_lb_price_00"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_gravity="center_vertical"
+				                android:drawableLeft="@drawable/coin"
+				                android:layout_marginLeft="2dip"
+				                android:gravity="center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:textColor="#ff0000"
+				                android:textSize="20sp" />
+				
+				            <TextView
+				                android:id="@+id/tv_lb_original_price_00"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_gravity="center_vertical"
+				                android:layout_marginLeft="5dip"
+				                android:gravity="center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:text="0.0"
+				                android:textSize="20sp" />
+				            
+			         	</LinearLayout>
+			        </LinearLayout>
+			
+			        <LinearLayout
+			            android:id="@+id/label_layout_00"
+			            android:layout_width="48dp"
+			            android:layout_height="52dp"
+			            android:layout_gravity="top"
+			            android:layout_marginRight="8dp"
+			            style="@style/NOFocusView"
+			            android:background="@drawable/lable"
+			            android:gravity="center"
+			            android:orientation="horizontal" >
+			
+			            <TextView
+			                android:id="@+id/tv_discount_00"
+			                android:layout_width="32dp"
+			                android:layout_height="52dp"
+			                android:gravity="center|top|right"
+			                android:paddingTop="10dp"
+			                android:textColor="#FFFFFF"
+			                style="@style/NOFocusView"
+			                android:textSize="18sp" />
+			
+			            <TextView
+			                android:layout_width="16dp"
+			                android:layout_height="52dp"
+			                android:gravity="center|top|left"
+			                android:paddingTop="16dp"
+			                android:text="@string/fold"
+			                android:textColor="#FFFFFF"
+			                style="@style/NOFocusView"
+			                android:textSize="12sp" />
+			        </LinearLayout>
+			    </LinearLayout>
+		    </RelativeLayout>
+		</FrameLayout>
+		
+        <FrameLayout 
+		    android:id="@+id/fl_balance_01"
+		    style="@style/FrameLayout"
+		    android:padding="10dp"
+		    android:nextFocusUp="@+id/tv_lb_more"
+		    android:nextFocusDown="@+id/tv_more_exchange"
+		    android:nextFocusLeft="@+id/fl_balance_00"
+		    android:nextFocusRight="@+id/fl_balance_02"
+		    android:layout_toRightOf="@+id/fl_balance_00"
+		    android:background="@drawable/frame_bg"
+		    android:layout_marginLeft="15dp"
+		    android:layout_gravity="center" >
+		    
+		    <RelativeLayout 
+		        android:layout_width="216dip"
+		        android:layout_height="300dip"
+		        android:padding="5dp"
+        		android:gravity="center"
+        		android:background="#00000000"
+		        style="@style/NOFocusView"
+		        android:layout_gravity="center" >
+		        
+		        <ImageView
+			        android:id="@+id/img_src_01"
+			        android:layout_width="206dip"
+			        android:layout_height="290dip"
+			        android:layout_gravity="center"
+			        style="@style/NOFocusView"
+			        android:contentDescription="@null"
+			        android:scaleType="fitXY"
+			        android:src="@drawable/commdity_gb" />
+			
+			    <LinearLayout
+			        android:layout_width="206dp"
+			        android:layout_height="76dp"
+			        android:gravity="center"
+			        style="@style/NOFocusView"
+			        android:layout_alignParentBottom="true"
+			        android:background="#FFFFFF"
+			        android:orientation="horizontal" >
+			
+			        <LinearLayout
+			            android:layout_width="150dp"
+			            android:layout_height="match_parent"
+			            style="@style/NOFocusView"
+			            android:orientation="vertical" >
+			
+			            <LinearLayout
+			                android:layout_width="match_parent"
+			                android:layout_height="26dp"
+			                android:layout_marginTop="10dp"
+			                android:gravity="bottom"
+			                style="@style/NOFocusView"
+			                android:orientation="horizontal" >
+			
+			                <TextView
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_marginLeft="2dip"
+				                android:gravity="right|center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:text="人民币："
+				                android:textColor="#ff0000"
+				                android:textSize="15sp" />
+			                <TextView
+			                    android:id="@+id/tv_rmb_now_price_01"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="36dp"
+			                    style="@style/NOFocusView"
+			                    android:gravity="center|left|bottom"
+			                    android:paddingLeft="5dp"
+			                    android:textColor="#FF0033"
+			                    android:textSize="15sp" />
+
+			            </LinearLayout>
+
+			            <LinearLayout
+				                android:layout_width="match_parent"
+				                android:layout_height="26dp"
+				                android:layout_marginTop="10dp"
+				                android:gravity="bottom"
+				                style="@style/NOFocusView"
+				                android:orientation="horizontal" >
+				            <TextView
+				                android:id="@+id/txt_price_label_01"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_marginLeft="2dip"
+				                android:gravity="center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:text="乐币："
+				                android:textColor="#ff0000"
+				                android:textSize="20sp" />
+						
+				            <TextView
+				                android:id="@+id/tv_lb_price_01"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_gravity="center_vertical"
+				                android:drawableLeft="@drawable/coin"
+				                android:layout_marginLeft="2dip"
+				                android:gravity="center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:textColor="#ff0000"
+				                android:textSize="20sp" />
+				
+				            <TextView
+				                android:id="@+id/tv_lb_original_price_01"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_gravity="center_vertical"
+				                android:layout_marginLeft="5dip"
+				                android:gravity="center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:text="0.0"
+				                android:textSize="20sp" />
+				            
+			         	</LinearLayout>
+			        </LinearLayout>
+			
+			        <LinearLayout
+			            android:id="@+id/label_layout_01"
+			            android:layout_width="48dp"
+			            android:layout_height="52dp"
+			            android:layout_gravity="top"
+			            android:layout_marginRight="8dp"
+			            style="@style/NOFocusView"
+			            android:background="@drawable/lable"
+			            android:gravity="center"
+			            android:orientation="horizontal" >
+			
+			            <TextView
+			                android:id="@+id/tv_discount_01"
+			                android:layout_width="32dp"
+			                android:layout_height="52dp"
+			                android:gravity="center|top|right"
+			                android:paddingTop="10dp"
+			                style="@style/NOFocusView"
+			                android:textColor="#FFFFFF"
+			                android:textSize="18sp" />
+			
+			            <TextView
+			                android:layout_width="16dp"
+			                android:layout_height="52dp"
+			                android:gravity="center|top|left"
+			                android:paddingTop="16dp"
+			                style="@style/NOFocusView"
+			                android:text="@string/fold"
+			                android:textColor="#FFFFFF"
+			                android:textSize="12sp" />
+			        </LinearLayout>
+			    </LinearLayout>
+		    </RelativeLayout>
+		</FrameLayout>
+		
+        <FrameLayout 
+		    android:id="@+id/fl_balance_02"
+		    style="@style/FrameLayout"
+		    android:padding="10dp"
+		    android:background="@drawable/frame_bg"
+		    android:nextFocusUp="@+id/tv_lb_more"
+		    android:nextFocusDown="@+id/tv_more_exchange"
+		    android:nextFocusLeft="@+id/fl_balance_01"
+		    android:nextFocusRight="@+id/fl_balance_03"
+		    android:layout_toRightOf="@+id/fl_balance_01"
+		    android:layout_marginLeft="15dp"
+		    android:layout_gravity="center" >
+		    
+		    <RelativeLayout
+		        android:layout_width="216dip"
+		        android:layout_height="300dip"
+		        style="@style/NOFocusView"
+		        android:padding="5dp"
+        		android:gravity="center"
+        		android:background="#00000000"
+		        android:layout_gravity="center" >
+		        
+		        <ImageView
+			        android:id="@+id/img_src_02"
+			        android:layout_width="206dip"
+			        android:layout_height="290dip"
+			        style="@style/NOFocusView"
+			        android:layout_gravity="center"
+			        android:contentDescription="@null"
+			        android:scaleType="fitXY"
+			        android:src="@drawable/commdity_gb" />
+			
+			    <LinearLayout
+			        android:layout_width="206dp"
+			        android:layout_height="76dp"
+			        android:gravity="center"
+			        android:layout_alignParentBottom="true"
+			        style="@style/NOFocusView"
+			        android:background="#FFFFFF"
+			        android:orientation="horizontal" >
+			
+			        <LinearLayout
+			            android:layout_width="150dp"
+			            android:layout_height="match_parent"
+			            style="@style/NOFocusView"
+			            android:orientation="vertical" >
+			
+			            <LinearLayout
+			                android:layout_width="match_parent"
+			                android:layout_height="26dp"
+			                style="@style/NOFocusView"
+			                android:layout_marginTop="10dp"
+			                android:gravity="bottom"
+			                android:orientation="horizontal" >
+			
+			                <TextView
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_marginLeft="2dip"
+				                android:gravity="right|center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:text="人民币："
+				                android:textColor="#ff0000"
+				                android:textSize="15sp" />
+			                <TextView
+			                    android:id="@+id/tv_rmb_now_price_02"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="36dp"
+			                    android:gravity="center|left|bottom"
+			                    style="@style/NOFocusView"
+			                    android:paddingLeft="5dp"
+			                    android:textColor="#FF0033"
+			                    android:textSize="15sp" />
+			
+			               
+			            </LinearLayout>
+			
+			            <LinearLayout
+				                android:layout_width="match_parent"
+				                android:layout_height="26dp"
+				                android:layout_marginTop="10dp"
+				                android:gravity="bottom"
+				                style="@style/NOFocusView"
+				                android:orientation="horizontal" >
+				            <TextView
+				                android:id="@+id/txt_price_label_02"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_marginLeft="2dip"
+				                android:gravity="center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:text="乐币："
+				                android:textColor="#ff0000"
+				                android:textSize="20sp" />
+						
+				            <TextView
+				                android:id="@+id/tv_lb_price_02"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_gravity="center_vertical"
+				                android:drawableLeft="@drawable/coin"
+				                android:layout_marginLeft="2dip"
+				                android:gravity="center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:textColor="#ff0000"
+				                android:textSize="20sp" />
+				
+				            <TextView
+				                android:id="@+id/tv_lb_original_price_02"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_gravity="center_vertical"
+				                android:layout_marginLeft="5dip"
+				                android:gravity="center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:text="0.0"
+				                android:textSize="20sp" />
+				            
+			         	</LinearLayout>
+			        </LinearLayout>
+			
+			        <LinearLayout
+			            android:id="@+id/label_layout_02"
+			            android:layout_width="48dp"
+			            android:layout_height="52dp"
+			            android:layout_gravity="top"
+			            android:layout_marginRight="8dp"
+			            style="@style/NOFocusView"
+			            android:background="@drawable/lable"
+			            android:gravity="center"
+			            android:orientation="horizontal" >
+			
+			            <TextView
+			                android:id="@+id/tv_discount_02"
+			                android:layout_width="32dp"
+			                android:layout_height="52dp"
+			                android:gravity="center|top|right"
+			                android:paddingTop="10dp"
+			                android:textColor="#FFFFFF"
+			                style="@style/NOFocusView"
+			                android:textSize="18sp" />
+			
+			            <TextView
+			                android:layout_width="16dp"
+			                android:layout_height="52dp"
+			                android:gravity="center|top|left"
+			                android:paddingTop="16dp"
+			                android:text="@string/fold"
+			                android:textColor="#FFFFFF"
+			                style="@style/NOFocusView"
+			                android:textSize="12sp" />
+			        </LinearLayout>
+			    </LinearLayout>
+		    </RelativeLayout>
+		</FrameLayout>
+		
+        <FrameLayout 
+		    android:id="@+id/fl_balance_03"
+		    style="@style/FrameLayout"
+		    android:padding="10dp"
+		    android:background="@drawable/frame_bg"
+		    android:nextFocusUp="@+id/tv_lb_more"
+		    android:nextFocusDown="@+id/tv_more_exchange"
+		    android:nextFocusLeft="@+id/fl_balance_02"
+		    android:nextFocusRight="@+id/fl_balance_00"
+		    android:layout_toRightOf="@+id/fl_balance_02"
+		    android:layout_marginLeft="15dp"
+		    android:layout_gravity="center" >
+		    
+		    <RelativeLayout
+		        android:layout_width="216dip"
+		        android:layout_height="300dip"
+		        style="@style/NOFocusView"
+		        android:padding="5dp"
+        		android:gravity="center"
+        		android:background="#00000000"
+		        android:layout_gravity="center" >
+		        
+		        <ImageView
+			        android:id="@+id/img_src_03"
+			        android:layout_width="206dip"
+			        android:layout_height="290dip"
+			        style="@style/NOFocusView"
+			        android:layout_gravity="center"
+			        android:contentDescription="@null"
+			        android:scaleType="fitXY"
+			        android:src="@drawable/commdity_gb" />
+			
+			    <LinearLayout
+			        android:layout_width="206dp"
+			        android:layout_height="76dp"
+			        android:gravity="center"
+			        android:layout_alignParentBottom="true"
+			        style="@style/NOFocusView"
+			        android:background="#FFFFFF"
+			        android:orientation="horizontal" >
+			
+			        <LinearLayout
+			            android:layout_width="150dp"
+			            android:layout_height="match_parent"
+			            style="@style/NOFocusView"
+			            android:orientation="vertical" >
+			
+			            <LinearLayout
+			                android:layout_width="match_parent"
+			                android:layout_height="26dp"
+			                style="@style/NOFocusView"
+			                android:layout_marginTop="10dp"
+			                android:gravity="bottom"
+			                android:orientation="horizontal" >
+			
+			                <TextView
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_marginLeft="2dip"
+				                android:gravity="right|center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:text="人民币："
+				                android:textColor="#ff0000"
+				                android:textSize="15sp" />
+			                <TextView
+			                    android:id="@+id/tv_rmb_now_price_03"
+			                    android:layout_width="wrap_content"
+			                    android:layout_height="36dp"
+			                    android:gravity="center|left|bottom"
+			                    style="@style/NOFocusView"
+			                    android:paddingLeft="5dp"
+			                    android:textColor="#FF0033"
+			                    android:textSize="15sp" />
+			
+			               
+			            </LinearLayout>
+			
+			            <LinearLayout
+				                android:layout_width="match_parent"
+				                android:layout_height="26dp"
+				                android:layout_marginTop="10dp"
+				                android:gravity="bottom"
+				                style="@style/NOFocusView"
+				                android:orientation="horizontal" >
+				            <TextView
+				                android:id="@+id/txt_price_label_03"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_marginLeft="2dip"
+				                android:gravity="center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:text="乐币："
+				                android:textColor="#ff0000"
+				                android:textSize="20sp" />
+						
+				            <TextView
+				                android:id="@+id/tv_lb_price_03"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_gravity="center_vertical"
+				                android:drawableLeft="@drawable/coin"
+				                android:layout_marginLeft="2dip"
+				                android:gravity="center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:textColor="#ff0000"
+				                android:textSize="20sp" />
+				
+				            <TextView
+				                android:id="@+id/tv_lb_original_price_03"
+				                android:layout_width="wrap_content"
+				                android:layout_height="wrap_content"
+				                android:layout_gravity="center_vertical"
+				                android:layout_marginLeft="5dip"
+				                android:gravity="center_vertical"
+				                android:maxLines="1"
+				                android:singleLine="true"
+				                android:text="0.0"
+				                android:textSize="20sp" />
+				            
+			         	</LinearLayout>
+			        </LinearLayout>
+			
+			        <LinearLayout
+			            android:id="@+id/label_layout_03"
+			            android:layout_width="48dp"
+			            android:layout_height="52dp"
+			            android:layout_gravity="top"
+			            android:layout_marginRight="8dp"
+			            style="@style/NOFocusView"
+			            android:background="@drawable/lable"
+			            android:gravity="center"
+			            android:orientation="horizontal" >
+			
+			            <TextView
+			                android:id="@+id/tv_discount_03"
+			                android:layout_width="32dp"
+			                android:layout_height="52dp"
+			                android:gravity="center|top|right"
+			                android:paddingTop="10dp"
+			                android:textColor="#FFFFFF"
+			                style="@style/NOFocusView"
+			                android:textSize="18sp" />
+			
+			            <TextView
+			                android:layout_width="16dp"
+			                android:layout_height="52dp"
+			                android:gravity="center|top|left"
+			                android:paddingTop="16dp"
+			                android:text="@string/fold"
+			                android:textColor="#FFFFFF"
+			                style="@style/NOFocusView"
+			                android:textSize="12sp" />
+			        </LinearLayout>
+			    </LinearLayout>
+		    </RelativeLayout>
+		</FrameLayout>
+    </RelativeLayout>
+    
+    <TextView 
+         android:id="@+id/tv_more_exchange"
+         android:layout_width="262dp"
+         android:layout_height="63dp"
+         android:nextFocusUp="@+id/fl_balance_03"
+         android:nextFocusDown="@+id/tv_more_exchange"
+         android:nextFocusLeft="@+id/tv_more_exchange"
+         android:nextFocusRight="@+id/tv_more_exchange"
+         android:background="@drawable/butt_style"
+         android:layout_marginLeft="710dp"
+         style="@style/FocusView"
+         android:layout_below="@+id/rl_balance_frame"
+         android:textSize="36sp"
+         android:gravity="center"
+         android:textColor="#FFFFFF"
+         android:text="@string/more_sp" />
+</RelativeLayout>

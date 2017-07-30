@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="menu_label">
+        <item>乐币余额</item>
+        <item>会员信息</item>
+        <item>支付管理</item>
+        <item>兑换记录</item>
+        <item>充值</item>
+        <item>提现</item>
+    </string-array>
+   
+</resources>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BBPawPhoneChat</string>
+
+    <!-- other  string -->
+    <string name="image_null">图片加载失败</string>
+    <string name="learn_time">学习时间:</string>
+    <string name="learn_content">学习内容：</string>
+    <string name="text_ack_msg">已读</string>
+    <string name="text_delivered_msg">送达</string>
+
+    <!-- chat to someone -->
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="attach_picture">图片</string>
+    <string name="attach_take_pic">拍照</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="send_fail">发送消息失败</string>
+    <string name="delete_message">删除消息</string>
+    <string name="copy_message">复制消息</string>
+    <string name="delete_voice">删除语音</string>
+    <string name="delete_video">删除视频</string>
+    <string name="delete">删除</string>
+    <string name="resend">重发</string>
+    <string name="confirm_resend">确认重发该信息？</string>
+    <string name="connect_failuer_toast">请检查网络或稍候重试</string>
+    <string name="network_unavailable">网络连接不可用，请检查网络</string>
+    <string name="copy">复制</string>
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="prompt">提示</string>
+    <string name="clear_records">清空记录</string>
+    <string name="clear_all_records">是否清空所有聊天记录？</string>
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_message">位置信息</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="network_isnot_available">网络不可用</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="sd_card_does_not_exist">SD卡不存在，不能拍照</string>
+    <string name="cant_find_pictures">找不到图片</string>
+    <string name="Send_voice_need_sdcard_support">发送语音需要sdcard支持</string>
+    <string name="Recording_without_permission">无录音权限</string>
+    <string name="The_recording_time_is_too_short">录音时间太短</string>
+    <string name="send_failure_please">发送失败，请检测服务器是否连接</string>
+    <string name="Download_the_pictures">下载图片: 0%</string>
+    <string name="Download_the_pictures_new">下载图片:</string>
+    <string name="Is_download_voice_click_later">正在下载语音，稍后点击</string>
+
+    <!-- exit note -->
+    <string name="logout">退出登录</string>
+    <string name="exit_group">退出</string>
+    <string name="connect_conflict">同一帐号已在其他设备登录</string>
+    <string name="em_user_remove">此用户已被移除</string>
+    <string name="exit_error">退出失败</string>
+
+    <!-- setting -->
+    <string name="voice">声音</string>
+    <string name="shake">震动</string>
+    <string name="Current_version">当前版本</string>
+    <string name="Version_number_is_wrong">版本号错误</string>
+
+    <!-- add new  friend -->
+    <string name="Add_a_friend">加个好友呗</string>
+    <string name="send_successful">发送请求成功,等待对方验证</string>
+    <string name="Request_add_buddy_failure">请求添加好友失败:</string>
+    <string name="Network_error">网络出错</string>
+    <string name="not_connect_to_server">尚未连接至服务器，请稍后重试</string>
+    <string name="deleting">正在删除\.\.\.</string>
+    <string name="Delete_failed">删除失败:</string>
+    <string name="being_added">正在添加\.\.\.</string>
+    <string name="Is_unblock">正在解除屏蔽\.\.\.</string>
+    <string name="Add_a_button_was_clicked">添加按钮被点击</string>
+    <string name="Is_sending_a_request">正在发送请求\.\.\.</string>
+    <string name="this_is_your_friend">该用户已经是你的好友！</string>
+    <string name="add_this_friend">添加该好友</string>
+
+    <!-- login and register -->
+    <string name="User_name_cannot_be_empty">用户名不能为空！</string>
+    <string name="Password_cannot_be_empty">密码不能为空！</string>
+    <string name="please_set_the_current">设置当前用户的昵称\n用于ios离线推送时显示用户昵称</string>
+    <string name="Is_landing">正在登录\.\.\.</string>
+    <string name="list_is_for">将在后台获取好友和群聊列表\.\.\.</string>
+    <string name="login_failure_failed">登录失败: 获取好友或群聊失败</string>
+    <string name="Login_failed">登录失败:帐号或密码错误！</string>
+    <string name="receive_the_passthrough">收到透传：action：</string>
+    <string name="Logoff_notification">下线通知</string>
+    <string name="Remove_the_notification">移除通知</string>
+    <string name="Whether_to_send">是否发送？</string>
+    <string name="Are_logged_out">正在退出登录..</string>
+    <string name="Confirm_password_cannot_be_empty">确认密码不能为空!</string>
+    <string name="Two_input_password">两次输入的密码不一致，请重新输入!</string>
+    <string name="Is_the_registered">正在注册\.\.\.</string>
+    <string name="Registered_successfully">注册成功</string>
+    <string name="network_anomalies">网络异常，请检查网络！</string>
+    <string name="User_already_exists">用户已存在！</string>
+    <string name="User_is_not_exists">用户不存在，请确认！</string>
+    <string name="registration_failed_without_permission">注册失败，无权限!</string>
+    <string name="Registration_failed">注册失败:</string>
+    <string name="Registration_code_false">验证码错误，请确认</string>
+    <string name="get_phone_code">获取验证码，请查收手机短信</string>
+    <string name="get_email_code">获取验证码，请查收邮件</string>
+    <string name="username_format_error">您输入的账户格式不正确，请确认!</string>
+
+    <!-- carefor -->
+    <string name="Are_connected_to_each_other">正在连接对方\.\.\.</string>
+    <string name="Is_not_yet_connected_to_the_server">尚未连接至服务器</string>
+    <string name="have_connected_with">等待接通\.\.\.</string>
+    <string name="In_the_call">通话中\.\.\.</string>
+    <string name="The_other_party_refused_to_accept">对方拒绝接受！\.\.\.</string>
+    <string name="Connection_failure">连接建立失败！\.\.\.</string>
+    <string name="The_other_party_is_not_online">对方不在线，请稍后再拨\.\.\.</string>
+    <string name="The_other_is_on_the_phone_please">对方正在通话中，请稍后再拨</string>
+    <string name="The_other_is_hang_up">对方已经挂断</string>
+    <string name="The_other_party_did_not_answer_new">对方未接听</string>
+    <string name="make_call_is_not_connect">未连接\.\.\.</string>
+    <string name="please_select_call_to_user">请先选择监控对象</string>
+
+    <!-- change  psw -->
+    <string name="please_write_old_pass">请填写旧密码！</string>
+    <string name="please_write_new_pass">请填写新密码！</string>
+    <string name="please_write_confirm_pass">请确认新密码！</string>
+    <string name="please_write_change_password">正在修改密码！</string>
+    <string name="please_login_again">密码已经修改成功,请重新登陆</string>
+
+    <!-- forgot password -->
+    <string name="forget_psw_change_failed">密码重置失败，请重试</string>
+    <string name="forget_psw_change_success">密码已经重置！</string>
+    <string name="forget_psw_change_now">正在重置密码，请稍后！</string>
+    <string name="search_contacts">点击输入帐号\.\.\.</string>
+    <string name="login_name_hint">手机/邮箱</string>
+    <string name="login_pass_hint">请输入密码</string>
+    <string name="register_pass_hint">请输入6-/12位数字或者字母组合</string>
+    <string name="register_pass_confirm_hint">请再次输入密码</string>
+    <string name="forget_pass_new_psw">请输入新密码</string>
+    <string name="forget_pass_confirm_hint">请再次输入新密码</string>
+    <string name="please_write_confrim_code">验证码不能为空!</string>
+    <string name="register_confirm_code_hint">请输入验证码</string>
+
+    <!-- habit manager -->
+    <string name="habit_item_minutes">分钟</string>
+    <string name="habit_item_hour">小时</string>
+
+    <!-- question  and  feedback -->
+    <string name="userName">用户昵称 </string>
+    <string name="title_activity_feedback_and_suggest">问题反馈和建议</string>
+    <string name="please_write_question_first">请先填写相关问题</string>
+    <string name="thank_you_sugesst">感谢您提出的宝贵建议，我们会尽快回复！</string>
+    <string name="you_commit_sugesst_failed">提交失败，请稍后重新提交</string>
+
+    <!-- my info setting fragment -->
+    <string name="my_change_head_success">修改头像成功</string>
+    <string name="my_change_head_failed">修改头像失败，请稍后再试！</string>
+    
+
+    <!-- habit fragment string -->
+    <string name="alert_dialog_lock_paid">锁住平板</string>
+    <string name="is_time_wash_hands">宝宝洗手时间到了</string>
+    <string name="is_time_eatting">宝宝吃饭时间到了</string>
+    <string name="is_time_drinking">宝宝喝水时间到了</string>
+    <string name="is_time_sporting">宝宝运动时间到了</string>
+    <string name="is_time_tooth_brush">宝宝刷牙时间到了</string>
+    <string name="is_time_take_shower">宝宝洗澡时间到了</string>
+    <string name="is_time_do_housework">宝宝做家务时间到了</string>
+    <string name="is_time_lock_screen">关闭平板屏幕</string>
+    <string name="alert_dialog_open_paid">解锁屏幕</string>
+    <string name="close_paid">关闭设备</string>
+    
+    <string name="is_time_wash_hands_open">解除洗手的锁定</string>
+    <string name="is_time_eatting_open">解除吃饭的锁定</string>
+    <string name="is_time_drinking_open">解除喝水的锁定</string>
+    <string name="is_time_sporting_open">解除运动的锁定</string>
+    <string name="is_time_tooth_brush_open">解除刷牙洗脸的锁定</string>
+    <string name="is_time_take_shower_open">解除洗澡的锁定</string>
+    <string name="is_time_do_housework_open">解除做家务的锁定</string>
+    <string name="is_time_lock_screen_open">解除关闭屏幕锁定</string>
+    <string name="please_selelct_contact_carefor">点击头像选择一个监控对象</string>
+    <string name="please_add_contact">请先扫一扫关联平板</string>
+    <string name="app_name_init">应用名称:</string>
+    <string name="version_number">新版本号:</string>
+    <string name="update_introduce">更新说明:</string>
+    <string name="old_psw">原始密码:</string>
+    <string name="new_psw">新的密码:</string>
+    <string name="please_input">请输入您宝贵的意见吧!</string>
+    <string name="explain">图片有时更能说明问题喔！</string>
+    <string name="allow_input">可输入500字</string>
+    <string name="you_input">你还可输入</string>
+    <string name="word">字</string>
+    <string name="question">问题:</string>
+    <string name="BBPaw_reply">BBpaw官方回复:</string>
+    <string name="Related_Images">相关图片</string>
+    <string name="default_response">请您耐心等候，工作人员第一时间将为您解答.</string>
+    <string name="min">分钟</string>
+    <string name="comson">敬请期待</string>
+    <string name="committing">提交中\，请稍候\.\.\.</string>
+    <string name="no_feedback">没有反馈</string>
+    <string name="change_name_null">昵称不能为空</string>
+    <string name="setting_account_exit">账号退出！</string>
+    <string name="setting_account_other_place">账号在其他地方登陆！</string>
+    <string name="setting_account_not_serve">无法连接服务器，请重试！</string>
+    <string name="setting_account_not_net">无法连接网络，请重试！</string>
+    <string name="change_name_success">修改昵称成功</string>
+    <string name="change_name_fail">修改昵称失败</string>
+    <string name="setting_updateing">正在下载更新</string>
+    <string name="change_psw_ok">修改密码成功</string>
+    <string name="change_psw_fail">修改密码失败，请稍后再试</string>
+    <string name="btn_voice">按下语音按钮，可以说话</string>
+    
+    <string name="updateing_nikename">正在修改昵称</string>
+    <string name="send_text">发送</string>
+    <string name="press_to_talk">按住说话</string>
+    <string name="question_commit">提交中，请稍候\.\.\.</string>
+    
+    <string name="login_only_can_input">qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM1234567890</string>
+    
+    <string name="save_picture">保存图片</string>
+    <string name="save_picture_failed">保存失败</string>
+    <string name="save_picture_success">图片成功保存至%s目录</string>
+    <string name="update_head_now">正在上传头像</string>
+    
+    <string name="ageree_protocol">同意协议</string>
+    <string name="agreee_protocol_link">《BBpaw用户协议》</string>
+    <string name="please_agree_protocol">请先确认同意协议</string>
+   
+    <string name="note_be_deleted">您已不在他（她）的好友列表里，请重新添加后，才能聊天</string>
+    
+    <string name="change_remark_name">修改备注</string>
+    <string name="deleted_the_contacts">解除绑定</string>
+    
+    
+</resources>

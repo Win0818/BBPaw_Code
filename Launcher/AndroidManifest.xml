@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.worldchip.bbp.ect"
+    android:versionCode="5"
+    android:versionName="5.01">
+     <!-- android:sharedUserId="android.uid.system" -->
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+    <original-package android:name="com.worldchip.bbp.ect" />
+
+    <!--在SDCard中创建与删除文件权限 -->
+  　　<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+  　　<!--往SDCard写入数据权限 -->
+  　　<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  　　<!--从SDCard读取数据权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" /> 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <!-- <uses-permission android:name="android.permission.DELETE_PACKAGES" /> -->
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" /> -->
+    <!-- <uses-permission android:name="android.permission.DEVICE_POWER" /> -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name = "android.permission.DISABLE_KEYGUARD"/><!-- 屏蔽HOME键需要的权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    
+    
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+  <!--  <application android:hardwareAccelerated="false" .../> -->
+    <application
+        android:hardwareAccelerated="false"
+        android:name="com.worldchip.bbp.ect.activity.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleInstance"
+        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+        <activity
+            android:name="com.worldchip.bbp.ect.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:clearTaskOnLaunch="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.worldchip.bbp.ect.activity.ImageNameActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.worldchip.bbp.ect.activity.ImageGridActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.worldchip.bbp.ect.activity.PatriarchControlActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name="com.worldchip.bbp.ect.activity.PassLockActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.worldchip.bbp.ect.activity.SettingActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.CustomDialog" />
+        <activity
+            android:name="com.worldchip.bbp.ect.activity.MyAppActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.worldchip.bbp.ect.activity.ClockActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.worldchip.bbp.ect.activity.AlarmActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.worldchip.bbp.ect.activity.BrowserActivity"
+            android:screenOrientation="landscape"
+            android:exported="true"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.worldchip.bbp.ect.activity.LoadingActivity"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.worldchip.bbp.ect.activity.AlarmComeAcitivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.worldchip.bbp.ect.activity.MediaShareActivity"
+            android:screenOrientation="landscape"
+            android:exported="true"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+         <activity 
+             android:name="com.worldchip.bbp.ect.activity.PictureAllScreen"
+             android:screenOrientation="landscape" />
+         <activity 
+             android:name="com.worldchip.bbp.ect.activity.ChargingActivity"
+             android:launchMode="singleInstance"
+             android:screenOrientation="landscape" 
+             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+         <activity android:name="com.worldchip.bbp.ect.activity.StoreOrChargeActivity"
+             	   android:screenOrientation="landscape"
+             	   android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+         <activity android:name="com.worldchip.bbp.ect.installapk.CopyActivity"
+             	   android:screenOrientation="landscape"
+             	   android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+         <activity android:name="com.worldchip.bbp.ect.installapk.InstallApkActivity"
+             	   android:screenOrientation="landscape"
+             	   android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+         <activity android:name="com.worldchip.bbp.ect.activity.FestivalActivity"
+             	   android:screenOrientation="landscape"
+             	   android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+         
+        <service android:name="com.worldchip.bbp.ect.service.TimeTontrolService" />
+        <service android:name="com.worldchip.bbp.ect.service.BootService" />
+        <service android:name="com.worldchip.bbp.ect.service.FloatWindowService"/>
+        <service android:name="com.worldchip.bbp.ect.service.ScanService"/>
+        <receiver android:name="com.worldchip.bbp.ect.receiver.BootReceiver" >
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.worldchip.bbp.ect.installapk.ApkInstalledReceiver"  
+                  android:label="@string/app_name">    
+            <intent-filter>  
+             <action android:name="android.intent.action.PACKAGE_ADDED" />  
+             <data android:scheme="package" />  
+            </intent-filter>  
+        </receiver>
+        <receiver
+            android:name="com.worldchip.bbp.ect.receiver.AlarmReceiver">
+            <intent-filter>
+                <action android:name="com.worldchip.bbpaw.alarm.Action" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.worldchip.bbp.ect.receiver.DetectionAlarmReceiver">
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom|center_horizontal"
+    android:background="@drawable/shortcut_background_2"
+    android:id="@+id/menu_main">
+
+    <HorizontalScrollView
+        android:id="@+id/app_hscrollview"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:scrollbars="none">
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+		        android:orientation="horizontal"
+		        android:layout_gravity="bottom|center_horizontal"
+		        android:gravity="center_horizontal"
+	            android:layout_marginBottom="5dip"
+	            android:weightSum="1">
+	            
+		        <GridView 
+		            android:id="@+id/grid_menu"
+		        	android:layout_width="0dip"
+		        	android:layout_height="wrap_content"
+		        	android:clickable="true"
+		        	android:layout_weight="0.8"
+		        	android:scrollbars="none"
+		        	android:listSelector="@android:color/transparent"
+		        	android:stretchMode="columnWidth"/>
+	        </LinearLayout>
+	</HorizontalScrollView>
+    
+</RelativeLayout>

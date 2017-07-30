@@ -1,0 +1,72 @@
+<resources>
+
+    <string name="app_name">EGRShopping</string>
+
+    <string name="str_null"></string>
+    <string name="gold_number">Gold Number: %1$s</string>
+    <string name="get_more_gold">Get more coin(s)</string>
+    
+    <string name="exchange_record">Exchange Record</string>
+    
+    <string name="le_coin">乐币：</string>
+    <string name="people_coin">人民币：</string>
+    <string name="fold">折</string>
+    
+    <string name="zero">1</string>
+    
+    <string name="next_step">下一步</string>
+    <string name="change_receiving_address">修改收货地址</string>
+    <string name="confirmation_exchange">确认购买</string>
+    <string name="save">保存</string>
+    
+    <string name="user_info_tip1">为了保障您的购买成功完成和您的账户安全，请先完善用户信息：</string>
+    <string name="user_info_tip2">注：标注为 * 号的为必填项，而且非常重要，请填写真实信息。</string>
+    <string name="user_info_tip3">系统已经向您的手机发送了确认短信，请输入短信中的验证码：</string>
+    <string name="user_info_tip4">接收短信的手机号码：</string>
+    <string name="user_info_tip5">注：请注意接收手机短信</string>
+    <string name="user_info_tip6">支付密码用户购买商品时确认支付使用，请设置支持密码：</string>
+    <string name="user_info_tip7">注：支付密码为6位数字，请输入两次</string>
+    <string name="user_info_tip8">已经完成用户信息收集，现在请继续购买！</string>
+    <string name="user_info_tip9">请输入购买数量</string>
+    <string name="user_info_tip9_info">亲，请问您要多少？</string>
+    <string name="user_info_tip10">按左键减少或按右键增加数量</string>
+    <string name="user_info_tip11">请确认您的收货信息</string>
+    <string name="user_info_tip12">请输入支付密码</string>
+    <string name="user_info_tip13">请输入绑定的手机号码</string>
+    <string name="user_info_tip14">请输入手机验证码</string>
+    <string name="user_info_tip15">请输入新的支付密码</string>
+    <string name="user_info_tip16">恭喜，购买完成！</string>
+    <string name="user_info_tip17">请记录提货确认码</string>
+    <string name="user_info_tip18">取货时需要出示提确认码，请妥善保管好您的提货验证码</string>
+    <string name="re_sending">重新发送</string>
+    <string name="confirm">确认</string>
+    <string name="retrieve_password">找回支付密码</string>
+    
+    <string name="tip_name">* 真实姓名：</string>
+    <string name="tip_phone">* 联系电话：</string>
+    <string name="tip_name_00">真实姓名：</string>
+    <string name="tip_phone_00">联系电话：</string>
+    <string name="tip_phone2">常用电话：</string>
+    <string name="tip_address">街道地址：</string>
+    <string name="tip_home">小区名称：</string>
+    <string name="tip_home_part">楼道单元：</string>
+    
+    <!-- zxing(start) -->
+    <string name="placeHolder">placeHolder</string>
+    <string name="seekbar_add">+</string>
+    <string name="seekbar_minus">-</string>
+    <string name="create">生成</string>
+    <string name="scan_failed">扫描失败</string>
+    <string name="bottom_hint">建议与镜头保持10CM距离，尽量避免逆光和阴影</string>
+    <string name="top_hint">将条形码或二维码置于取景框内系统会自动扫描</string>
+    <string name="cancel">取消</string>
+    <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="button_ok">确定</string>
+    <!-- zxing(end) -->
+    
+    <string name="payment_remind">亲！请使用手机微信扫一扫功能扫描下面的二维码：</string>
+    <string name="payment_method">选择支付方式</string>
+    <string name="payment_method_jifen">乐币兑换</string>
+    <string name="payment_method_weixin">微信支付</string>
+    <string name="user_info_tip19">请在3分钟之内使用微信完成支付</string>
+</resources>
